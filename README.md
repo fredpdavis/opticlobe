@@ -29,17 +29,17 @@ This section describes steps to turn RNA-seq reads to figures and tables.
 
 We used the following software on an LSF linux compute cluster.
 
- #      Software                Source
---      ----------------------  --------------------------------------------
-1       seqtk (2012 Oct 16)     https://github.com/lh3/seqtk
-2       kallisto 0.43.1         https://pachterlab.github.io/kallisto/
-3       STAR 2.5.3c             https://github.com/alexdobin/STAR
-4       bedtools 2.15.0         http://bedtools.readthedocs.io/
-5       samtools 0.1.19         https://github.com/samtools/samtools
-6       UCSC bedGraphToBigWig   http://hgdownload.cse.ucsc.edu/admin/exe
-7       picard 1.9.1            http://broadinstitute.github.io/picard/
-8       R v3.3.1                https://www.r-project.org/
-9       RStan/Stan              http://mc-stan.org/users/interfaces/rstan
+|  #  | Software               |  Source                                    |
+| --- | ---------------------- | ------------------------------------------ |
+|  1  | seqtk (2012 Oct 16)    | https://github.com/lh3/seqtk               |
+|  2  | kallisto 0.43.1        | https://pachterlab.github.io/kallisto/     |
+|  3  | STAR 2.5.3c            | https://github.com/alexdobin/STAR          |
+|  4  | bedtools 2.15.0        | http://bedtools.readthedocs.io/            |
+|  5  | samtools 0.1.19        | https://github.com/samtools/samtools       |
+|  6  | UCSC bedGraphToBigWig  | http://hgdownload.cse.ucsc.edu/admin/exe   |
+|  7  | picard 1.9.1           | http://broadinstitute.github.io/picard/    |
+|  8  | R v3.3.1               | https://www.r-project.org/                 |
+|  9  | RStan/Stan             | http://mc-stan.org/users/interfaces/rstan  |
 
 Table: External software used for data processing
 
