@@ -3,8 +3,8 @@
 This package contains code to analyze RNA-seq data and generate figures and
 tables presented in:
 
-A genetic, genomic, and computational resource for exploring neural circuit function
-Davis FP*, Nern A*, Picard S, Reiser MB, Rubin GM, Eddy SR, Henry GL.
+A genetic, genomic, and computational resource for exploring neural circuit function  
+Davis FP*, Nern A*, Picard S, Reiser MB, Rubin GM, Eddy SR, Henry GL.  
 submitted, 2018.
 
 Contact fred.davis@nih.gov with any questions.
