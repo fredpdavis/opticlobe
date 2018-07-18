@@ -1,0 +1,219 @@
+Internal Sample #	BDGP Cloning #	Clone Name	Class	Symbol	Flybase Gene ID	Name	Special Identification	Annotation	ECD Insert Size (aa)	Full-length size (aa)	"Domains EC, (IC)"	SP	TM or GPI	Cellular Localization	Expression as Bait	Expression as Prey	Included in	Notes on sequence	"Extracellular interactions observed, based on Literature Survey"
+22	GT50001	RT01502	Ig + LRR	Sema-2a	FBgn0011260	Sema-2a		CG4700	699	724	"1 Sema, 1 PSI, 1 Ig"	Y	N	Secreted	Moderate	Moderate	Interactome I and II		Sema-2a binds PlexB (PMID: 16672342).
+12	GT50002	RT01907	Ig + LRR	CG16974	FBgn0032479			CG16974	754	1257	"LRR[11], 1 Ig"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Orphan.
+19	GT50003	RT01511	Ig + FnIII	klg	FBgn0017590	klingon		CG6669	446	545	"3 Ig, 1 FnIII"	Y	GPI	Membrane attached	Moderate	Low	Interactome I and II		"Klg Binds itself (PMID: 19104051, 9043060)."
+103	GT50004	RT01520	Ig	dpr6	FBgn0040823	dpr6		CG14162	260	283	2 Ig	Y	N	Secreted	Low	Moderate	Interactome I and II		Orphan.
+73	GT50005	RT01915	Ig	unc-5	FBgn0034013	unc-5		CG8166	477	1072	"2 Ig, 2 Tsp1, (ZU5), (Death)"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		"Unc-5 binds NetA, NetB (PMID: 11719202)."
+121	GT50006	RT01527	Ig	Bsg	FBgn0261822	Basigin		CG31605	202	265	2 Ig	Y	TM	Transmembrane	High	High	Interactome I and II		Bsg Binds integrin (if [_PS2] and mys [_PS]; PMID: 15928045).
+15	GT50007	RT01920	Ig	CG31431	FBgn0051431			CG31431	276	361	2 Ig	Y	TM	Transmembrane	High	Moderate	Interactome I and II		Orphan.
+10	GT50008	RT01925	Ig	CG31708	FBgn0051708			CG31708	483	532	3 Ig	Y	TM	Transmembrane	Low	Low	Interactome I and II		Orphan.
+97	GT50009	RT02815	Ig	rst	FBgn0003285	roughest		CG4125	511	764	5 Ig	Y	TM	Transmembrane	High	Low	Interactome I and II		"Rst binds itself (PMID: 7646884), SNS (PMID: 15511638) and Hbs (PMID: 15935781). Rst binds X11L intracellularly."
+30	GT50010	RT02589	Ig + FnIII	Cont	FBgn0037240	Contactin		CG1084	1354	1390	"1 CLect, 6 Ig, 4 FnIII"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Cont binds NrxIV (PMID: 22022470).
+81	GT50011	RT02603	Ig + FnIII	Ptp69D	FBgn0014007	Protein tyrosine phosphatase 69D		CG10975	767	1461	"2 Ig, 3 FnIII, (2 PTPc)"	Y	TM	Transmembrane	Moderate but degraded	Moderate but degraded	Interactome I and II	First two residues of the ECD missing.	Orphan.
+80	GT50012	RT01942	Ig	beat-IIIc	FBgn0032629	beat-IIIc		CG15138	280	383	2 Ig	Y	TM	Transmembrane	High	High	Interactome I and II		Orphan.
+110	GT50013	RT02817	Ig	CG32791	FBgn0052791			CG32791	469	554	3 Ig	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II	First residue of the ECD missing.	Orphan.
+89	GT50014	RT02819	Ig	beat-IIa	FBgn0038498	beaten path IIa		CG14334	279	431	2 Ig	Y (SA)	TM	Transmembrane	Moderate	High	Interactome I and II		Orphan.
+60	GT50015	RT01963	Ig	dpr18	FBgn0030723	dpr18		CG14948	449	519	2 Ig	Y (SA)	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Orphan.
+116	GT50016	RT01541	Ig	CG13532	FBgn0034788			CG13532	238	263	2 Ig	Y	N	Secreted	Low	Low	Interactome I and II		Orphan.
+104	GT50017	RT01550	Ig + FnIII	tutl	FBgn0010473	turtle		CG15427	728	1508	"5 Ig, 2 FnIII"	Y (SA)	TM	Transmembrane	High	Moderate	Interactome I and II		Tutl binds itself (PMID: 19906964)
+18	GT50018	RT01559	Ig	CG8964	FBgn0033674			CG8964	317	433	3 Ig	Y	TM	Transmembrane	High	High	Interactome I and II		Orphan.
+72	GT50019	RT01967	Ig	CG31814	FBgn0051814			CG31814	525	672	3 Ig	Y	TM	Transmembrane	None	None	Interactome I and II		Orphan.
+28	GT50020	RT09804	Ig	beat-Ib	FBgn0028645	beaten path Ib		CG7644	771	327	2 Ig	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Orphan.
+92	GT50021	RT01570	Ig	dpr4	FBgn0053512	dpr4		CG33512	292	323	2 Ig	Y	?	Secreted (?)	None	Very Low	Interactome I and II	"Dpr4 may have a TM, resulting in a 236-residue ECD."	Orphan.
+75	GT50022	RT01577	Ig	dpr17	FBgn0051361	dpr17		CG31361	582	694	2 Ig	TM/SA	N	Transmembrane (Type II)	None (degraded band)	None (degraded band)	Interactome I and II		Orphan.
+39	GT50023	RT01583	Ig	CG6867	FBgn0030887			CG6867	865	949	"3 Collagen, 2 Ig, 1 Olf"	TM/SA	N	Transmembrane (Type II)	None	None	Interactome I and II		Orphan.
+118	GT50024	RT01589	Ig + FnIII	CG15630	FBgn0031627			CG15630	450	431	"3 Ig, 1 FnIII"	Y	N	Secreted	High	High	Interactome I and II		Orphan.
+193	GT50025	RT11101	Ig	CG31646	FBgn0051646			CG31646	606	513	3 Ig	Y	TM	Transmembrane	Moderate	Low	Interactome II only		Orphan.
+1	GT50026	"RT02618, RT02621"	Ig + FnIII	hbs	FBgn0029082	hibris		CG7449	1025	1228	"9 Ig, 1 FnIII"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Hbs binds rst (PMID: 15935781) and kirre (PMID: 19270174). Also reported: sns (PMID: 19270174) in cis only.
+77	GT50027	RT01604	Ig + FnIII	CG34371	FBgn0085400			CG34371	798	1173	"5 Ig, 1 FnIII"	Y	TM	Transmembrane	Low	Low (some degradation)	Interactome I and II		Orphan.
+41	GT50028	RT01615	Ig + FnIII	CG12484	FBgn0086604			CG12484	697	1201	"5 Ig, 1 FnIII"	Y	N	Secreted	High	High	Interactome I and II	Last 15 residues missing in ECD construct; true ECD is 712 residues.	Orphan.
+54	GT50029	RT01624	Ig + FnIII	boi	FBgn0040388	brother of ihog		CG32796	707	1110	"4 Ig, 2 FnIII"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		"Boi, based on homology to ihog, bind itself (with the help of heparin, PMID: 17077139, 17348690) and Hh (PMID: 16630821)."
+5	GT50030	RT01632	Ig	dpr15	FBgn0037993	dpr15		CG10095	636	662	2 Ig	Y	?	Secreted (?)	None	None	Interactome I and II	"Dpr15 may have a TM, resulting in a 559-residue ECD."	Orphan.
+58	GT50031	RT01633	Ig	dpr9	FBgn0038282	dpr9		CG33485	367	494	2 Ig	Y	TM	Transmembrane	Low	Low	Interactome I and II		Orphan.
+125	GT50032	RT01647	Ig + FnIII	wrapper	FBgn0025878	wrapper		CG10382	450	500	"3 Ig, 1 FnIII"	Y	TM	Transmembrane	High	Moderate	Interactome I and II		Wrapper binds NrxIV.
+115	GT50033	RT01988	Ig + FnIII	Nrg	FBgn0264975	Neuroglian		CG1634	1108	1239	"6 Ig, 5 FnIII"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II	Mutation: A1101V.	Nrg binds itself (PMID: 2132825) and ed (PMID: 12668620).
+11	GT50034	RT01650	Ig + FnIII	ihog	FBgn0031872	interference hedgehog		CG9211	691	886	"4 Ig, 2 FnIII"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		"ihog binds itself (with the help of heparin, PMID: 17077139, 17348690) and Hh (PMID: 16630821)."
+42	GT50035	RT01660	Ig	CG5597	FBgn0034920			CG5597	220	260	2 Ig	Y	TM	Transmembrane	High	High	Interactome I and II		Orphan.
+13	GT50036	RT01672	Ig	dpr5	FBgn0037908	dpr5		CG5308	250	336	2 Ig	TM/SA	TM	Transmembrane	Low	Low	Interactome I and II		Orphan.
+127	GT50037	RT01673	Ig	CG14521	FBgn0039617			CG14521	370	413	3 Ig	Y	TM	Transmembrane	High	Moderate	Interactome I and II		Orphan.
+67	GT50038	RT01685	Ig	beat-Vb	FBgn0038092	beat-Vb		CG31298	269	328	2 Ig	Y	TM	Transmembrane	High	High	Interactome I and II		Orphan.
+16	GT50039	RT01690	Ig + FnIII	CG16857	FBgn0028482			CG16857	617	719	"4 Ig, 2 FnIII"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Orphan.
+48	GT50040	RT01704	Ig	beat-IV	FBgn0039089	beat-IV		CG10152	392	413	2 Ig	Y	N	Secreted	Very low	Low	Interactome I and II		Orphan.
+4	GT50041	RT01714	Ig	dpr8	FBgn0052600	dpr8		CG32600	242	343	2 Ig	Y	TM	Transmembrane	Low	Moderate	Interactome I and II		Orphan.
+91	GT50042	RT01989	Ig + FnIII	CG12950	FBgn0037736			CG12950	631	939	"5 Ig, 1 FnIII"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Orphan.
+51	GT50043	RT02003	Ig	dpr20	FBgn0035170	dpr20		CG12191	440	525	2 Ig	Y (SA)	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Orphan.
+66	GT50044	"RT02014, RT02016"	Ig	dpr14	FBgn0029974	dpr14		CG10946	281	340	2 Ig	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Orphan.
+122	GT50045	RT01718	Ig	CG31619	FBgn0051619			CG31619	2949	1014	"8 Tsp, 1 Ig"	Y	N	Secreted	None	None	Interactome I and II		Orphan.
+27	GT50046	RT02019	Ig	dpr11	FBgn0053202	dpr11		CG33202	293	360	2 Ig	Y	TM	Transmembrane	High	High	Interactome I and II		Orphan.
+113	GT50047	RT02030	Ig	beat-Ic	FBgn0028644	beaten path Ic		CG4838	295	534	2 Ig	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Orphan.
+43	GT50048	RT01725	Ig	beat-Va	FBgn0038087	beat-Va		CG10134	246	300	2 Ig	Y	TM	Transmembrane	High	High	Interactome I and II		Orphan.
+34	GT50049	RT09990	Ig + LRR	kek2	FBgn0015400	kekkon-2		CG4977	359	894	"LRR[1+5+1], 1 Ig"	Y	TM	Transmembrane	High	High	Interactome I and II		Orphan.
+2	GT50050	RT01751	Ig + FnIII	CG34353	FBgn0085382			CG34353	464	566	"3 Ig, 1 FnIII"	TM/SA	TM	Transmembrane	Low	Moderate	Interactome I and II		Orphan.
+50	GT50051	RT02821	Ig	dpr3	FBgn0053516	dpr3		CG33516	353	522	2 Ig	TM/SA	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Orphan.
+31	GT50052	RT09811	Ig	beat-VII	FBgn0250908	beat-VII		CG42242	255	517	2 Ig	Y	TM	Transmembrane	High	High	Interactome I and II	"Wild-type Beat-VII has an insertion in its second Ig domain, and degrades. We removed the insertion and rescued expression, but there is no evidence for this transcript."	Orphan.
+55	GT50053	RT02045	Ig	CG11320	FBgn0031837			CG11320	355	376	3 Ig	Y	TM (?)	Transmembrane	Very low	Low	Interactome I and II	"CG11320 does appear to have a TM, resulting in a 337 residue ECD. This is not reflected in our construct."	Orphan.
+117	GT50054	RT02053	Ig + FnIII	CG7166	FBgn0037107			CG7166	417	467	"3 Ig, 1 FnIII"	Y	TM	Transmembrane	Low	Low	Interactome I and II		Orphan.
+101	GT50055	RT01891	Ig + FnIII	vn	FBgn0003984	vein		CG10491	579	618	"1 Ig, 1 FnIII"	Y	N	Secreted	None	None	Interactome I and II		Vn binds EGFR (PMID: 8824589).
+85	GT50056	RT02633	Ig	dpr12	FBgn0085414	dpr12		CG34385	287	321	2 Ig	Y	N (?)	Transmembrane (?)	Low	High	Interactome I and II	"CG34385 might have a TM, resulting in a 266 residue ECD."	Orphan.
+106	GT50057		Ig + FnIII	CG34113	FBgn0083949			CG34113	659	1056	"5 Ig, 1 FnIII"	Y	TM	Transmembrane	Moderate	Low	Interactome I and II		Orphan.
+96	GT50058	RT02067	Ig + FnIII	CG34114	FBgn0083950			CG34114	642	1088	"5 Ig, 1 FnIII"	Y	TM	Transmembrane	High	High	Interactome I and II		Orphan.
+83	GT50059	RT01762	Ig	Fas3	FBgn0000636	Fasciclin 3		CG5803	329	401	3 Ig	Y	TM	Transmembrane	High	High	Interactome I and II		Fas3 binds itself (PMID: 2132825).
+99	GT50060	RT01770	Ig	CG42368	FBgn0259714			CG42368	414	467	3 Ig	Y	TM	Transmembrane	High	Very Low	Interactome I and II		Orphan.
+65	GT50061	RT01774	Ig + LRR	kek3	FBgn0028370	kekkon-3		CG4192	359	1021	"LRR[1+6+1], 1 Ig"	TM/SA	TM	Transmembrane	High	High	Interactome I and II		Orphan.
+7	GT50062	RT01781	Ig	htl	FBgn0010389	heartless		CG7223	278	729	"2 Ig, (1TyrKc)"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Htl binds Pyr and Ths.
+108	GT50063	RT01795	Ig	Lac	FBgn0010238	Lachesin		CG12369	310	359	3 Ig	Y	TM	Transmembrane	High	High	Interactome I and II		Lachesin binds itself (PMID: 14681183).
+102	GT50064	RT02073	Ig + FnIII	sdk	FBgn0021764	sidekick		CG5227	1948	2224	"6 Ig, 13 FnIII"	Y	TM	Transmembrane	Low	Very low	Interactome I and II		"Human orthologs are known to bind themselves, but this has not been demonstrated for Drosophila sdk."
+14	GT50065	RT01803	Ig	Ama	FBgn0000071	Amalgam		CG2198	310	333	3 Ig	Y	TM	Transmembrane	High	Moderate	Interactome I and II		"Ama binds itself (PMID: 12783792), and Nrt (PMID: 10970840)."
+38	GT50066	RT01811	Ig + FnIII	CG15312	FBgn0030174			CG15312	383	412	"1 Ig, 1 FnIII"	Y	N	Secreted	Low	Low	Interactome I and II		Orphan.
+44	GT50067	RT01819	Ig	dpr19	FBgn0032233	dpr19		CG13140	318	385	2 Ig	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Orphan.
+124	GT50068	RT09814	Ig	otk	FBgn0004839	off-track		CG8967	558	1033	"5 Ig, (1 TyrKc)"	Y	TM	Transmembrane	High	Moderate	Interactome I and II		"Otk, for axon guidance and neural connectivity, binds PlexA (PMID: 11604138), and for non-canocical Wnt signaling, Wnt4 and Dsh (PMID: 21772251)."
+120	GT50069	RT01825	Ig + FnIII	robo3	FBgn0041097	robo3		CG5423	850	1342	"5 Ig, 3 FnIII"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		"Robo3 binds Sli (PMID: 10102268, 10102267). Robo3 may be binding itself based on homology to Lea (PMID: 20206526)."
+109	GT50070	RT01833	Ig + LRR	kek5	FBgn0031016	kekkon5		CG12199	375	931	"LRR[1+6+1], 1 Ig"	Y	TM	Transmembrane	High	Moderate	Interactome I and II		Orphan.
+95	GT50071	RT01842	Ig + LRR	kek1	FBgn0015399	kekkon-1		CG12283	424	810	"LRR[1+6+1], 1 Ig"	Y	TM	Transmembrane	Moderate	Low	Interactome I and II		Kek1 binds EGFR (PMID: 10102272).
+25	GT50072	RT02653	Ig	Pvr	FBgn0032006	PDGF- and VEGF-receptor related		CG8222	767	1509	"7 Ig, (1 TyrKc)"	Y	TM	Transmembrane	High	High	Interactome I and II		"Pvr binds Pvf1 (PMID: 11595182), Pvf2, Pvf3."
+32	GT50073	RT01858	Ig	ImpL2	FBgn0001257	Ecdysone-inducible gene L2		CG15009	242	266	2 Ig	Y	N	Secreted	High	Moderate	Interactome I and II		ImpL2 binds Ilp2 (PMID: 18412985 and DPiM) and conv (PMID: 18396139).
+119	GT50074	RT09817	Ig	CG43462	FBgn0266801			CG43462	532	1148	5 Ig	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II	Incorrectly annotated as PQBP-1 until recently.	Orphan.
+68			Ig + FnIII	dome	FBgn0043903	domeless		CG14226	869	1282	"1 Ig, 6 FnIII"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		"Dome binds os (upd), and et (PMID: 20689801, 20624926). Dome binds intracellularly hop."
+82	GT50101	RT09991	Ig	beat-Ia	FBgn0013433	beaten path Ia		CG4846	295	427	2 Ig	Y	TM	Transmembrane	Low	Moderate	Interactome I and II		beat-Ia binds side (PMID: 19369411).
+61	GT50102	RT09992	Ig	beat-IIb	FBgn0038494	beat-IIb		CG4135	282	407	2 Ig	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II	"A possible N-terminal TM was eliminated, and expression levels were increased"	Orphan.
+29	GT50103	RT09903	Ig	beat-IIIa	FBgn0032627	beat-IIIa		CG12621	243	305	2 Ig	Y	TM	Transmembrane	Low	Low	Interactome I and II	Another 3 residues (CSK) clipped from C terminus with the hopes of increasing yield.	Orphan.
+49	GT50104	RT02784	Ig	beat-IIIb	FBgn0053179	beat-IIIb		CG33179	187	379	2 Ig	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II	"We have the ECD for the shorter CG179-PC variant, lacking a TM. The longer CG33179-PB has a 275-aa ECD and a TM. Neither might be correct as a transcript."	Orphan.
+98	GT50105	RT02330	Ig	beat-Vc	FBgn0038084	beat-Vc		CG14390	244	297	2 Ig	Y	TM	Transmembrane	Low	Moderate	Interactome I and II		Orphan.
+105	GT50106	RT02340	Ig	beat-VI	FBgn0039584	beat-VI		CG14064	256	332	2 Ig	Y (SA)	TM	Transmembrane	Very low	Moderate	Interactome I and II		Orphan.
+23	GT50107	RT2787 done (6/4)	Ig	btl	FBgn0005592	breathless		CG32134	583	1052	"5 Ig, (1 TyrKc)"	Y	TM	Transmembrane	High	High	Interactome I and II		Btl binds Bnl.
+46	GT50108	RT02358	Ig	CG13506	FBgn0034723			CG13506	458	503	3 Ig	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Orphan.
+8	GT50109	RT01251	Ig	CG14141	FBgn0036146			CG14141	138	162	1 Ig	Y	N	Secreted	None	Very low	Interactome I and II		Orphan.
+62	GT50110	RT2789	Ig + FnIII	CG17839	FBgn0036454			CG17839	1452	1656	"1 Ig, 1 DB, 1 FnIII, 1 DB, 1 FnIII, 1 DB, 2 FnIII, 2 Ig, 1 DB, 1 FnIII"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Orphan.
+56	GT50111	RT01258	Ig	CG3624	FBgn0034724			CG3624	150	196	1 Ig	Y	TM	Transmembrane	High	High	Interactome I and II		Orphan.
+87	GT50112	RT09836	Ig	CG40378	FBgn0058378			CG40378	430	548	3 Ig	Y	TM	Transmembrane	Low	Low	Interactome I and II		Orphan.
+21	GT50113	RT02363 	Ig + FnIII	Dscam2	FBgn0265296	Down syndrome cell adhesion molecule 2	Dscam2-PI	CG42256	1604	1809	"9 Ig, 4 FnIII, 1 Ig, 2 FnIII"	Y	TM	Transmembrane	Low	Low	Interactome I and II		Dscam2 binds itself (PMID: 17554308).
+74	GT50113	RT02365	Ig + FnIII	Dscam2	FBgn0265296	Down syndrome cell adhesion molecule 2	Dscam2-PG	CG42256	1603	1808	"9 Ig, 4 FnIII, 1 Ig, 2 FnIII"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Dscam2 binds itself (PMID: 17554308).
+100	GT50114	"RT02374, RT02376"	Ig + FnIII	CG42313	FBgn0259213			CG42313	665	1064	"5 Ig, 1 FnIII"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Orphan.
+201	GT50115	RT11104	Ig + FnIII	Dscam4	FBgn0263219	Down syndrome cell adhesion molecule 4		CG42330	1601	1912	"9 Ig, 4 FnIII, 1 Ig, 2 FnIII"	Y	TM	Transmembrane	Moderate	Moderate	Interactome II only		"Dscam4 binds itself (PMID: 18837673, 17554308)."
+36	GT50116	RT02792	Ig + FnIII	CG6490	FBgn0039431			CG6490	888	1298	"4 Ig, 2 FnII"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Orphan.
+94	GT50117	RT02390 done (I137V; short exon missing compared to model.)	Ig	dpr10	FBgn0052057	dpr10		CG32057	390	408	2 Ig	Y	N (?)	Secreted (?)	None	Very low	Interactome I and II	"Dpr10 might have a TM, resulting in a 313-residue ECD."	Orphan.
+35	GT50118	RT09838	Ig	dpr13	FBgn0034286	dpr13		CG33996	351	419	2 Ig	Y	TM	Transmembrane	High	High	Interactome I and II		Orphan.
+24	GT50119	RT02541 done.  Model change; deletion of 4aa total.	Ig	dpr2	FBgn0261871	dpr2		CG33507	323	414	2 Ig	Y	TM	Transmembrane	Low	Moderate	Interactome I and II		Orphan.
+17	GT50120	RT02407	Ig	dpr	FBgn0040726	defective proboscis extension response		CG13439	244	367	2 Ig	Y	TM	Transmembrane	High	High	Interactome I and II		Orphan.
+6	GT50121	RT02670	Ig + FnIII	Dscam	FBgn0033159	Down syndrome cell adhesion molecule		CG17800	1590	2016	"9 Ig, 4 FnIII, 1 Ig, 2 FnIII"	Y	TM	Transmembrane	Low	Low	Interactome I and II		Dscam binds itself (PMID: 15339666).
+76	GT50122	RT09842	Ig + FnIII	ed	FBgn0000547	echinoid		CG12676	961	1332	"7 Ig, 1 FnIII"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Ed binds itself (PMID: 12668620) and Nrg (PMID: 12668620).
+57	GT50123	"RT02414, RT02420"	Ig + FnIII	fred	FBgn0051774	friend of echinoid		CG31774	967	1193	"7 Ig, 1 FnIII"	Y	TM	Transmembrane	Low	Low	Interactome I and II		"Fred likely binds itself, based on its homology to Ed (PMID: 12668620)."
+123	GT50124	RT02796	Ig + FnIII	lea	FBgn0002543	leak		CG5481	910	1406	"5 Ig, 3 FnIII"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		"Lea binds Sli (PMID: 10102268, 10102267). Lea, but not close homolog Robo, binds itself (PMID: 20206526)."
+71	GT50125	RT2552 translation-perfect (5/7)	Ig	kirre	FBgn0028369	kin of irre		CG3653	539	956	5 Ig	Y	TM	Transmembrane	High	High	Interactome I and II		Kirre binds sns and hbs (PMID: 19270174). Kirre also binds itself (PMID: 11684662).
+26	GT50126	RT2802 confirmed (different transcript variant but acceptable) 6/5/09	Ig	hig	FBgn0010114	hikaru genki		CG2040	903	933	"1 CCP, 1 Ig, 4 CCP"	Y	N	Secreted	Low	Low	Interactome I and II		Orphan.
+59	GT50127	RT02803 confirmed (insertion compared to model) 6/9	Ig + FnIII	Dscam3	FBgn0261046	Down syndrome cell adhesion molecule 3		CG31190	1632	2087	"9 Ig, 4 FnIII, 1 Ig, 2 FnIII"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Dscam3 binds itself (PMID: 17554308).
+53	GT50128	RT02805 confirmed (small deletion compared to model; I>L mutation OK) 6/9	Ig + FnIII	CG14372	FBgn0038156			CG14372	667	1027	"5 Ig, 1 FnIII"	Y	TM	Transmembrane	Moderate	Low	Interactome I and II		Orphan.
+112	GT50129	RT09845	Ig	CG15744	FBgn0030466			CG15744	758	1844	"LRR[0+2+1], 1 Ig, 1 HormR, 1 GAIN, (7TM)"	Y	TM	Transmembrane (7 TM)	Moderate	Low	Interactome I and II		Orphan.
+79	GT50130	RT02161	Ig	dpr16	FBgn0037295	dpr16		CG12591	427	443	2 Ig	Y	N	Secreted	Moderate	Low	Interactome I and II		Orphan.
+107	GT50131	"RT02448 done (3/13) - missing final 3bp, extra exon compared to target."	Ig	dpr7	FBgn0053481	dpr7		CG33481	229	294	2 Ig	Y (SA)	TM	Transmembrane	Low	Moderate	Interactome I and II		Orphan.
+-	GT50132	no clone obtained	Ig	Ppn	FBgn0003137	Papilin		CG33103	2868	2894	"1 Tsp1, 1 ADAM-spacer1, 6 Tsp1, 12 KU, 1 WAP, 3 Ig, 1 PLAC"	Y	N	Secreted			none		Orphan. Heavily glycosylated and sulfated extracellular protein.
+37	GT50133	"RT02807 ok; Ala>Val, short transcript (6/25)."	Ig + FnIII	fra	FBgn0011592	frazzled		CG8581	1194	1526	"4 Ig, 6 FnIII"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		"Fra binds NetA and NetB (PMID: 10068638, 8861904, 10972289)."
+40	GT50134	RT01339	Ig	CG34391	FBgn0085420			CG34391	430	469	3 Ig	Y	TM	Transmembrane	Low	Low	Interactome I and II		Orphan.
+63	GT50135	RT02559	Ig + FnIII	CG33543	FBgn0053543			CG33543	426	470	"3 Ig, 1 FnIII"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Orphan.
+93	GT50136	RT02809	Ig	CG42343	FBgn0259245			CG42343	389	555	3 Ig	Y (SA)	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Orphan.
+69	GT50137	RT02811	Ig	CG7607	FBgn0036145			CG7607	149	178	1 Ig	Y	N	Secreted	Low	Moderate	Interactome I and II		Orphan.
+-	GT50138	no clone obtained	Ig	trol	FBgn0261451	terribly reduced optic lobes		CG33950	4576	4629	"22 LDLa, 1 Ig, 3 LDLa, 1 Ig, 1 LamB, 3 EGF, 1 LamB, 3 EGF, 1 LamB, 1 EGF, 11 Ig, 1 LamG, 2 EGF, 1 LamG, 1 EGF, 1 LamG"	Y	N	Secreted			none		Trol binds Hh (PMID: 12645928).
+126	GT50139	RT02813	Ig	fas	FBgn0000633	faint sausage		CG17716	774	822	5 Ig	Y	TM	Transmembrane	High	Moderate	Interactome I and II		Orphan.
+20	GT50140	RT09851	Ig	nrm	FBgn0262509	neuromusculin		CG43079	930	1087	9 Ig	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Nrm binds itself (PMID: 8398154).
+-	GT50141	no clone obtained	Ig	CG31714	FBgn0032180			CG31714	1071	1946	"1 CUB, 2 EGF, 2 Ig, 1 HormR, 1 GAIN, (7TM)"	Y	TM	Transmembrane (7 TM)			none	"We propose to join CG31714 with CG42843, based on Apis and Tribolium genomes."	Orphan.
+86	GT50142	RT01368	Ig	CG14010	FBgn0031725			CG14010	382	450	3 Ig	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Orphan.
+84	GT50143	"RT02575 T801A vs genome (ok), matches published transcript and also other strains of Drosophila."	Ig + FnIII	sns	FBgn0024189	sticks and stones		CG33141	1010	1479	"9 Ig, 1 FnIII"	Y	TM	Transmembrane	High	High	Interactome I and II		"Sns binds Rst (PMID: 15511638) and Kirre (PMID: 15511638, 19270174). Also reported: itself (PMID: 19270174) in cis only."
+52	GT50144	RT01378 translation-perfect (4/8/09)	Ig + FnIII	Fas2	FBgn0000635	Fasciclin 2		CG3665	725	873	"5 Ig, 2 FnIII"	Y	TM	Transmembrane	High	Moderate	Interactome I and II		Fas2 binds itself (PMID: 2132825).
+111	GT50145	RT09856	Ig + LRR	lbk	FBgn0034083	lambik		CG8434	928	1212	"LRR[1+14+1], 3 Ig"	Y	TM	Transmembrane	Moderate	Low	Interactome I and II		Orphan.
+3	GT50146	RT09859	Ig + FnIII	robo	FBgn0005631	roundabout		CG13521	871	1395	"5 Ig, 3 FnIII"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		"Robo binds Sli (PMID: 10102268, 10102267) and NrxIV (PMID: 20410118)."
+114	GT50147	RT09994	Ig + FnIII	side	FBgn0016061	sidestep		CG31062	709	1021	"5 Ig, 1 FnIII"	Y (SA)	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Side binds beat-Ia (PMID: 19369411).
+78	GT50148	RT02520	Ig + LRR	kek6	FBgn0039862	kekkon6		CG1804	353	836	"LRR[1+6+1], 1 Ig"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		Orphan.
+45	GT50149	RT02186	Ig + LRR	kek4	FBgn0032484	kekkon4		CG9431	367	649	"LRR[1+6+1], 1 Ig"	Y	TM	Transmembrane	Low	Moderate	Interactome I and II		Orphan.
+47	GT50150	RT09868	Ig + FnIII	Lar	FBgn0000464	Leukocyte-antigen-related-like		CG10443	1345	2029	"3 Ig, 9 FnIII, (2 PTPc)"	Y	TM	Transmembrane	Moderate	Moderate	Interactome I and II		"Lar binds Sdc (PMID: 16213816, 16476662) and dlp (PMID: 16476662), both of which are Heparan sulfate proteoglycans."
+64	GT50151	RT09995	Ig + FnIII	Ptp99A	FBgn0004369	Protein tyrosine phosphatase 99A	Ptp99A-PA	CG11516	530	1397	"1 Ig, 4 FnIII, (2 PTPc)"	Y	TM	Transmembrane	Moderate	Low	Interactome I and II	"This is the F splice variant, Ptp99A-PF."	Orphan.
+202	GT50151	RT11108	FnIII	Ptp99A	FBgn0004369	Protein tyrosine phosphatase 99A	Ptp99A-PF	CG11516	364	1231	"3 FnIII, (2 PTPc)"	Y	TM	Transmembrane	High	High	Interactome II only		Orphan.
+33	GT50152	RT09996	Ig + LRR	Pxn	FBgn0011828	Peroxidasin		CG12002	1504	1527	"LRR[1+5+1], 4 Ig, 1 An-Peroxidase, 1 vWC"	Y	N	Secreted	None	"None (100 kDa band, degradation?)"	Interactome I and II		Orphan.
+70			A4-EXTRA	Appl	FBgn0000108	_ amyloid protein precursor-like		CG7727	786	887	"A4-Extra, App-E2, (1 App-Amyloid)"	Y	TM	Transmembrane	Low	Moderate	Interactome I and II		"Appl binds Dab, X11 and APP-BP1 intracellularly. Human Appl can homodimerize (PMID: 16193067)."
+90			LamNT	NetA	FBgn0015773	Netrin-A		CG18657	707	726	"1 LamNT, 3 EGF, 1 C345C"	Y	N	Secreted	None	None	Interactome I and II		"NetA binds Unc-5 (PMID: 11719202) and Fra (PMID: 10068638, 8861904, 10972289)."
+9			LamNT	NetB	FBgn0015774	Netrin-B		CG10521	595	793	"1 LamNT, 3 EGF, 1 C345C"	Y	N	Secreted	Low	Low	Interactome I and II	The true ECD is 768 residues. We were just able to clone this.	"NetB binds Unc-5 (PMID: 11719202) and Fra (PMID: 10068638, 8861904, 10972289)."
+151	GT91301	RT09901	LRR	18w	FBgn0004364	18 wheeler		CG8896	968	1385	"LRR[0+18+1], LRR[1+4+1], (1 TIR)"	Y	TM	Transmembrane	High	Moderate	Interactome II only		Orphan.
+142	GT91302	RT10004	LRR	CG1504	FBgn0031100			CG1504	352	425	LRR[1+5+0]	Y	TM	Transmembrane	High	High	Interactome II only		Orphan.
+129	GT91303	RT11110	LRR	CG32055	FBgn0052055			CG32055	517	534	LRR[0+11+0]	Y	N	Secreted	Low	Very low	Interactome II only		Orphan.
+-	GT91304	no clone obtained	LRR	CG4168	FBgn0028888			CG4168	1405	1443	LRR[0+33+1]	Y	TM	Transmembrane			none		Orphan.
+-	GT91305	no clone obtained	LRR + FnIII	CG42346	FBgn0259677			CG42346	1462	1717	"LRR[0+32+1], 1 FnIII"	TM/SA	TM	Transmembrane			none		Orphan.
+144	GT91306	RT09926	LRR	CG42573	FBgn0260793			CG42573	902	1141	LRR[0+8+0]	Y	TM	Transmembrane	Low	Low	Interactome II only		Orphan.
+158	GT91307	RT09908	LRR	CG5810	FBgn0038866			CG5810	406	428	LRR[0+6+0]	Y	N	Secreted	Moderate	Low	Interactome II only		Orphan.
+-	GT91308	no clone obtained	LRR	conv	FBgn0261269	convoluted		CG8561	1053	1092	LRR[0+28+1]	Y	GPI	Membrane attached			none		Conv binds ImpL2 (PMID: 18396139).
+148	GT91309	RT10026	LRR	Egfr	FBgn0003731	Epidermal growth factor receptor		CG10079	839	1426	"1 L, 2 FU, 1 L, 5 FU, (1 TyrKc)"	Y	TM	Transmembrane	Moderate	Very low	Interactome II only		"EGFR binds Vn (PMID: 8824589), kek1 (PMID: 10102272), and other secreted ligands: Spi, Aos, Grk."
+156	GT91310	RT10042	LRR	haf	FBgn0261509	hattifattener		CG14351	664	1316	LRR[0+11+1]	Y	TM	Transmembrane	None	None	Interactome II only		Orphan.
+-	GT91311	no clone obtained	LRR + FnIII	InR	FBgn0013984	Insulin-like receptor		CG18402	1267	2144	"1 L, 1 FU, 1 L, 3 FnIII, (1 TyrKc)"	Y	TM	Transmembrane			none		"InR probably binds Drosophila Ilp1 to 7, but this has not been demonstrated."
+190	GT91312	RT11115	LRR	MstProx	FBgn0015770	MstProx		CG1149	336	965	"LRR, LRR, LRR, LRR, (1 TIR)"	N (?)	TM	Transmembrane	Very low	Very low	Interactome II only	The true ECD is 771 residues or longer. 5-prime end not certain. Our construct is the 336-aa truncation from the N terminus.	"Orphan. As a Toll-like receptor, it likely binds spz or spz-like proteins."
+194	GT91313	RT11116	FnIII	Ptp52F	FBgn0034085			CG18243	1010	1433	"6 FnIII, (1 PTPc)"	Y	TM	Transmembrane	Moderate	Moderate	Interactome II only		Orphan.
+189	GT91314	RT11119	LRR	rk	FBgn0003255	rickets		CG8930	725	1360	LRR[0+17+0]	Y	TM	Transmembrane (7 TM)	Very low	Very low	Interactome II only		"Rk binds burs (PMID: 15703293, 15811337)."
+203	GT91315	RT11122	FnIII	sev	FBgn0003366	sevenless		CG18085	2000	2554	"2 FnIII, 1 LY, 1 FnIII, 1 LY, 3 FnIII, (1 TyrKc)"	TM/SA	TM	Transmembrane	Low (mostly degraded)	Low (mostly degraded)	Interactome II only		Sev binds Boss (PMID: 1857416). It has other intracellular interaction partners.
+132	GT91316	RT11125	LRR	sli	FBgn0264089	slit	sli-PC	CG43758	1468	1504	"LRR[1+6+1], LRR[1+5+1], LRR[1+4+1], LRR[1+4+1], 6 EGF, 1 LamG, 1 EGF, 1 CTCK"	Y	N	Secreted	None	None	Interactome II only		"Sli (N-terminal fragment) binds Robo, Lea and Robo3 (PMID: 10102268, 10102267). Sli also binds itself (PMID: 15496984, 19498462)."
+133	GT91316	"RT09974 has deletion in D2-D3, effectively fusing them.  Matches genome but no predicted transcript.  Keep.  Finished."	LRR	sli	FBgn0264089	slit	sli-PG	CG43758	1292	1328	"LRR[1+6+1], LRR[1+6+1], LRR[1+4+1], 6 EGF, 1 LamG, 1 EGF, 1 CTCK"	Y	N	Secreted	None	None	Interactome II only		"Sli (N-terminal fragment) binds Robo, Lea and Robo3 (PMID: 10102268, 10102267). Sli also binds itself (PMID: 15496984, 19498462)."
+170	GT91316	RT09975 matches RA and RD and genome.	LRR	sli	FBgn0264089	slit	sli-PA	CG43758	1444	1480	"LRR[1+5+1], LRR[1+5+1], LRR[1+4+1], LRR[1+4+1], 6 EGF, 1 LamG, 1 EGF, 1 CTCK"	Y	N	Secreted	None	None	Interactome II only		"Sli (N-terminal fragment) binds Robo, Lea and Robo3 (PMID: 10102268, 10102267). Sli also binds itself (PMID: 15496984, 19498462)."
+167	GT91317	RT09936	LRR	Tehao	FBgn0026760	Tehao		CG7121	568	795	"LRR[0+3+0], LRR[1+1+0], (1 TIR)"	Y	TM	Transmembrane	Moderate	Moderate	Interactome II only		"Orphan. As a Toll-like receptor, it likely binds spz or spz-like proteins."
+141	GT91318	RT11128	LRR	Toll-4	FBgn0032095			CG18241	736	1125	"4 LRR, (1 TIR)"	N	TM	Transmembrane	None	None	Interactome II only	"Our construct starts at aa 186 of the current gene model, which is 5-prime incomplete. Current ECD for the model is 925 aa."	"Orphan. As a Toll-like receptor, it likely binds spz or spz-like proteins."
+162	GT91319	RT09953	LRR	Toll-7	FBgn0034476			CG8595	1031	1446	"LRR[0+19+1], LRR[1+4+1], (1 TIR)"	Y	TM	Transmembrane	Low	Low	Interactome II only		"Orphan. As a Toll-like receptor, it likely binds spz or spz-like proteins."
+161	GT91320	RT10307	LRR	Toll-9	FBgn0036978			CG5528	663	900	"LRR[0+11+0], (1 TIR)"	Y	TM	Transmembrane	None	None	Interactome II only		"Orphan. As a Toll-like receptor, it likely binds spz or spz-like proteins."
+169	GT91401	RT10103	LRR	caps	FBgn0023095	capricious		CG11282	421	540	LRR[1+12+1]	Y	TM	Transmembrane	High	High	Interactome II only		Orphan.
+177	GT91402	RT10107	LRR + FnIII	CG10702	FBgn0032752			CG10702	845	946	"1 L, 1 FU, 1 L, 3 FnIII"	Y	TM	Transmembrane	None	None	Interactome II only		Orphan.
+137	GT91403	RT10112	LRR	CG10824	FBgn0038865			CG10824	532	554	LRR[1+15+1]	Y	N	Secreted	High	High	Interactome II only		Orphan.
+140	GT91404	RT10113	LRR	Lrt	FBgn0034540	Leucine-rich tendon-specific protein		CG11136	695	808	LRR[0+9+1]	Y	TM	Transmembrane	Moderate	Low	Interactome II only		Lrt binds Robo (PMID: 19793885).
+165	GT91405	RT10118	LRR	alrm	FBgn0039332	astrocytic leucine-rich repeat molecule		CG11910	448	471	LRR[0+10+0]	Y	N	Secreted	Moderate	Moderate	Interactome II only		Orphan.
+184	GT91406	RT10121	LRR	CG14662	FBgn0037291			CG14662	367	550	1 L	Y (SA)	TM	Transmembrane	High	Moderate	Interactome II only		Orphan.
+171	GT91407	RT10125	LRR	CG14762	FBgn0033250			CG14762	440	470	LRR[1+11+1]	Y	N	Secreted	High	High	Interactome II only		Orphan.
+150	GT91408	RT10314	LRR	Lapsyn	FBgn0034602	Leucine-rich repeat activity-regulated protein at synapses		CG15658	254	343	LRR[0+6+0]	Y	TM	Transmembrane	Moderate	Moderate	Interactome II only		Orphan.
+181	GT91409	RT10135	LRR	CG42709	FBgn0261674			CG42709	376	458	LRR[1+5+0]	Y	TM	Transmembrane	Moderate	Moderate	Interactome II only		Orphan.
+182	GT91410	RT11131	LRR	CG18095	FBgn0028872			CG18095	485	548	LRR[0+11+0]	Y	TM	Transmembrane	Moderate	Moderate	Interactome II only		Orphan.
+196	GT91411	RT10144	LRR	CG18249	FBgn0037553			CG18249	474	559	LRR[0+8+0]	Y	TM	Transmembrane	Low	Very low	Interactome II only		Orphan.
+160	GT91412	RT10145	LRR	CG18480	FBgn0028518			CG18480	336	550	LRR[1+5+0]	Y	TM	Transmembrane	Low	Low	Interactome II only		Orphan.
+197	GT91413	RT10325	LRR	ltl	FBgn0052372	larval translucida		CG32372	805	817	LRR[0+12+0]	Y	N	Secreted	Moderate	Low	Interactome II only		Ltl binds dlp (PMID: 21266407).
+154	GT91414	RT10153	FnIII	CG33143	FBgn0053143			CG33143	155	502	1 FnIII	Y	TM	Transmembrane	Low	Low	Interactome II only	This is the CG33143-PC splice variant.	Orphan.
+176	GT91415	RT10158	LRR	CG34411	FBgn0085440			CG34411	443	806	"1 LDLa, LRR[1+10+1], (7TM)"	Y	TM	Transmembrane (7 TM)	High	Moderate	Interactome II only		Orphan.
+198	GT91416	RT11134	LRR + FnIII	CG3837	FBgn0038279			CG3837	834	868	"1 L, 1 FU, 1 L, 2 FnIII"	Y	N	Secreted	Very low	Very low	Interactome II only		Orphan.
+192	GT91417	RT10162	FnIII	CG42389	FBgn0259735			CG42389	1373	1413	9 FnIII	N	TM	Transmembrane	None	Very low	Interactome II only	This is the CG42389-PG splice variant.	Orphan.
+157	GT91418	RT10339	LRR	CG4781	FBgn0035043			CG4781	387	469	LRR[0+6+1]	Y	TM	Transmembrane	Moderate	Moderate	Interactome II only		Orphan.
+153	GT91419	RT10350	LRR	CG4950	FBgn0036587			CG4950	495	574	LRR[0+9+0]	Y	TM	Transmembrane	High	Moderate	Interactome II only		Orphan.
+172	GT91420	RT10538	LRR	CG5096	FBgn0032235			CG5096	413	491	LRR[0+6+1]	Y	TM	Transmembrane	Moderate	Moderate	Interactome II only		Orphan.
+136	GT91421	RT11137	LRR	CG5195	FBgn0036995			CG5195	1491	1535	LRR[1+33+1]	Y	GPI	Membrane attached	Moderate	Very low	Interactome II only		Orphan.
+130	GT91422	RT10374	LRR	CG5541	FBgn0030603			CG5541	370	463	1 LRR	Y	TM	Transmembrane	High	Moderate	Interactome II only		Orphan.
+180	GT91423	RT10387	LRR	CG5819	FBgn0034717			CG5819	515	915	LRR[1+9+1]	Y	TM	Transmembrane	Moderate	Low	Interactome II only		Orphan.
+195	GT91424	RT10185	LRR	CG5888	FBgn0028523			CG5888	439	455	LRR[0+3+0]	Y	N	Secreted	Moderate	Moderate	Interactome II only		Orphan.
+168	GT91425	RT10189	LRR	CG6749	FBgn0036040			CG6749	527	552	LRR[0+16+0]	Y	N	Secreted	Moderate	Moderate	Interactome II only		Orphan.
+179	GT91426	RT11140	LRR	CG6959	FBgn0037956			CG6959	346	425	LRR[1+6+1]	Y	TM	Transmembrane	High	High	Interactome II only		Orphan.
+183	GT91427	RT10293	LRR	CG7509	FBgn0035575			CG7509	593	615	LRR[0+13+0]	Y	N	Secreted	None	None	Interactome II only		Orphan.
+187	GT91428	RT10291	LRR	CG7702	FBgn0038638			CG7702	432	537	LRR[1+7+1]	Y	TM	Transmembrane	Moderate	Moderate	Interactome II only		Orphan.
+191	GT91429	RT11143	LRR	CG7800	FBgn0037552			CG7800	459	533	LRR[0+5+0]	Y	TM	Transmembrane	Moderate	Very low	Interactome II only		Orphan.
+135	GT91430	RT10543	LRR	CG7896	FBgn0039728			CG7896	1210	1392	LRR[1+35+1]	Y	TM	Transmembrane	Moderate	Moderate	Interactome II only		Orphan.
+188	GT91431	RT10216	LRR	CG8852	FBgn0031548			CG8852	464	663	1 L	Y	TM	Transmembrane	Moderate	Moderate	Interactome II only		Orphan.
+128	GT91432	RT11146	LRR	chp	FBgn0267435	chaoptic		CG1744	1270	1315	LRR[1+33+0]	Y	TM	Transmembrane	Moderate	Moderate	Interactome II only		Chp binds itself (PMID: 2189727).
+146	GT91433	RT10551	LRR	Con	FBgn0005775	Connectin		CG7503	626	691	LRR[1+8+1]	Y	TM	Transmembrane	None (degraded band)	None (degraded band)	Interactome II only		Con binds itself (PMID: 1505024).
+155	GT91434	RT11149	FnIII	Eph	FBgn0025936	Eph receptor tyrosine kinase		CG1511	556	1096	"1 EPH-LBD, 2 FnIII, (1 TyrKc), (1 SAM)"	TM/SA	TM	Transmembrane	Very low	None	Interactome II only		Eph binds Ephrin.
+149	GT91435	RT10433	LRR	Fili	FBgn0085397	Fish-lips		CG34368	488	738	LRR[1+11+0]	Y	TM	Transmembrane	High	Moderate	Interactome II only		Orphan.
+185	GT91436	RT11152	LRR	Lgr1	FBgn0016650	Lgr1		CG7665	439	831	"1 LRR, (7TM)"	Y	TM	Transmembrane (7 TM)	Very low	Very low	Interactome II only		"Lgr1 binds a heterodimer of Gpa2 and Gpb5 (PMID: 15890769). Evidence is indirect, but believable."
+131	GT91437	RT10449	LRR	Gp150	FBgn0013272	Gp150		CG5820	946	1051	LRR[1+18+0]	Y	TM	Transmembrane	Moderate (some degradation)	Low	Interactome II only		Orphan.
+173	GT91438	RT10243	LRR	hfw	FBgn0001189	halfway		CG3095	538	611	1 LRR	Y	TM	Transmembrane	Low	Very low	Interactome II only		Orphan.
+166	GT91439	RT10464	FnIII	Kal1	FBgn0039155	Kallmann syndrome 1 ortholog		CG6173	502	525	"1 WAP, 2 FnIII"	Y	N	Secreted	Very low	None	Interactome II only		Orphan.
+174	GT91440	RT11155	LRR	Lgr3	FBgn0039354	Lgr3		CG31096	396	765	"1 LDLa, LRR[0+7+0], (7TM)"	Y	TM	Transmembrane (7 TM)	Moderate	Very low	Interactome II only	"Signal peptide prediction removes 8 aa of the first domain, and the ECD should be actually be 405 aa."	Orphan.
+139	GT91441	RT11158	FnIII	nord	FBgn0050418	nord		CG30418	563	587	2 FnIII	Y	N	Secreted	Low	Very low	Interactome II only		Orphan.
+159	GT91442	RT11161	FnIII	Ptp10D	FBgn0004370	Protein tyrosine phosphatase 10D		CG1817	1155	1962	"11 FnIII, (1 PTPc)"	Y	TM	Transmembrane	None	None	Interactome II only		Orphan.
+175	GT91443	RT10263	FnIII	Ptp4E	FBgn0004368	Protein tyrosine phosphatase 4E		CG6899	1183	1767	"11 FnIII, (1 PTPc)"	Y	TM	Transmembrane	Very low	Very low	Interactome II only		Orphan.
+134	GT91444	RT10265	LRR	rdo	FBgn0243486	reduced ocelli		CG15151	488	741	LRR[1+14+1]	Y	TM	Transmembrane	Moderate	Moderate	Interactome II only		Orphan.
+200	GT91445	RT11164	FnIII	sas	FBgn0002306	stranded at second		CG2507	1588	1693	"4 VWC, 3 FnIII"	Y	TM	Transmembrane	None	None	Interactome II only		Orphan.
+143	GT91446	RT10273	LRR	swi2	FBgn0034262	swi2		CG14485	432	499	"LRR[0+4+1], LRR[1+4+1]"	Y	TM	Transmembrane	High	Moderate	Interactome II only		Orphan.
+186	GT91447	RT11167	LRR	Tl	FBgn0262473	Toll		CG5490	778	1097	"LRR[0+12+1], LRR[1+2+1], (1 TIR)"	Y	TM	Transmembrane	Moderate	Moderate	Interactome II only		"Tl binds itself (PMID: 15795223). Tl also binds spz (PMID: 12872120), and possibly other spz-like proteins. Intracellularly, it binds MyD88."
+138	GT91448	RT10281	LRR	Toll-6	FBgn0036494	Toll-6		CG7250	1040	1514	"LRR[0+23+1], LRR[1+3+0], (1 TIR)"	Y	TM	Transmembrane	Moderate	Moderate	Interactome II only		"Orphan. As a Toll-like receptor, it likely binds spz or spz-like proteins."
+178	GT91449	RT10285	LRR	Tollo	FBgn0029114	Tollo		CG6890	997	1346	"LRR[0+21+1], LRR[1+5+0], (1 TIR)"	Y	TM	Transmembrane	Very low	Very low	Interactome II only		"Orphan. As a Toll-like receptor, it likely binds spz or spz-like proteins."
+164	GT91450	RT10495	FnIII	tor	FBgn0003733	torso		CG1389	378	923	"1 FnIII, (1 TyrKc)"	Y	TM	Transmembrane	Moderate	Moderate	Interactome II only		"Torso binds Trk (PMID: 11290307) and Ptth (PMID: 19965758), although the evidence appears to be only genetic."
+145	GT91451	RT11170	LRR	trn	FBgn0010452	tartan		CG11280	414	737	LRR[1+12+1]	Y	TM	Transmembrane	High	High	Interactome II only		Orphan.
+152	GT91452	RT10075	LRR	wdp	FBgn0034718	windpipe		CG3413	429	677	LRR[1+2+1]	Y	TM	Transmembrane	Moderate	Very low	Interactome II only		Orphan.
+199	GT91453	RT10079	FnIII	Wsck	FBgn0046685	Wsck		CG31127	370	791	"1 WSC, 1 FnIII, (1 TyrKc)"	Y	TM	Transmembrane	High	High	Interactome II only		Orphan.
+163	GT91454	RT10069	Ig + FnIII	et	FBgn0031055	eye transformer		CG14225	492	643	"1 Ig, 4 FnIII"	Y	TM	Transmembrane	Moderate	Moderate	Interactome II only		"Et binds dome (PMID: 20689801, 20624926) and hop (PMID: 20624926)."
+147	GT91455	RT10064	Ig	Sema-2b	FBgn0026363	Sema-2b		CG33960	712	785	"1 Sema, 1 PSI, 1 Ig"	Y	N	Secreted	Moderate	Weak	Interactome II only		Sema-2b binds Plexin B (PMID: 16672342).
+-	-	not cloned	Ig	CG42596	FBgn0260995			CG42596	282	245	2 Ig	Y	TM	Transmembrane			-		Orphan. Only recently annotated Dpr-like gene. Not cloned due to recent discovery.
+Slit fragments later included																			
+204	-	-	LRR	sli	FBgn0264089	slit	sliN-PC	CG43758	1099	1504	"LRR[1+6+1], LRR[1+5+1], LRR[1+4+1], LRR[1+4+1], 5 EGF"	Y	N	Secreted	Moderate	Moderate	-	N-terminal fragment of Sli-PC.	"N-terminal fragment of Sli binds Robo, Lea and Robo3 (PMID: 10102268, 10102267). Sli also binds itself (PMID: 15496984, 19498462)."
+205	-	-	LRR	sli	FBgn0264089	slit	sliN-PG	CG43758	923	1328	"LRR[1+6+1], LRR[1+6+1], LRR[1+4+1], 5 EGF"	Y	N	Secreted	Low	Low	-	N-terminal fragment of Sli-PG.	"N-terminal fragment of Sli binds Robo, Lea and Robo3 (PMID: 10102268, 10102267). Sli also binds itself (PMID: 15496984, 19498462)."
+206	-	-	LRR	sli	FBgn0264089	slit	sliN-PA	CG43758	1075	1480	"LRR[1+5+1], LRR[1+5+1], LRR[1+4+1], LRR[1+4+1], 5 EGF"	Y	N	Secreted	Moderate	Moderate	-	N-terminal fragment of Sli-PA.	"N-terminal fragment of Sli binds Robo, Lea and Robo3 (PMID: 10102268, 10102267). Sli also binds itself (PMID: 15496984, 19498462)."
+207	-	-	LRR	sli	FBgn0264089	slit	sliC	CG43758	369	1504	"1 EGF, 1 LamG, 1 EGF, 1 CTCK"	Y	N	Secreted	Moderate	Moderate	-	C-terminal fragment of Sli (all variants).	Orphan.
+$Control proteins included			Ig	Syg-1	C. elegans	Synaptogenesis-1			533	727	5 Ig	Y	Y	Transmembrane	High	High	Interactome I and II		Syg-1 binds Syg-2 (PMID: 15035988).
+$in the Extracellular Interactome			Ig+FnIII	Syg-2	C. elegans	Synaptogenesis-2			1011	1217	"9 Ig, 1 FnIII"	Y	Y	Transmembrane	Very low	Very low	Interactome I and II		Syg-2 binds Syg-1 (PMID: 15035988).
+$"Table S1. Related to Figure 1. The list of proteins studied in this work. Clone names (column C) can be used to find cDNA sequences at FlyBase (http://flybase.org). All commonly used annotation (columns E, F, G, I) was added from FlyBase (http://flybase.org), and extracellular domain size and domain predictions (columns J-O) were made as explained in the main-text and extended Experimental Procedures. In column M, ÒYÓ indicates the presence of a signal peptide, and SA indicates a possible signal anchor, although such an assignment cannot always be made with confidence. In column N, ÒTMÓ and ÒGPIÓ indicate the presence of transmembrane helices and GPI linkages respectively. Domain definitions of LRR domains are further specified as ÒLRR[N-terminal cap,LRR repeats,C-terminal cap]Ó, and are communicated to us by Kevin J. Mitchell and Karsten Hokamp, based on Dolan et al, 2007. LRR domains may have undetected cap domains or LRR repeats. Relative expression levels of all cloned proteins in bait and prey forms are reported in columns P-Q. All differences between sequences of our constructs and the Drosophila genomic sequences are remarked (column S), and known extracellular interactions from literature are noted (column T)."																			

@@ -1,0 +1,16 @@
+Functional gene annotations
+FlyBase http://flybase.org
+----------------------------
+
+- gene_group_data_fb_2018_02.tsv.gz - all gene group annotations, from ftp://ftp.flybase.net/releases/FB2018_02/precomputed_files/genes/gene_group_data_fb_2018_02.tsv.gz
+
+- fbgn_interpro.dmel-r6.02.20160607.txt.gz - interpro annotations, built as:
+
+   wget ftp://ftp.flybase.net/genomes/dmel/dmel_r6.02_FB2014_05/gff/dmel-all-r6.02.gff.gz
+   zcat dmel-all-r6.02.gff.gz | perl ~/ol/src/perl/extract_interpro_from_flybase_GFF.pl | gzip -c > fbgn_interpro.dmel-r6.02.20160607.txt.gz
+
+- beat_family_FBgg0000596.txt - BEAT family gene group, manually downloaded
+- dip_FBgg0000530.txt - DPR interacting protein gene group, manually downloaded
+- dpr_FBgg0000529.txt - DPR gene group, manually downloaded
+- flybase.fbgn_goterm.2014_05.txt.gz - GO term annotations, manually downloaded
+- flybase_TFs_genegroup_FBgg0000745_20180221.txt - TF gene group, manually downloaded

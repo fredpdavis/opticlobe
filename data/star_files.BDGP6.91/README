@@ -1,0 +1,60 @@
+1. 2018 Jan 17. Build Index 
+
+zcat ../external/BDGP6.ENSEMBL91/Drosophila_melanogaster.BDGP6.91.gtf.gz | grep -v FBgn0013687 > BDGP6.91.ERCC.INTACT.gtf
+cat ../external/ERCC/ERCC92.gtf >> BDGP6.91.ERCC.INTACT.gtf
+cat ../external/INTACT_sequences/INTACT.gtf >> BDGP6.91.ERCC.INTACT.gtf
+
+
+zcat ../external/BDGP6.ENSEMBL91/Drosophila_melanogaster.BDGP6.dna_sm.chromosome.2L.fa.gz \
+../external/BDGP6.ENSEMBL91/Drosophila_melanogaster.BDGP6.dna_sm.chromosome.2R.fa.gz \
+../external/BDGP6.ENSEMBL91/Drosophila_melanogaster.BDGP6.dna_sm.chromosome.3L.fa.gz \
+../external/BDGP6.ENSEMBL91/Drosophila_melanogaster.BDGP6.dna_sm.chromosome.3R.fa.gz \
+../external/BDGP6.ENSEMBL91/Drosophila_melanogaster.BDGP6.dna_sm.chromosome.4.fa.gz \
+../external/BDGP6.ENSEMBL91/Drosophila_melanogaster.BDGP6.dna_sm.chromosome.dmel_mitochondrion_genome.fa.gz \
+../external/BDGP6.ENSEMBL91/Drosophila_melanogaster.BDGP6.dna_sm.chromosome.X.fa.gz \
+../external/BDGP6.ENSEMBL91/Drosophila_melanogaster.BDGP6.dna_sm.chromosome.Y.fa.gz > BDGP6.91.ERCC.INTACT.fa
+
+cat ../external/ERCC/ERCC92.fa >> BDGP6.91.ERCC.INTACT.fa
+cat ../external/INTACT_sequences/INTACT.fa >> BDGP6.91.ERCC.INTACT.fa
+
+
+mkdir BDGP6.91.ERCC.INTACT.star_index
+
+/groups/eddy/home/davisf/software/STAR/STAR_2.5.3a/STAR \
+   --runMode genomeGenerate --genomeDir BDGP6.91.ERCC.INTACT.star_index \
+   --genomeFastaFiles BDGP6.91.ERCC.INTACT.fa \
+   --runThreadN 16 --sjdbGTFfile BDGP6.91.ERCC.INTACT.gtf
+
+Jan 18 00:19:21 ..... started STAR run
+Jan 18 00:19:21 ... starting to generate Genome files
+Jan 18 00:19:24 ... starting to sort Suffix Array. This may take a long time...
+Jan 18 00:19:25 ... sorting Suffix Array chunks and saving them to disk...
+Jan 18 00:19:42 ... loading chunks from disk, packing SA...
+Jan 18 00:19:45 ... finished generating suffix array
+Jan 18 00:19:45 ... generating Suffix Array index
+Jan 18 00:20:22 ... completed Suffix Array index
+Jan 18 00:20:22 ..... processing annotations GTF
+Jan 18 00:20:24 ..... inserting junctions into the genome indices
+Jan 18 00:20:50 ... writing Genome to disk ...
+Jan 18 00:20:50 ... writing Suffix Array to disk ...
+Jan 18 00:20:53 ... writing SAindex to disk
+Jan 18 00:20:57 ..... finished successfully
+ 
+
+2. Create BED file of regions to count alignments for normalizing bigWig tracks
+
+#get dm6 chrom sizes from UCSC:
+
+wget http://hgdownload-test.cse.ucsc.edu/goldenPath/dm6/bigZips/dm6.chrom.sizes
+
+head -7 dm6.chrom.sizes | sort | awk '{OFS="\t"} {print $1,0,$2}' | sed 's/^chr//' > regular_whole_chromosomes.bed 
+
+grep 'biotype "rRNA' BDGP6.91.ERCC.INTACT.gtf | \
+   grep '^2L\|^2R\|^3L\|^3R\|^4\|^X\|^Y' | \
+   awk 'BEGIN{OFS="\t"} {print $1,$4 - 1, $5}' | \
+   sort -k1,1 -k2,2n -k3,3n | \
+   bedtools merge > rRNA_regular_chromosomes.bed
+
+bedtools subtract -a regular_whole_chromosomes.bed \
+   -b rRNA_regular_chromosomes.bed > \
+   regular_chromosomes.nonribosomal_regions.bed

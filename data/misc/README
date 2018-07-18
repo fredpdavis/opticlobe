@@ -1,0 +1,7 @@
+Miscellaneous files used by R code
+----------------------------------
+
+fly_neurotransmission_manuallist.txt - Table of neurotransmitter-associated genes
+INTACT.fa - FASTQ sequences of INTACT genetic bits
+INTACT.gtf - GTF file for RNA-seq alignment to INTACT genetic bits
+ol_expr_benchmark.txt - manually annotated results of FlyBase query for genes expressing in optic lobe cell types

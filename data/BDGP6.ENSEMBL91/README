@@ -1,0 +1,76 @@
+################################################################################
+# Downloading newest versions of genome assembly, gene sets, fxn annotation
+# fpd180117_2242
+#
+################################################################################
+
+Retrieving data from ENSEMBL release 91
+
+----------
+http://uswest.ensembl.org/Drosophila_melanogaster/Info/Annotation
+
+Assembly        BDGP6, INSDC Assembly GCA_000001215.4, Jul 2014
+Base Pairs      142,573,017
+Golden Path Length      143,725,995
+Annotation provider     FlyBase
+Annotation method       Import
+Genebuild started       Aug 2017
+Genebuild released      Sep 2014
+Genebuild last updated/patched  
+Database version        91.6
+Gene counts
+Coding genes    13,931
+Non coding genes        3,497
+Small non coding genes  3,497
+Pseudogenes     309
+Gene transcripts        34,776
+Other
+Short Variants  6,794,559
+
+----------
+
+Files downloaded:
+
+1. GTF file
+wget http://ftp.ensemblorg.ebi.ac.uk/pub/release-91/gtf/drosophila_melanogaster/Drosophila_melanogaster.BDGP6.91.gtf.gz
+
+2. Transcript sequences
+wget http://ftp.ensemblorg.ebi.ac.uk/pub/release-91/fasta/drosophila_melanogaster/cdna/Drosophila_melanogaster.BDGP6.cdna.all.fa.gz
+
+manually deleted FBgn0013687 gene model from cDNA fasta file -- mt:ori pseudogene
+from mitochondrial genome that has all N's
+
+2b. noncoding RNA sequences
+wget http://ftp.ensemblorg.ebi.ac.uk/pub/release-91/fasta/drosophila_melanogaster/ncrna/Drosophila_melanogaster.BDGP6.ncrna.fa.gz
+
+3. Genome sequences. from: http://ftp.ensembl.org/pub/release-91/fasta/drosophila_melanogaster/dna/
+
+wget http://ftp.ensemblorg.ebi.ac.uk/pub/release-91/fasta/drosophila_melanogaster/dna/Drosophila_melanogaster.BDGP6.dna_sm.chromosome.2L.fa.gz
+wget http://ftp.ensemblorg.ebi.ac.uk/pub/release-91/fasta/drosophila_melanogaster/dna/Drosophila_melanogaster.BDGP6.dna_sm.chromosome.2R.fa.gz
+wget http://ftp.ensemblorg.ebi.ac.uk/pub/release-91/fasta/drosophila_melanogaster/dna/Drosophila_melanogaster.BDGP6.dna_sm.chromosome.3L.fa.gz
+wget http://ftp.ensemblorg.ebi.ac.uk/pub/release-91/fasta/drosophila_melanogaster/dna/Drosophila_melanogaster.BDGP6.dna_sm.chromosome.3R.fa.gz
+wget http://ftp.ensemblorg.ebi.ac.uk/pub/release-91/fasta/drosophila_melanogaster/dna/Drosophila_melanogaster.BDGP6.dna_sm.chromosome.4.fa.gz
+wget http://ftp.ensemblorg.ebi.ac.uk/pub/release-91/fasta/drosophila_melanogaster/dna/Drosophila_melanogaster.BDGP6.dna_sm.chromosome.X.fa.gz
+wget http://ftp.ensemblorg.ebi.ac.uk/pub/release-91/fasta/drosophila_melanogaster/dna/Drosophila_melanogaster.BDGP6.dna_sm.chromosome.Y.fa.gz
+wget http://ftp.ensemblorg.ebi.ac.uk/pub/release-91/fasta/drosophila_melanogaster/dna/Drosophila_melanogaster.BDGP6.dna_sm.chromosome.dmel_mitochondrion_genome.fa.gz
+wget http://ftp.ensemblorg.ebi.ac.uk/pub/release-91/fasta/drosophila_melanogaster/dna/Drosophila_melanogaster.BDGP6.dna_sm.nonchromosomal.fa.gz
+
+NOT NECESSARY: wget http://ftp.ensemblorg.ebi.ac.uk/pub/release-91/fasta/drosophila_melanogaster/dna/Drosophila_melanogaster.BDGP6.dna_sm.toplevel.fa.gz
+
+4. Gene ontology annotations (BIOMART); OR ignore for now, use the biomaRt R bioconductor package
+
+Manually downloaded from biomart website: http://www.biomart.org
+
+Dataset:
+Drosophila melanogaster genes
+Filters
+[None selected]
+Attributes
+Gene stable ID
+GO term accession
+GO term name
+GO term definition
+GO term evidence code
+GO domain
+Gene name
+FlyBase CGID gene ID

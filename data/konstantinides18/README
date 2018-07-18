@@ -1,0 +1,9 @@
+Single cell RNA-seq analysis of optic lobe
+Konstaninides..Desplan, Cell 2018. doi:10.1016/j.cell.2018.05.021
+-----------------------------------------------------------------
+
+konstantinides18_fig3a_cluster_labels.txt - manually entered cluster labels from Figure 3A
+
+konstantinides18_scope_singlecell_cluster_assignment.csv.gz - cluster assignments (SEURAT resolution 4.0) downloaded from the SCope database (http://scope.aertslab.org/)
+
+konstantinides18_tableS1_cluster_markers.txt - text version of excel Table S1 from https://ars.els-cdn.com/content/image/1-s2.0-S0092867418306330-mmc1.xlsx

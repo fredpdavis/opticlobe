@@ -1,0 +1,23 @@
+49	perineurial glia
+58	subperineurial glia
+30	ensheathing glia
+26	neuropile glia
+38	astrocyte-like glia
+57	chiasm glia
+56	chortex glia
+23	T1
+2	T4/T5
+47	Dm8/Tm5c
+45	Mt1
+37	Tm5ab
+6	T2/T3
+25	Lawf1/Lawf2
+8	C2/C3
+18	Dm12
+9	Tm9
+15	TmY14
+55	Dm2
+12	Tm1/TmY8
+17	Mi1/Tm2/Tm3
+52	Pm3
+13	Pm1/Pm2

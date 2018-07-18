@@ -1,0 +1,11 @@
+ERCC92 spike-in information
+Life Tech / ThermoFisher
+---------------------------
+
+cms_095046.txt - ERCC species info  - eg, concentration
+ERCC92.fa - FASTA sequence of spike-in
+ERCC92.gtf - GTF file used for preparing RNA-seq alignment indices
+
+original sources:
+- http://tools.thermofisher.com/content/sfs/manuals/cms_095046.txt
+- https://assets.thermofisher.com/TFS-Assets/LSG/manuals/ERCC92.zip (GTF and FA files)

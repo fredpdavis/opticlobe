@@ -1,0 +1,133 @@
+Interactor 1	Description	Interactor 2	Description	Interaction Type	Discovery Type	PMID(s)	Possible reason for failure to detect
+18w	LRR	CG14372	Ig-FnIII	Heterophilic	Novel		
+beat-Ia	Beat	side	Side	Heterophilic	Previously known	19369411	
+beat-IIa	Beat	CG14372	Side	Heterophilic	Novel		
+beat-IIa	Beat	side	Side	Heterophilic	Novel		
+beat-IIb	Beat	CG14372	Side	Heterophilic	Novel		
+beat-IIb	Beat	side	Side	Heterophilic	Novel		
+beat-IV	Beat	CG12950	Side	Heterophilic	Novel		
+beat-Va	Beat	CG34114	Side	Heterophilic	Novel		
+beat-Vb	Beat	CG34114	Side	Heterophilic	Novel		
+beat-Vc	Beat	CG34114	Side	Heterophilic	Novel		
+CG10824	DIPc	CG14010	DIP	Heterophilic	Novel		
+CG10824	DIPc	CG14521	DIP	Heterophilic	Novel		
+CG10824	DIPc	CG31646	DIP	Heterophilic	Novel		
+CG10824	DIPc	CG31708	DIP	Heterophilic	Novel		
+CG10824	DIPc	CG34391	DIP	Heterophilic	Novel		
+CG10824	DIPc	CG42343	DIP	Heterophilic	Novel		
+CG10824	DIPc	CG42368	DIP	Heterophilic	Novel		
+CG12950	Side	CG17839	Ig-FnIII	Heterophilic	Novel		
+CG1504	LRR	CG14521	DIP	Heterophilic	Novel		
+CG34113	Side	CG42313	Side	Heterophilic	Novel		
+dpr	Dpr	CG10824	DIPc	Heterophilic	Novel		
+dpr	Dpr	CG14010	DIP	Heterophilic	Novel		
+dpr	Dpr	CG31646	DIP	Heterophilic	Novel		
+dpr10	Dpr	CG10824	DIPc	Heterophilic	Novel		
+dpr10	Dpr	CG32791	DIP	Heterophilic	Novel		
+dpr11	Dpr	CG10824	DIPc	Heterophilic	Novel		
+dpr11	Dpr	CG14521	DIP	Heterophilic	Novel		
+dpr11	Dpr	CG42343	DIP	Heterophilic	Novel		
+dpr12	Dpr	CG10824	DIPc	Heterophilic	Novel		
+dpr12	Dpr	CG34391	DIP	Heterophilic	Novel		
+dpr13	Dpr	CG10824	DIPc	Heterophilic	Novel		
+dpr13	Dpr	CG31708	DIP	Heterophilic	Novel		
+dpr13	Dpr	CG42368	DIP	Heterophilic	Novel		
+dpr14	Dpr	CG42368	DIP	Heterophilic	Novel		
+dpr16	Dpr	CG14521	DIP	Heterophilic	Novel		
+dpr16	Dpr	CG31708	DIP	Heterophilic	Novel		
+dpr16	Dpr	CG42368	DIP	Heterophilic	Novel		
+dpr17	Dpr	CG14521	DIP	Heterophilic	Novel		
+dpr17	Dpr	CG42368	DIP	Heterophilic	Novel		
+dpr19	Dpr	CG10824	DIPc	Heterophilic	Novel		
+dpr19	Dpr	CG31708	DIP	Heterophilic	Novel		
+dpr19	Dpr	CG42368	DIP	Heterophilic	Novel		
+dpr2	Dpr	CG10824	DIPc	Heterophilic	Novel		
+dpr2	Dpr	CG14010	DIP	Heterophilic	Novel		
+dpr2	Dpr	CG31646	DIP	Heterophilic	Novel		
+dpr20	Dpr	CG31708	DIP	Heterophilic	Novel		
+dpr20	Dpr	CG42368	DIP	Heterophilic	Novel		
+dpr3	Dpr	CG14010	DIP	Heterophilic	Novel		
+dpr3	Dpr	CG31646	DIP	Heterophilic	Novel		
+dpr3	Dpr	dpr7	Dpr	Heterophilic	Novel		
+dpr5	Dpr	CG10824	DIPc	Heterophilic	Novel		
+dpr5	Dpr	CG31646	DIP	Heterophilic	Novel		
+dpr5	Dpr	dpr6	Dpr	Heterophilic	Novel		
+dpr6	Dpr	CG10824	DIPc	Heterophilic	Novel		
+dpr6	Dpr	CG31708	DIP	Heterophilic	Novel		
+dpr6	Dpr	CG32791	DIP	Heterophilic	Novel		
+dpr6	Dpr	CG42343	DIP	Heterophilic	Novel		
+dpr6	Dpr	CG42368	DIP	Heterophilic	Novel		
+dpr7	Dpr	CG10824	DIPc	Heterophilic	Novel		
+dpr7	Dpr	CG14010	DIP	Heterophilic	Novel		
+dpr7	Dpr	CG31646	DIP	Heterophilic	Novel		
+dpr8	Dpr	CG10824	DIPc	Heterophilic	Novel		
+dpr8	Dpr	CG42343	DIP	Heterophilic	Novel		
+dpr9	Dpr	CG10824	DIPc	Heterophilic	Novel		
+dpr9	Dpr	CG42343	DIP	Heterophilic	Novel		
+hig	Ig	CG34114	Side	Heterophilic	Novel		
+klg	Ig-FnIII	CG10824	DIPc	Heterophilic	Novel		
+klg	Ig-FnIII	klg	Ig-FnIII	Homophilic	Previously known	"19104051, 9043060"	
+hbs	Syg2	kirre	Syg1	Heterophilic	Previously known	19270174	
+hbs	Syg2	rst	Syg1	Heterophilic	Previously known	15935781	
+Dscam	Dscam	Dscam	Dscam	Homophilic	Previously known	15339666	
+NetB	Netrin	fra	Ig-FnIII	Heterophilic	Previously known	"10068638, 8861904, 10972289"	
+ihog	Ig-FnIII	vn	Ig	Heterophilic	Novel		
+Ama	Ig	Ama	Ig	Homophilic	Previously known	12783792	
+nrm	Ig	CG5597	Ig	Heterophilic	Novel		
+Dscam2	Dscam	Dscam2	Dscam	Homophilic	Previously known	17554308	
+#Dscam2-PI	Dscam	Dscam2-PI	Dscam	Homophilic	Previously known	17554308	
+CG13506	Ig	CG7702	LRR	Heterophilic	Novel		
+boi	Ig-FnIII	vn	Ig	Heterophilic	Novel		
+fred	Ig-FnIII	fred	Ig-FnIII	Homophilic	Previously known	Based on homology to ed-ed.	
+fred	Ig-FnIII	ed	Ig-FnIII	Heterophilic	Novel		
+Dscam3	Dscam	Dscam3	Dscam	Homophilic	Previously known	17554308	
+Ptp99A	Ig-FnIII	Ptp99A	Ig-FnIII	Homophilic	Novel		
+kirre	Syg1	sns	Syg2	Heterophilic	Previously known	19270174	
+unc-5	Ig	sns	Syg2	Heterophilic	Novel		
+#Dscam2-PG	Dscam	Dscam2-PG	Dscam	Homophilic	Previously known	17554308	
+ed	Ig-FnIII	ed	Ig-FnIII	Homophilic	Previously known	12668620	
+ed	Ig-FnIII	tutl	Ig-FnIII	Heterophilic	Novel		
+Fas3	Ig	Fas3	Ig	Homophilic	Previously known	2132825	
+sns	Syg2	rst	Syg1	Heterophilic	Previously known	15511638	
+kek1	Ig-LRR	Egfr	LRR	Heterophilic	Previously known	10102272	
+rst	Syg1	rst	Syg1	Homophilic	Previously known	7646884	
+Lac	Ig	Lac	Ig	Homophilic	Previously known	14681183	
+Lac	Ig	CG6959	LRR	Heterophilic	Novel		
+CG43462	Ig	CG43462	Ig	Homophilic	Novel		
+robo3	Ig-FnIII	robo3	Ig-FnIII	Homophilic	Previously known	Based on homology to lea-lea.	
+CG5541	LRR	caps	LRR	Heterophilic	Novel		
+CG1504	LRR	CG5819	LRR	Heterophilic	Novel		
+CG33143	FnIII	CG33143	FnIII	Homophilic	Novel		
+CG4781	LRR	CG7702	LRR	Heterophilic	Novel		
+Tl	LRR	Tl	LRR	Homophilic	Previously known	15795223	
+Dscam4	Dscam	Dscam4	Dscam	Homophilic	Previously known	"18837673, 17554308"	
+Fas2	Ig-FnIII	CG15630	Ig-FnIII	Heterophilic	Novel		
+Fas2	Ig-FnIII	CG33543	Ig-FnIII	Heterophilic	Novel		
+Fas2	Ig-FnIII	Fas2	Ig-FnIII	Homophilic	Previously known	2132825	
+ImpL2	Ig	ImpL2	Ig	Homophilic	Novel		
+boi	Ig-FnIII	boi	Ig-FnIII	Homophilic	Previously known	Based on homology to ihog-ihog.	
+#Previously established interactions that we failed to detect:							Possible reason for failure to detect
+unc-5	Ig	NetA	other	Heterophilic	Previously known	11719202	NetA: Very low expression
+tutl	Ig-FnIII	tutl	Ig-FnIII	Homophilic	Previously known	19906964	-
+Nrg	Ig-FnIII	Nrg	Ig-FnIII	Homophilic	Previously known	2132825	-
+Nrg	Ig-FnIII	ed	Ig-FnIII	Heterophilic	Previously known	12668620	-
+ihog	Ig-FnIII	ihog	Ig-FnIII	Homophilic	Previously known	"17077139, 17348690"	-
+vn	Ig	Egfr	LRR	Heterophilic	Previously known	8824589	Vn: Very low expression
+robo3	Ig-FnIII	sli	LRR	Heterophilic	Previously known	"10102268, 10102267"	Sli: No expression
+lea	Ig-FnIII	sli	LRR	Heterophilic	Previously known	"10102268, 10102267"	Sli: No expression
+robo	Ig-FnIII	sli	LRR	Heterophilic	Previously known	"10102268, 10102267"	Sli: No expression
+fra	Ig-FnIII	NetA	other	Heterophilic	Previously known	"10068638, 8861904, 10972289"	NetA: Very low expression
+unc-5	Ig	NetB	other	Heterophilic	Previously known	11719202	NetB: Very low expression
+dome	Ig-FnIII	et	Ig-FnIII	Heterophilic	Previously known	"20689801, 20624926"	-
+nrm	Ig	nrm	Ig	Homophilic	Previously known	8398154	-
+kirre	Ig	kirre	Ig	Homophilic	Previously known	11684662	-
+Con	LRR	Con	LRR	Homophilic	Previously known	1505024	-
+chp	LRR	chp	LRR	Homophilic	Previously known	2189727	-
+hbs	Syg2	sns	Syg2	Heterophilic	Previously known	19270174	"Interaction may not exist, according to PMID: 11684662"
+sns	Syg2	sns	Syg2	Homophilic	Previously known	19270174	"Interaction may not exist, according to PMID: 11684662"
+sli	LRR	sli	LRR	Homophilic	Previously known	"15496984, 19498462"	Sli: No expression
+lea	Ig-FnIII	lea	Ig-FnIII	Homophilic	Previously known	20206526	-
+robo	Ig-FnIII	Lrt	LRR	Heterophilic	Previously known	19793885	-
+#conv (below) could not be cloned for the interactome.
+conv	LRR	ImpL2	Ig	Heterophilic	Previously known	18396139	
+#"Table S2. Related to Figure 2. List of the interactions detected by the Extracellular Interactome Assay. Also included below are interactions not detected by the Extracellular Interactome, but established in the literature, with possible reasons for our failure to detect (column H)."

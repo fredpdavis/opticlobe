@@ -1,0 +1,53 @@
+## 2018 Jan 17. Built Kallisto index using cDNA + ERCC + INTACT
+
+~/software/kallisto/kallisto_linux-v0.43.1/kallisto index \
+   -i BDGP6.91.ERCC.INTACT.kallisto_index \
+   ../external/BDGP6.ENSEMBL91/Drosophila_melanogaster.BDGP6.cdna.all.fa.gz \
+   ../external/ERCC/ERCC92.fa \
+   ../external/INTACT_sequences/INTACT.fa
+
+[build] loading fasta file ../external/BDGP6.ENSEMBL91/Drosophila_melanogaster.BDGP6.cdna.all.fa.gz
+[build] loading fasta file ../external/ERCC/ERCC92.fa
+[build] loading fasta file ../external/INTACT_sequences/INTACT.fa
+[build] k-mer length: 31
+[build] warning: clipped off poly-A tail (longer than 10)
+        from 99 target sequences
+[build] warning: replaced 4 non-ACGUT characters in the input sequence
+        with pseudorandom nucleotides
+[build] counting k-mers ... done.
+[build] building target de Bruijn graph ...  done
+[build] creating equivalence classes ...  done
+[build] target de Bruijn graph has 71365 contigs and contains 33331939 k-mers
+
+
+
+
+## 2018 Jan 17: Build Kallisto index using cDNA + ncRNA + ERCC + INTACT
+##    cDNA = protein coding gene + pseudogenes only
+##    ncRNA includes rRNA, tRNA, snoRNA, lincRNA, etc.
+
+
+~/software/kallisto/kallisto_linux-v0.43.1/kallisto index \
+   -i BDGP6.91.ERCC.INTACT.ncrna.kallisto_index \
+   ../external/BDGP6.ENSEMBL91/Drosophila_melanogaster.BDGP6.cdna.all.fa.gz \
+   ../external/BDGP6.ENSEMBL91/Drosophila_melanogaster.BDGP6.ncrna.fa.gz \
+   ../external/ERCC/ERCC92.fa \
+   ../external/INTACT_sequences/INTACT.fa
+
+
+
+[build] loading fasta file ../external/BDGP6.ENSEMBL91/Drosophila_melanogaster.BDGP6.cdna.all.fa.gz
+[build] loading fasta file ../external/BDGP6.ENSEMBL91/Drosophila_melanogaster.BDGP6.ncrna.fa.gz
+[build] loading fasta file ../external/ERCC/ERCC92.fa
+[build] loading fasta file ../external/INTACT_sequences/INTACT.fa
+[build] k-mer length: 31
+[build] warning: clipped off poly-A tail (longer than 10)
+        from 100 target sequences
+[build] warning: replaced 4 non-ACGUT characters in the input sequence
+        with pseudorandom nucleotides
+[build] counting k-mers ... done.
+[build] building target de Bruijn graph ...  done
+[build] creating equivalence classes ...  done
+[build] target de Bruijn graph has 80507 contigs and contains 35213198 k-mers
+
+

@@ -11,21 +11,37 @@ Contact fred.davis@nih.gov with any questions.
 
 ## Package contents
 
-### src
-
-* Code, organized by language, to turn RNA-seq read files into figures.
-
-### metadata
-
-* text tables describing the RNA-seq samples
-
-## Analysis overview
-
-This section describes steps to turn RNA-seq reads to figures and tables.
+- src - code, organized by language, to turn RNA-seq read files into figures.
+- metadata - text tables describing RNA-seq samples
+- data - text data files used by code
 
 ## Requirements
 
-### Software Requirements
+### Data
+
+The data used by this package comes from several sources. We include nearly all
+data files expected by the R and LSF shell programs, along with README files
+describing the contents. The only exceptions are large files (eg, genome
+sequence, gene annotations, transcript sequences, RNA-seq alignment indices),
+which we do not provide but descrige in README files how to obtain or build.
+
+| Data                    | Source                                                                                                                 |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| RNA-seq FASTQ files     | [GEO accession GSE116969](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE116969)                                |
+| genome sequence         | [ENSEMBL release 91; based on BDGP6 (dm6)](http://dec2017.archive.ensembl.org/Drosophila_melanogaster/Info/Index)      |
+| gene structures         | [ENSEMBL release 91; based on FlyBase 2017_04](http://dec2017.archive.ensembl.org/Drosophila_melanogaster/Info/Index)  |
+| FlyBase gene groups     | [FlyBase 2018_02](http://fb2018_02.flybase.org/)
+
+
+We also use data from the following papers:
+
+- [Rivera-Alaba et al., Curr Biol 2011.](http://dx.doi.org/10.1016/j.cub.2011.10.022)
+- [Takemura et al., Nature 2013.](http://dx.doi.org/10.1038/nature12450)
+- [Ozkan et al., Cell 2013.](http://dx.doi.org/10.1016/j.cell.2013.06.006)
+- [Konstantinides et al., Cell 2018.](http://dx.doi.org/10.1016/j.cell.2018.05.021)
+
+
+### Software
 
 We used the following software on an LSF linux compute cluster.
 
@@ -41,35 +57,7 @@ We used the following software on an LSF linux compute cluster.
 |  8  | R v3.3.1               | https://www.r-project.org/                 |
 |  9  | RStan/Stan             | http://mc-stan.org/users/interfaces/rstan  |
 
-Table: External software used for data processing
-
-### Data sources
-
-The code uses the following internal data:
-
-1. sample descriptions. included in metadata directory
-2. raw FASTQ files. available from GEO (accession GSE116969).
-3. fly_neurotransmission_manuallist.txt - list of neurotransmitter-associated genes
-
-
-The code also uses data from the following external data sources:
-
-1. FlyBase: gene groups, InterPro annotation, gene ontology annotation.
-2. ENSEMBL genome and transcript sequence.
-3. BioMart gene ontology annotation.
-4. ERCC synthetic spike-in sequence. cms_095046.txt
-5. paper: Rivera-Alaba et al., 2011. Table S2.
-6. paper: Takemura et al., 2013. nature12450-s3.xls
-7. paper: Ozkan et al., 2013. Tables S1 and S2
-8. paper: Konstantinides et al., 2018. Table S1 (cluster markers), manually entered Figure 3A cluster labels.
-
-### Genomic data versions
-
-1. genome assembly: BDGP6 (dm6)
-2. gene models: ENSEMBL91, based on FlyBase 2017_04
-3. gene groups: FlyBase 2018_02
-
-## Processing Steps
+## Analysis overview
 
 The analysis includes three parts: (1) RNA-seq read processing, (2) modeling
 gene expression states, and (3) generating figures and tables.

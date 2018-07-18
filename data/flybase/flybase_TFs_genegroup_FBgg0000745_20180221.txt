@@ -1,0 +1,632 @@
+gene_id	gene_descr	gene_name
+FBgn0028789	Dorsocross1	Doc1
+FBgn0035956	Dorsocross2	Doc2
+FBgn0035954	Dorsocross3	Doc3
+FBgn0000179	bifid	bi
+FBgn0261963	midline	mid
+FBgn0016660	H15	H15
+FBgn0011723	brachyenteron	byn
+FBgn0021767	optomotor-blind-related-gene-1	org-1
+FBgn0000568	Ecdysone-induced protein 75B	Eip75B
+FBgn0004865	Ecdysone-induced protein 78C	Eip78C
+FBgn0000448	Hormone receptor 3	Hr3
+FBgn0000546	Ecdysone receptor	EcR
+FBgn0015240	Hormone receptor-like in 96	Hr96
+FBgn0004914	Hepatocyte nuclear factor 4	Hnf4
+FBgn0003964	ultraspiracle	usp
+FBgn0015239	Hormone-receptor-like in 78	Hr78
+FBgn0003720	tailless	tll
+FBgn0034012	Hormone receptor 51	Hr51
+FBgn0015381	dissatisfaction	dsf
+FBgn0037436	Hormone receptor 83	Hr83
+FBgn0003651	seven up	svp
+FBgn0035849	estrogen-related receptor	ERR
+FBgn0014859	Hormone receptor-like in 38	Hr38
+FBgn0001078	ftz transcription factor 1	ftz-f1
+FBgn0261239	Hormone receptor-like in 39	Hr39
+FBgn0264562	Hormone receptor 4	Hr4
+FBgn0001323	knirps-like	knrl
+FBgn0000560	eagle	eg
+FBgn0001320	knirps	kni
+FBgn0260632	dorsal	dl
+FBgn0011274	Dorsal-related immunity factor	Dif
+FBgn0014018	Relish	Rel
+FBgn0265193	Activating transcription factor-2	Atf-2
+FBgn0033010	Atf6	Atf6
+FBgn0004396	Cyclic-AMP response element binding protein A	CrebA
+FBgn0001150	giant	gt
+FBgn0036126	Inverted repeat binding protein 18 kDa	Irbp18
+FBgn0001291	Jun-related antigen	Jra
+FBgn0001297	kayak	kay
+FBgn0005638	slow border cells	slbo
+FBgn0016076	vrille	vri
+FBgn0028550	Activating transcription factor 3	Atf3
+FBgn0034096	-	CG7786
+FBgn0262975	cap-n-collar	cnc
+FBgn0000370	cryptocephal	crc
+FBgn0265784	Cyclic-AMP response element binding protein B	CrebB
+FBgn0034534	maf-S	maf-S
+FBgn0016694	PAR-domain protein 1	Pdp1
+FBgn0032202	REPTOR-binding partner	REPTOR-BP
+FBgn0000964	traffic jam	tj
+FBgn0021872	X box binding protein-1	Xbp1
+FBgn0039209	Repressed by TOR	REPTOR
+FBgn0003411	sisterless A	sisA
+FBgn0000022	achaete	ac
+FBgn0003270	absent MD neurons and olfactory sensilla	amos
+FBgn0000137	asense	ase
+FBgn0010433	atonal	ato
+FBgn0039509	bigmax	bigmax
+FBgn0024249	cousin of atonal	cato
+FBgn0037937	48 related 3	Fer3
+FBgn0023076	Clock	Clk
+FBgn0001994	cropped	crp
+FBgn0023094	cycle	cyc
+FBgn0267821	daughterless	da
+FBgn0023091	dimmed	dimm
+FBgn0010109	deadpan	dpn
+FBgn0039411	dysfusion	dysf
+FBgn0002609	Enhancer of split m3, helix-loop-helix	E(spl)m3-HLH
+FBgn0002631	Enhancer of split m5, helix-loop-helix	E(spl)m5-HLH
+FBgn0002633	Enhancer of split m7, helix-loop-helix	E(spl)m7-HLH
+FBgn0000591	Enhancer of split m8, helix-loop-helix	E(spl)m8-HLH
+FBgn0002733	Enhancer of split mbeta, helix-loop-helix	E(spl)mbeta-HLH
+FBgn0002734	Enhancer of split mdelta, helix-loop-helix	E(spl)mdelta-HLH
+FBgn0002735	Enhancer of split mgamma, helix-loop-helix	E(spl)mgamma-HLH
+FBgn0037475	48 related 1	Fer1
+FBgn0001168	hairy	h
+FBgn0032209	Hand	Hand
+FBgn0030899	HES-related	Hesr
+FBgn0027788	Hairy/E(spl)-related with YRPW motif	Hey
+FBgn0011277	Helix loop helix protein 4C	HLH4C
+FBgn0022740	HLH54F	HLH54F
+FBgn0002561	lethal of scute	l(1)sc
+FBgn0017578	Max	Max
+FBgn0263112	Mitf	Mitf
+FBgn0032940	Mondo	Mondo
+FBgn0262656	Myc	Myc
+FBgn0002922	nautilus	nau
+FBgn0002931	net	net
+FBgn0032651	Olig family	Oli
+FBgn0037672	salivary gland-expressed bHLH	sage
+FBgn0004170	scute	sc
+FBgn0032741	similar to Deadpan	Sidpn
+FBgn0266411	similar	sima
+FBgn0261283	Sterol regulatory element binding protein	SREBP
+FBgn0041092	taiman	tai
+FBgn0015550	target of Poxn	tap
+FBgn0264075	tango	tgo
+FBgn0003900	twist	twi
+FBgn0263118	taxi	tx
+FBgn0053557	-	CG33557
+FBgn0259938	clockwork orange	cwo
+FBgn0000575	extra macrochaetae	emc
+FBgn0038402	48 related 2	Fer2
+FBgn0261703	germ cell-expressed bHLH-PAS	gce
+FBgn0011276	Helix loop helix protein 3B	HLH3B
+FBgn0002723	Methoprene-tolerant	Met
+FBgn0023215	Mnt	Mnt
+FBgn0004666	single-minded	sim
+FBgn0003513	spineless	ss
+FBgn0262139	trachealess	trh
+FBgn0029711	Usf	Usf
+FBgn0001319	knot	kn
+FBgn0000504	doublesex	dsx
+FBgn0030477	doublesex-Mab related 11E	dmrt11E
+FBgn0038851	doublesex-Mab related 93B	dmrt93B
+FBgn0039683	doublesex-Mab related 99B	dmrt99B
+FBgn0264442	abrupt	ab
+FBgn0005694	Adult enhancer factor 1	Aef1
+FBgn0035625	Blimp-1	Blimp-1
+FBgn0004893	brother of odd with entrails limited	bowl
+FBgn0283451	broad	br
+FBgn0000233	buttonhead	btd
+FBgn0000286	Chorion factor 2	Cf2
+FBgn0267033	maternal gene required for meiosis	mamo
+FBgn0035481	-	CG12605
+FBgn0051632	senseless-2	sens-2
+FBgn0003028	ovo	ovo
+FBgn0004859	cubitus interruptus	ci
+FBgn0020309	crooked legs	crol
+FBgn0022935	D19A	D19A
+FBgn0022699	D19B	D19B
+FBgn0263239	dendritic arbor reduction 1	dar1
+FBgn0262636	datilografo	dati
+FBgn0000459	disconnected	disco
+FBgn0285879	disco-related	disco-r
+FBgn0036179	-	CG7368
+FBgn0031375	earmuff	erm
+FBgn0001981	escargot	esg
+FBgn0004652	fruitless	fru
+FBgn0004618	glass	gl
+FBgn0001180	hunchback	hb
+FBgn0001185	hermaphrodite	her
+FBgn0261434	huckebein	hkb
+FBgn0027339	jim	jim
+FBgn0035144	Kahuli	Kah
+FBgn0011236	ken and barbie	ken
+FBgn0025679	Kruppel-like factor 15	Klf15
+FBgn0013469	klumpfuss	klu
+FBgn0001325	Kruppel	Kr
+FBgn0265276	lethal (3) neo38	l(3)neo38
+FBgn0039039	lame duck	lmd
+FBgn0040765	luna	luna
+FBgn0002985	odd skipped	odd
+FBgn0003002	odd paired	opa
+FBgn0038418	poils au dos	pad
+FBgn0003053	pebbled	peb
+FBgn0002521	pleiohomeotic	pho
+FBgn0035997	pleiohomeotic like	phol
+FBgn0267337	rotund	rn
+FBgn0004880	scratch	scrt
+FBgn0002573	senseless	sens
+FBgn0003396	schnurri	shn
+FBgn0003448	snail	sna
+FBgn0020378	Sp1	Sp1
+FBgn0010768	squeeze	sqz
+FBgn0003567	suppressor of Hairy wing	su(Hw)
+FBgn0033782	sugarbabe	sug
+FBgn0013263	Trithorax-like	Trl
+FBgn0003870	tramtrack	ttk
+FBgn0001983	worniu	wor
+FBgn0037446	Zinc-finger protein	Zif
+FBgn0039740	Zinc-finger protein interacting with CP190	ZIPIC
+FBgn0259789	zelda	zld
+FBgn0015371	charlatan	chn
+FBgn0003866	teashirt	tsh
+FBgn0003512	Serendipity delta	Sry-delta
+FBgn0000520	deformed wings	dwg
+FBgn0001133	grauzone	grau
+FBgn0040305	Metal response element-binding Transcription Factor-1	MTF-1
+FBgn0003511	Serendipity beta	Sry-beta
+FBgn0004606	Zn finger homeodomain 1	zfh1
+FBgn0003963	u-shaped	ush
+FBgn0004607	Zn finger homeodomain 2	zfh2
+FBgn0024244	drumstick	drm
+FBgn0038016	MBD-R2	MBD-R2
+FBgn0035702	-	CG10147
+FBgn0027514	-	CG1024
+FBgn0035690	-	CG10274
+FBgn0034643	-	CG10321
+FBgn0032814	-	CG10366
+FBgn0032730	-	CG10431
+FBgn0032815	-	CG10462
+FBgn0034570	-	CG10543
+FBgn0032817	-	CG10631
+FBgn0036294	-	CG10654
+FBgn0039329	-	CG10669
+FBgn0030010	-	CG10959
+FBgn0037379	-	CG10979
+FBgn0037120	-	CG11247
+FBgn0040366	-	CG11398
+FBgn0037031	-	CG11456
+FBgn0030316	-	CG11695
+FBgn0030314	-	CG11696
+FBgn0037618	ouija board	ouib
+FBgn0034425	-	CG11906
+FBgn0037645	-	CG11966
+FBgn0283521	longitudinals lacking	lola
+FBgn0039831	-	CG12054
+FBgn0039808	-	CG12071
+FBgn0043796	-	CG12219
+FBgn0029822	-	CG12236
+FBgn0032295	-	CG12299
+FBgn0035137	-	CG1233
+FBgn0033581	-	CG12391
+FBgn0028979	tiptop	tio
+FBgn0033459	-	CG12744
+FBgn0033252	-	CG12769
+FBgn0041105	nervous fingers 2	nerfin-2
+FBgn0033569	-	CG12942
+FBgn0032150	-	CG13123
+FBgn0035643	-	CG13287
+FBgn0035687	-	CG13296
+FBgn0039201	-	CG13617
+FBgn0028999	nervous fingers 1	nerfin-1
+FBgn0029895	-	CG14441
+FBgn0005642	wings down	wdn
+FBgn0037275	-	CG14655
+FBgn0037317	-	CG14667
+FBgn0037922	-	CG14711
+FBgn0034379	-	CG15073
+FBgn0028878	-	CG15269
+FBgn0031144	-	CG1529
+FBgn0031610	-	CG15436
+FBgn0034120	-	CG15710
+FBgn0033186	-	CG1602
+FBgn0033185	-	CG1603
+FBgn0025185	az2	az2
+FBgn0033449	-	CG1663
+FBgn0037698	-	CG16779
+FBgn0028895	-	CG17328
+FBgn0036396	-	CG17359
+FBgn0036395	-	CG17361
+FBgn0033934	-	CG17385
+FBgn0284250	O/E-associated zinc finger protein	Oaz
+FBgn0032763	-	CG17568
+FBgn0031597	-	CG17612
+FBgn0038550	-	CG17801
+FBgn0038549	-	CG17802
+FBgn0038547	-	CG17803
+FBgn0038548	-	CG17806
+FBgn0025635	-	CG17829
+FBgn0039860	-	CG1792
+FBgn0033491	-	CG18011
+FBgn0030012	-	CG18262
+FBgn0036725	-	CG18265
+FBgn0032979	Chromatin-linked adaptor for MSL proteins	Clamp
+FBgn0033458	-	CG18446
+FBgn0033155	Bromodomain-containing protein, 140kD	Br140
+FBgn0037931	-	CG18476
+FBgn0042205	-	CG18764
+FBgn0030003	-	CG2116
+FBgn0030008	-	CG2129
+FBgn0035213	-	CG2199
+FBgn0030240	-	CG2202
+FBgn0027951	Metastasis associated 1-like	MTA1-like
+FBgn0014931	-	CG2678
+FBgn0024975	-	CG2712
+FBgn0030206	-	CG2889
+FBgn0050020	-	CG30020
+FBgn0029928	-	CG3032
+FBgn0050431	-	CG30431
+FBgn0050443	Optix-binding protein	Opbp
+FBgn0034946	-	CG3065
+FBgn0051224	-	CG31224
+FBgn0051365	-	CG31365
+FBgn0051388	-	CG31388
+FBgn0051441	-	CG31441
+FBgn0051612	-	CG31612
+FBgn0086758	Chronologically inappropriate morphogenesis	chinmo
+FBgn0045852	hamlet	ham
+FBgn0052121	-	CG32121
+FBgn0004892	sister of odd and bowl	sob
+FBgn0026575	hangover	hang
+FBgn0260741	-	CG3281
+FBgn0028991	sequoia	seq
+FBgn0031573	-	CG3407
+FBgn0263490	molting defective	mld
+FBgn0264744	-	CG44002
+FBgn0029867	-	CG3847
+FBgn0034878	pita	pita
+FBgn0270924	zinc finger protein 30C	zf30C
+FBgn0001990	weckle	wek
+FBgn0034114	-	CG4282
+FBgn0038787	-	CG4360
+FBgn0039078	-	CG4374
+FBgn0038767	trade embargo	trem
+FBgn0038765	-	CG4424
+FBgn0043364	cabut	cbt
+FBgn0005771	no ocelli	noc
+FBgn0031894	-	CG4496
+FBgn0035036	-	CG4707
+FBgn0039355	-	CG4730
+FBgn0037876	-	CG4820
+FBgn0038766	-	CG4854
+FBgn0000287	spalt-related	salr
+FBgn0034240	Misexpression suppressor of ras 4	MESR4
+FBgn0038768	-	CG4936
+FBgn0038047	-	CG5245
+FBgn0039169	Sp1-like factor for pairing sensitive-silencing	Spps
+FBgn0015025	CKII-alpha subunit interactor-1	CkIIalpha-i1
+FBgn0037794	-	CG6254
+FBgn0000283	Centrosomal protein 190kD	Cp190
+FBgn0261648	spalt major	salm
+FBgn0038301	-	CG6654
+FBgn0037877	-	CG6689
+FBgn0035903	-	CG6765
+FBgn0037918	-	CG6791
+FBgn0032401	Promyelocytic leukemia zinc finger	Plzf
+FBgn0037921	-	CG6808
+FBgn0030963	-	CG7101
+FBgn0037085	Neuroectoderm-expressed 2	Neu2
+FBgn0038551	Oddjob	Odj
+FBgn0036522	-	CG7372
+FBgn0035691	-	CG7386
+FBgn0038626	-	CG7691
+FBgn0259785	putzig	pzg
+FBgn0003499	stripe	sr
+FBgn0038244	-	CG7987
+FBgn0033993	-	CG8089
+FBgn0037617	numerous disordered muscles	nom
+FBgn0037717	-	CG8301
+FBgn0037722	-	CG8319
+FBgn0000289	combgap	cg
+FBgn0034062	-	CG8388
+FBgn0025874	Meiotic central spindle	Meics
+FBgn0037746	-	CG8478
+FBgn0037751	matotopetli	topi
+FBgn0035769	CTCF	CTCF
+FBgn0267792	regular	rgr
+FBgn0030680	-	CG8944
+FBgn0086350	teflon	tef
+FBgn0030659	-	CG9215
+FBgn0285971	piragua	prg
+FBgn0030787	-	CG9609
+FBgn0037620	ranshi	ranshi
+FBgn0037621	Motif 1 Binding Protein	M1BP
+FBgn0034814	-	CG9890
+FBgn0261705	-	CG42741
+FBgn0039602	-	CG1647
+FBgn0051109	-	CG31109
+FBgn0031608	-	CG15435
+FBgn0037584	-	CG7963
+FBgn0037619	-	CG8159
+FBgn0037923	-	CG6813
+FBgn0030455	-	CG4318
+FBgn0051457	-	CG31457
+FBgn0028647	-	CG11902
+FBgn0040467	Dorsal interacting protein 1	Dlip1
+FBgn0037920	-	CG14710
+FBgn0067779	debra	dbr
+FBgn0267336	Glucose transporter 4 enhancer factor	Glut4EF
+FBgn0085405	-	CG34376
+FBgn0039946	(A+T)-stretch binding protein	ATbp
+FBgn0032707	-	CG10348
+FBgn0035407	ASCIZ zinc finger protein	Asciz
+FBgn0030009	-	CG15336
+FBgn0038741	-	CG17186
+FBgn0030005	-	CG2120
+FBgn0261679	-	CG42726
+FBgn0052767	-	CG32767
+FBgn0053213	-	CG33213
+FBgn0263072	-	CG43347
+FBgn0032473	kumgang	kmg
+FBgn0036791	-	CG7271
+FBgn0029939	-	CG9650
+FBgn0262160	-	CG9932
+FBgn0086655	jing	jing
+FBgn0266450	Kruppel homolog 1	Kr-h1
+FBgn0003683	terminus	term
+FBgn0263772	-	CG43689
+FBgn0036249	-	CG11560
+FBgn0031874	-	CG13775
+FBgn0040392	-	CG14050
+FBgn0039712	-	CG15514
+FBgn0028931	-	CG16863
+FBgn0036248	sunspot	ssp
+FBgn0038472	-	CG3995
+FBgn0015664	DNA replication-related element factor	Dref
+FBgn0032600	Bub3 interacting GLEBS and Zinc finger domain protein	BuGZ
+FBgn0004878	castor	cas
+FBgn0032223	GATAd	GATAd
+FBgn0038391	GATAe	GATAe
+FBgn0001138	grain	grn
+FBgn0003117	pannier	pnr
+FBgn0003507	serpent	srp
+FBgn0031232	-	CG11617
+FBgn0015904	araucan	ara
+FBgn0015919	caupolican	caup
+FBgn0014343	mirror	mirr
+FBgn0033748	vismay	vis
+FBgn0033749	achintya	achi
+FBgn0001235	homothorax	hth
+FBgn0000611	extradenticle	exd
+FBgn0003130	Pox neuro	Poxn
+FBgn0003129	Pox meso	Poxm
+FBgn0005561	shaven	sv
+FBgn0003345	scalloped	sd
+FBgn0003896	tailup	tup
+FBgn0267978	apterous	ap
+FBgn0013751	Arrowhead	Awh
+FBgn0026411	LIM homeobox 1	Lim1
+FBgn0002023	Lim3	Lim3
+FBgn0052105	LIM homeobox transcription factor 1 alpha	Lmx1a
+FBgn0036274	-	CG4328
+FBgn0004862	bagpipe	bap
+FBgn0002941	slouch	slou
+FBgn0004110	tinman	tin
+FBgn0261930	ventral nervous system defective	vnd
+FBgn0264005	H6-like-homeobox	Hmx
+FBgn0004863	C15	C15
+FBgn0011278	ladybird early	lbe
+FBgn0008651	ladybird late	lbl
+FBgn0000492	Drop	Dr
+FBgn0011758	BarH1	B-H1
+FBgn0004854	BarH2	B-H2
+FBgn0000529	brain-specific homeobox	bsh
+FBgn0030408	-	CG11085
+FBgn0028993	scarecrow	scro
+FBgn0261723	Dbx	Dbx
+FBgn0034520	lateral muscles scarcer	lms
+FBgn0038833	-	CG15696
+FBgn0038592	-	CG18599
+FBgn0054031	-	CG34031
+FBgn0038852	Hematopoietically expressed homeobox	HHEX
+FBgn0000157	Distal-less	Dll
+FBgn0008646	E5	E5
+FBgn0000576	empty spiracles	ems
+FBgn0041156	extra-extra	exex
+FBgn0040318	HGTX	HGTX
+FBgn0001170	Homeodomain protein 2.0	H2.0
+FBgn0015561	unplugged	unpg
+FBgn0024321	NK7.1	NK7.1
+FBgn0000577	engrailed	en
+FBgn0001269	invected	inv
+FBgn0005558	eyeless	ey
+FBgn0019650	twin of eyeless	toy
+FBgn0000625	eyegone	eyg
+FBgn0001148	gooseberry	gsb
+FBgn0001147	gooseberry-neuro	gsb-n
+FBgn0003145	paired	prd
+FBgn0036285	twin of eyg	toe
+FBgn0004198	cut	ct
+FBgn0028996	onecut	onecut
+FBgn0020307	defective proventriculus	dve
+FBgn0004595	prospero	pros
+FBgn0000061	aristaless	al
+FBgn0030058	-	CG11294
+FBgn0052532	-	CG32532
+FBgn0085369	Dorsal root ganglia homeobox	Drgx
+FBgn0085396	-	CG34367
+FBgn0034821	-	CG9876
+FBgn0010323	Goosecoid	Gsc
+FBgn0008636	homeobrain	hbn
+FBgn0004102	ocelliless	oc
+FBgn0026058	Ods-site homeobox	OdsH
+FBgn0015524	orthopedia	otp
+FBgn0025334	Putative homeodomain protein	PHDP
+FBgn0023489	PvuII-PstI homology 13	Pph13
+FBgn0020912	Ptx1	Ptx1
+FBgn0011701	reversed polarity	repo
+FBgn0020617	Retinal Homeobox	Rx
+FBgn0024184	unc-4	unc-4
+FBgn0263511	Visual system homeobox 1	Vsx1
+FBgn0263512	Visual system homeobox 2	Vsx2
+FBgn0002522	labial	lab
+FBgn0051481	proboscipedia	pb
+FBgn0004054	zerknullt-related	zen2
+FBgn0004053	zerknullt	zen
+FBgn0000166	bicoid	bcd
+FBgn0000439	Deformed	Dfd
+FBgn0003339	Sex combs reduced	Scr
+FBgn0001077	fushi tarazu	ftz
+FBgn0260642	Antennapedia	Antp
+FBgn0003944	Ultrabithorax	Ubx
+FBgn0000014	abdominal A	abd-A
+FBgn0000015	Abdominal B	Abd-B
+FBgn0000606	even skipped	eve
+FBgn0025776	intermediate neuroblasts defective	ind
+FBgn0000251	caudal	cad
+FBgn0014949	buttonless	btn
+FBgn0003267	rough	ro
+FBgn0000411	Dichaete	D
+FBgn0085432	pangolin	pan
+FBgn0005612	Sox box protein 14	Sox14
+FBgn0005613	Sox box protein 15	Sox15
+FBgn0036411	Sox21a	Sox21a
+FBgn0042630	Sox21b	Sox21b
+FBgn0024288	Sox100B	Sox100B
+FBgn0039938	Sox102F	Sox102F
+FBgn0029123	SoxNeuro	SoxN
+FBgn0030093	Brahma associated protein 111kD	Bap111
+FBgn0024251	bobby sox	bbx
+FBgn0035238	-	CG12104
+FBgn0029936	-	CG4617
+FBgn0263667	Lost PHDs of trr	Lpt
+FBgn0038978	testis-enriched HMG-box-containing protein 1	tHMG1
+FBgn0038979	testis-enriched HMG-box-containing protein 2	tHMG2
+FBgn0026582	High mobility group protein 2	Hmg-2
+FBgn0262582	capicua	cic
+FBgn0278608	Dorsal switch protein 1	Dsp1
+FBgn0004362	High mobility group protein D	HmgD
+FBgn0010228	HMG protein Z	HmgZ
+FBgn0039227	polybromo	polybromo
+FBgn0010278	Structure specific recognition protein	Ssrp
+FBgn0038805	mitochondrial transcription factor A	TFAM
+FBgn0000659	fork head	fkh
+FBgn0003430	sloppy paired 1	slp1
+FBgn0004567	sloppy paired 2	slp2
+FBgn0004895	Forkhead box L1	FoxL1
+FBgn0004896	forkhead domain 59A	fd59A
+FBgn0004897	forkhead domain 96Ca	fd96Ca
+FBgn0004898	forkhead domain 96Cb	fd96Cb
+FBgn0014143	crocodile	croc
+FBgn0015396	jumeau	jumu
+FBgn0021738	Circadianly Regulated Gene	Crg-1
+FBgn0031086	forkhead domain 19B	fd19B
+FBgn0036134	Forkhead box K	FoxK
+FBgn0262477	Forkhead box P	FoxP
+FBgn0038197	forkhead box, sub-group O	foxo
+FBgn0039937	forkhead domain 102C	fd102C
+FBgn0045759	biniou	bin
+FBgn0052006	-	CG32006
+FBgn0264954	forkhead domain 3F	fd3F
+FBgn0029504	Checkpoint suppressor 1-like	CHES-1-like
+FBgn0003460	sine oculis	so
+FBgn0025360	Optix	Optix
+FBgn0027364	Six4	Six4
+FBgn0085424	nubbin	nub
+FBgn0004394	POU domain protein 2	pdm2
+FBgn0086680	ventral veins lacking	vvl
+FBgn0000028	abnormal chemosensory jump 6	acj6
+FBgn0261588	pou domain motif 3	pdm3
+FBgn0011656	Myocyte enhancer factor 2	Mef2
+FBgn0004101	blistered	bs
+FBgn0004795	retained	retn
+FBgn0015903	apontic	apt
+FBgn0002914	Myb oncogene-like	Myb
+FBgn0037540	PSEA-binding protein 95kD	Pbp95
+FBgn0032512	B double prime 1	Bdp1
+FBgn0030505	NFAT nuclear factor	NFAT
+FBgn0040465	Dorsal interacting protein 3	Dlip3
+FBgn0284249	Adh transcription factor 1	Adf1
+FBgn0003459	stonewall	stwl
+FBgn0014179	glial cells missing	gcm
+FBgn0019809	gcm2	gcm2
+FBgn0002576	lozenge	lz
+FBgn0003300	runt	run
+FBgn0083981	Runt related A	RunxA
+FBgn0259162	Runt related B	RunxB
+FBgn0011648	Mothers against dpp	Mad
+FBgn0011655	Medea	Med
+FBgn0025800	Smad on X	Smox
+FBgn0042696	Nuclear factor I	NfI
+FBgn0035157	-	CG13894
+FBgn0038273	-	CG14860
+FBgn0035414	-	CG14965
+FBgn0040466	Dorsal interacting protein 2	Dlip2
+FBgn0000567	Ecdysone-induced protein 74EF	Eip74EF
+FBgn0005660	Ets at 21C	Ets21C
+FBgn0005658	Ets at 65A	Ets65A
+FBgn0004510	Ets at 97D	Ets97D
+FBgn0005659	Ets at 98B	Ets98B
+FBgn0003118	pointed	pnt
+FBgn0000097	anterior open	aop
+FBgn0039225	Ets96B	Ets96B
+FBgn0032816	Nuclear factor Y-box B	Nf-YB
+FBgn0035993	Nuclear factor Y-box A	Nf-YA
+FBgn0029905	Nuclear factor Y-box C	Nf-YC
+FBgn0041111	lilliputian	lilli
+FBgn0259234	Calmodulin-binding transcription activator	Camta
+FBgn0050011	gemini	gem
+FBgn0259211	grainy head	grh
+FBgn0024250	brinker	brk
+FBgn0001222	Heat shock factor	Hsf
+FBgn0027503	-	CG11970
+FBgn0005427	erect wing	ewg
+FBgn0039044	p53	p53
+FBgn0037445	-	CG9727
+FBgn0020379	Rfx	Rfx
+FBgn0052296	Myocardin-related transcription factor	Mrtf
+FBgn0013799	Deformed epidermal autoregulatory factor-1	Deaf1
+FBgn0005677	dachshund	dac
+FBgn0016917	Signal-transducer and activator of transcription protein at 92E	Stat92E
+FBgn0261953	Transcription factor AP-2	TfAP-2
+FBgn0040929	-	CG12659
+FBgn0004837	Suppressor of Hairless	Su(H)
+FBgn0259176	bunched	bun
+FBgn0004656	female sterile (1) homeotic	fs(1)h
+FBgn0004050	zeste	z
+FBgn0000412	D1 chromosomal protein	D1
+FBgn0033998	relative of woc	row
+FBgn0004858	elbow B	elB
+FBgn0010328	without children	woc
+FBgn0002781	modifier of mdg4	mod(mdg4)
+FBgn0085450	Sno oncogene	Snoo
+FBgn0001978	shuttle craft	stc
+FBgn0052772	-	CG32772
+FBgn0000541	Enhancer of bithorax	E(bx)
+FBgn0026869	Thd1	Thd1
+FBgn0031434	insensitive	insv
+FBgn0034650	Negative Cofactor 2alpha	NC2alpha
+FBgn0028926	Negative Cofactor 2beta	NC2beta
+FBgn0032493	Mabiki	Mabi
+FBgn0039932	fussel	fuss
+FBgn0035518	-	CG15011
+FBgn0004870	bric a brac 1	bab1
+FBgn0025525	bric a brac 2	bab2
+FBgn0263108	BTB-protein-VII	BtbVII
+FBgn0029824	-	CG3726
+FBgn0030710	-	CG8924
+FBgn0035405	-	CG15812
+FBgn0039286	distal antenna	dan
+FBgn0039283	distal antenna-related	danr
+FBgn0050401	distal antenna-young	dany
+FBgn0264490	Ecdysone-induced protein 93F	Eip93F
+FBgn0266129	jim lovell	lov
+FBgn0263102	pipsqueak	psq
+FBgn0003254	ribbon	rib
+FBgn0011763	DP transcription factor	Dp
+FBgn0011766	E2F transcription factor 1	E2f1
+FBgn0024371	E2F transcription factor 2	E2f2

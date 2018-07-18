@@ -1,0 +1,23 @@
+Interactions between proteins with extracellular domains
+Ozkan..Zinn. Cell 2013. doi:10.1016/j.cell.2013.06.006
+--------------------------------------------------------
+
+Tables S1 and S2 from Ozkan et al., Cell 2013.
+S1 = individual protein information
+S2 = interacting protein pairs
+
+note, hand edited so R read.table() doesn't throw errors and tables are in sync.
+* table s1: "5'-end" changed to "5-prime end"
+* table S2: CG31369 changed to CG43462 (used in table S1 and current flybase)
+* table S2: iHog to ihog (matches table_S1 and current flybase)
+* table S1: changed CG8779 to CG43079 (nrm)
+* table S1: changed CG8355 (multiple entries) to CG43758 (sli)
+
+- manually edited S1 to update FBgns 
+
+old             new
+FBgn0263416     FBgn0266801
+FBgn0000313     FBgn0267435
+FBgn0263218     FBgn0265296
+FBgn0002968     FBgn0264975
+FBgn0003425     FBgn0264089

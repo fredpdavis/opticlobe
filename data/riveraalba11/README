@@ -1,0 +1,10 @@
+Optic lobe laminar connectome
+Rivera-Alba..de Polavieja. Curr Biol 2011. doi:10.1016/j.cub.2011.10.022
+-------------------------------------------------------------------------
+
+Table S2 in http://www.sciencedirect.com/science/MiamiMultiMediaURL/1-s2.0-S0960982211011468/1-s2.0-S0960982211011468-mmc2.xls/272099/html/S0960982211011468/25c4f05ff9ca718706d830a8669c5e24/mmc2.xls
+
+- row = post-synaptic cell
+- column = pre-synaptic cell
+
+Legend from paper: Connectivity Matrix of the Cartridge, Related to Figure 2A. Presynaptic cells (columns) contact postsynaptic cells (rows). Numbers indicate certain synapses + uncertain synapses. Amacrine, Lawf cells and marginal glia have been collapsed into single rows and columns.

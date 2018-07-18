@@ -1,0 +1,484 @@
+geneName	expression	celltype	evidence	references
+14-3-3zeta	+	opticlobe	insitu	Skoulakis96
+Ac3	+	opticlobe		Iourgenko00
+acj6	+	opticlobe	immuno	Certel00
+Actbeta	+	R7	insitu	Ting07
+Actbeta	+	R8	insitu	Ting07
+Alk	+	opticlobe	immuno	Gouzi11
+ap	+	Dm3	reporter	Morante08
+#aPKC unclear
+ap	+	L4	immuno,reporter	Hasegawa13,Morante08
+ap	+	Mi1	reporter	Morante08
+Appl	+	lamina		Bolkan12
+Appl	+	lamina	immuno	Bolkan12
+Appl	+	medulla	immuno	Torroja96
+Appl	+	opticlobe		Martin-Morris90
+ap	+	T3	reporter	Morante08
+ap	+	Tm12	reporter	Morante08
+ap	+	Tm16	reporter	Morante08
+ap	+	Tm1	reporter	Morante08
+ap	+	Tm20	immuno	Li13
+ap	+	Tm24	reporter	Morante08
+ap	+	Tm28	reporter	Morante08
+ap	+	Tm2	reporter	Morante08
+ap	+	Tm3-6	reporter	Morante08
+ap	+	Tm3a	reporter	Morante08
+ap	+	Tm4	reporter	Morante08
+ap	+	Tm5	immuno,reporter	Li13,Morante08
+ap	+	Tm5Y	reporter	Morante08
+ap	+	Tm7	reporter	Morante08
+ap	+	Tm9	reporter	Morante08
+ap	+	TmY10	immuno	Li13
+ap	+	TmY11	reporter	Morante08
+ap	+	TmY2	reporter	Morante08
+ap	+	TmY4	reporter	Morante08
+ap	+	TmY8	reporter	Morante08
+ap	+	TmY9	reporter	Morante08
+ap	+	Y1	reporter	Morante08
+ap	+	Y3	reporter	Morante08
+Arr1	+	R	insitu,immuno	Smith90,Dolph93
+Arr2	+	R1-6	immuno	Satoh10
+AstC-R1	+	monopolar	insitu	Kreienkamp02
+AstC-R2	+	monopolar	insitu	Kreienkamp02
+ato	+	opticlobe		Hassan00
+Atpalpha	+	R	immuno	Lebovitz89
+Bace	+	lamina	immuno	Bolkan12
+Bace	+	medulla	immuno	Bolkan12
+bdl	+	lamina	immuno	Cameron12
+bdl	+	medulla	immuno	Cameron13
+B-H1	-	dev-R1	devel marker	Higashijima12
+B-H1	-	dev-R6	devel marker	Higashijima12
+B-H2	-	dev-R1	devel marker	Higashijima12
+B-H2	-	dev-R6	devel marker	Higashijima12
+bif	-	dev-R1	devel marker	Bahri97
+bif	-	dev-R2	devel marker	Bahri97
+bif	-	dev-R3	devel marker	Bahri97
+bif	-	dev-R4	devel marker	Bahri97
+bif	-	dev-R5	devel marker	Bahri97
+bif	-	dev-R6	devel marker	Bahri97
+bif	-	dev-R7	devel marker	Bahri97
+bif	-	dev-R8	devel marker	Bahri97
+bi	+	lamina	insitu	Poeck93
+b	+	lamina	insitu	Phillips93
+b	+	Glia_Eg	immuno	Ziegler13
+boss	+	R	protein	Hart93
+brp	+	lamina	immuno	Hamanaka10
+brp	+	medulla	immuno	Hamanaka10
+brp	+	R1-6	immuno	Hamanaka10
+brp	+	R	immuno	Hamanaka10
+Bsg	+	lamina	immuno	Curtin07
+bsh	-	L1	good	Hasegawa13
+bsh	-	L2	good	Hasegawa13
+bsh	-	L3	good	Hasegawa13
+bsh	+	L4	immuno,reporter;nec/suff. transf to L3	Hasegawa13
+bsh	+	L5	immuno,reporter;nec. transf into glia	Hasegawa13
+bsh	+	Mi1	reporter;nec/suff	Hasegawa13
+CadN	+	R	immuno	Iwai02
+CaMKII	+	opticlobe	western	Rachidi99
+Cam	+	lamina	immuno,reporter	Hanson-Painton92
+Cam	+	lobula	immuno	Hanson-Painton92
+Cam	+	medulla	immuno	Hanson-Painton92
+Cam	+	R	immuno	Hanson-Painton92
+Ca-P60A	+	opticlobe	insitu	Magyar95
+CASK	+	lamina	immuno	Lopes01, Martin96
+CASK	+	lobula	immuno	Lopes01, Martin96
+CASK	+	lobula plate	immuno	Lopes01, Martin96
+CASK	+	medulla	immuno	Lopes01, Martin96
+CASK	+	opticobe	immuno	Lopes01
+Cbp53E	+	lamina	immuno	Reifegerste93
+#cdi unclear
+CdsA	+	R1-8		Wu95
+CG11155	+	Tm5c	RT-PCR	Karuppudurai14
+CG11155	+	Tm5c	scRT-PCR	Karuppudurai14
+CG1275	+	lLNv	microarray	Park..Taghert11
+CG13077	+	R	microinj	Xu16
+CG13248	+	lLNv	microarray	Park..Taghert11
+CG13565	+	medulla	immuno	Chen15
+CG14075	+	R	microinj	Xu16
+CG17159	+	R	microinj	Xu16
+CG17352	+	R	microinj,reporter	Xu15
+CG17739	+	R	microinj	Xu16
+CG30050	+	R	microinj	Xu16
+CG30054	+	R	microinj	Xu16
+CG31760	-	Tm5c	RT-PCR	Karuppudurai14
+CG32523	+	R	microinj	Xu16
+CG3822	+	Tm5c	scRT-PCR	Karuppudurai14
+CG45782	+	R	microinj	Xu16
+CG5621	+	Tm5c	scRT-PCR	Karuppudurai14
+CG5773	+	R	microinj	Xu16
+CG6656	+	R	microinj	Xu16;Yang05
+SLC22A	+	opticlobe_glia	immuno	Gai16
+CG7785	+	lLNv	microarray	Park..Taghert11
+CG8539	+	R	microinj	Xu16
+CG9317	+	R	microinj,reporter	Xu16,Xu15
+CG9935	+	R	microinj,reporter	Xu16
+ChAT	+	L2	RT-PCR,reporter	Takemura11,Gao08
+ChAT	+	L4	RT-PCR	Takemura11
+ChAT	+	Mi1	immuno	Hasegawa11
+ChAT	+	T4	reporter	VarijaRaghu11
+ChAT	+	Tm1	reporter	VarijaRaghu11
+ChAT	+	Tm20	reporter	Gao08
+ChAT	+	Tm2	RT-PCR,reporter	Takemura11,VarijaRaghu11
+ChAT	+	Tm5a	immuno	Karuppudurai14
+ChAT	+	Tm5b	immuno	Karuppudurai14
+ChAT	+	Tm9	reporter	Gao08
+ChAT	+	TmY5	reporter	VarijaRaghu11
+chp	+	R1-8	immuno	Hiesinger01,Reinke..Zipursky88
+Clect27	-	Tm5c	RT-PCR	Karuppudurai14
+Clk	+	LNd	immuno	Zheng09
+Clk	+	LNv	immuno	Zheng09
+clumsy	+	Tm5c	RT-PCR	Karuppudurai14
+Cngl	+	opticlobe	insitu	Miyazu00
+comt	+	lamina	immuno	Mohtashami01
+comt	+	lobula	immuno	Mohtashami01
+comt	+	medulla	immuno	Mohtashami01
+Cp1	+	R1-8	immuno	Kinser12
+Cpn	+	R1-8	immuno,insitu	Martin..Miller93
+Cpn	+	R1-8	immuno	Martin93
+crb	+	R1-8	immuno	Johnson..Knust02
+Crc	+	opticlobe	immuno	GAmo03
+cry	+	glia	immuno	Yoshii08
+cry	+	lLNv	immuno	Yoshii08
+cry	+	LNd	immuno	Yoshii08
+#cry	+	R7-8	immuno	Yoshii08	only when kept in dark for 4 days.
+cry	+	s-LNv	immuno	Yoshii08
+Csp	+	lamina	immuno	Zinsmaier94
+Csp	+	lobula	immuno	Zinsmaier94
+Csp	+	medulla	immuno	Zinsmaier94
+Csp	+	R1-6	immuno	Hamanaka10
+Csp	+	R	immuno	Zinsmaier94
+ct	+	Mi10b	immuno	Hasegawa11
+ct	+	Tm3a	immuno	Hasegawa11
+ct	+	Tm3b	immuno	Hasegawa11
+ct	+	Tm9	immuno	Hasegawa11
+dac	+	Dm8	immuno	Hasegawa11
+dac	+	Dm8b	immuno	Hasegawa11
+dac	+	L1	immuno	Hasegawa13
+dac	-	L2	immuno	Hasegawa13
+dac	+	L3	immuno	Hasegawa13
+dac	+	L4	immuno	Hasegawa13
+dac	+	L5	immuno	Hasegawa13
+dac	+	Tm9	immuno	Hasegawa11
+D	+	broad	immuno;glia,neuron	Melnattur13
+dco	+	R	immuno	Kloss98
+Dg	+	opticlobe	immuno	Shcherbata07
+dlg1	+	R1-6	immuno	Kolodziejczyk08,Hamanaka10
+Dl	-	opticlobe	dev expr only	flybase
+dnc	+	lobula	immuno	Nighorn91
+drd	+	opticlobe	immuno	Andlauer14
+Eaat1	+	opticlobe	immuno	Rival04
+elav	+	R1-8	immuno	Robinow91
+Ent2	+	opticlobe	insitu	Knight10
+e	+	opticlobeglia	immuno	Perez10
+e	+	Glia_Eg	immuno	Richardt02,Ziegler13
+Eps-15	+	R1-6	immuno	Hamanaka10
+#ewg unclear
+ey	+	Dm10	OK107-GAL4	Morante08
+ey	+	Dm1	OK107-GAL4	Morante08
+ey	+	Mi4	OK107-GAL4	Morante08
+ey	+	Mi9	OK107-GAL4	Morante08
+ey	+	Tm20	OK107-GAL4	Morante08
+ey	+	Tm3	OK107-GAL4	Morante08
+ey	+	Tm4	OK107-GAL4	Morante08
+ey	+	Tm5	OK107-GAL4	Morante08
+ey	+	Tm6	OK107-GAL4	Morante08
+ey	+	TmY5a	OK107-GAL4	Morante08
+Fatp	+	R1-6	RT-PCR,immuno,GAL4	Dourlen12
+Flo1	+	opticlobe	immuno	Hoehne05
+Flo1	+	Tm?	immuno	Hoehne05
+Flo2	+	opticlobe		Hoehne05
+Flo2	+	opticlobe	immuno	Hoehne05
+Flo2	+	Tm?	immuno	Hoehne05
+Fmr1	+	broad		Morales02
+FMRFa	+	opticlobe	immuno	Kahsai11
+for	+	medulla	immuno	Belay07
+fra	+	glia		Timofeev12
+fra	+	R8		Timofeev12
+Frq1	+	lamina	immuno	Pongs93
+fusl	+	lamina	immuno	Long08
+fusl	+	medulla	immuno	Long08
+#fz3	?	?	dev only?	
+GABA-B-R2	+	C2	immuno	Kolodziejczyk08
+GABA-B-R2	+	C3	immuno	Kolodziejczyk08
+GABA-B-R2	+	Lat	immuno	Kolodziejczyk08
+Gad1	+	C2	immuno	Kolodziejczyk08
+Gad1	+	C3	immuno	Kolodziejczyk08
+Galphaq	+	lamina	immuno	Schulz99
+Galphaq	+	medulla	immuno	Schulz99
+Galphaq	+	R	immuno	Schulz99
+Gbeta76C	+	lamina	immuno	Schulz99
+Gbeta76C	+	medulla	immuno	Schulz99
+Gbeta76C	+	R	immuno	Schulz99
+Ggamma1	+	opticlobe	northern	Ray92
+Ggamma30A	+	lamina	immuno	Sculz99
+Ggamma30A	+	medulla	immuno	Sculz99
+Ggamma30A	+	R	immuno	Sculz99
+GluClalpha	-	Tm5c	RT-PCR	Karuppudurai14
+#gogo	?	?	dev only	
+Gyc76C	+	opticlobe	northern	Liu95
+Gycalpha99B	+	lamina	immuno	Shah95
+Gycalpha99B	+	lobula	immuno	Shah95
+Gycalpha99B	+	medulla	immuno	Shah95
+Gycbeta100B	+	opticlobe	immuno	Shah95
+#hbs	?	?	dev only	
+Hdc	+	R	insitu	Burg93
+HisCl1	+	Glia_Eg	reporter	Pantazis08
+HisCl1	+	lamina	reporter	Pantazis08
+HisCl1	+	LNV	immuno	Hong06
+HisCl1	+	medulla	immuno	Hong06
+homer	+	opticlobe	immuno	Urizar07
+hth	+	Lawf2	reporter	Hasegawa11
+hth	+	Lawfl1	good	Hasegawa11
+hth	+	Mi1	reporter;nec	Hasegawa11
+hth	+	Pm3	reporter	Hasegawa11
+Ih	+	L1	immuno	Hu15
+Ih	+	L2	immuno	Hu15
+IM23	+	R	microinj	Xu16
+inaC	+	R	immuno	Smith91
+Inx2	+	lamina	insitu	Curtin99
+ITP	+	LNd	immuno	Hermann-Luibl14
+ITP	+	s-LNv	immuno	Hermann-Luibl14
+#Kap-alpha3 dev
+kcc	+	opticlobe	immuno	Hekmat-Scafe06
+KCNQ	+	lamina	insitu	Wen05
+Khc	+	Glia_Eg	immuno	Hamanaka10
+Khc	+	lamina	immuno	Hamanka10
+Khc	+	R1-6	immuno	Hamanaka10
+#klg unclear
+ktub	+	R1-6	immuno	Chen12
+Lsp1beta	+	R	microinj	Xu16
+mael	+	lLNv	microarray	Park..Taghert11
+Mef2	+	LNd	immuno	Blanchard10
+Mef2	+	LNv	immuno	Blanchard10
+#Mef2	?	R	immuno;datanotshown	Blanchard10
+mGluR	+	opticlobe	immuno	Ramaekers01
+mGluR	-	Tm5c	RT-PCR	Karuppudurai14
+Mip	+	opticlobe	immuno	Kahsai11
+msta	+	R	microinj	Xu16
+mtt	-	Tm5c	RT-PCR	Karuppudurai14
+Myo61F	+	R	immuno;also lam,med	Hegan07
+nAChRalpha1	+	Tm2	RT-PCR	Takemura11
+nAChRalpha2	+	Tm2	RT-PCR	Takemura11
+nAChRalpha3	+	L2	RT-PCR	Takemura11
+nAChRalpha4	+	L4	RT-PCR	Takemura11
+nAChRalpha5	+	L4	RT-PCR	Takemura11
+nAChRalpha7	+	L2	RT-PCR	Takemura11
+nAChRalpha7	+	L4	RT-PCR	Takemura11
+nAChRalpha7	+	Tm2	RT-PCR	Takemura11
+nAChRbeta1	+	L2	RT-PCR	Takemura11
+nAChRbeta1	+	L4	RT-PCR	Takemura11
+nAChRbeta1	+	Tm2	RT-PCR	Takemura11
+nAChRbeta2	+	Tm2	RT-PCR	Takemura11
+na	+	opticlobe	immuno	Nash02
+Nckx30C	+	lamina	insitu	Haug-Collet99
+Nckx30C	+	medulla	insitu	Haug-Collet99
+Nckx30C	+	R	insitu	Haug-Collet99
+NetA	+	L3	reporter	Timofeev12
+NetB	+	L3	immuno;reporter	Timofeev12
+NetB	+	T1	reporter	Timofeev12
+NetB	+	Tm20	reporter	Timofeev12
+NetB	+	Tm3a	reporter	Timofeev12
+ninaB	+	opticlobe	reporter;insitu	Yang07
+ninaD	-	opticlobe	reporter;insitu	Yang07
+ninaE	+	R1-6	immuno	Wang12
+Nlg4	+	lLNv	immuno	Li13
+nonA	+	R	immuno;also broad	Rendahl92
+norpA	+	R	northern;western	Bloomquist1988,Zhu1993
+NPF	+	lLNv	immuno	Hermann12
+NPF	+	LNd	immuno	Hermann12
+nrv2	+	opticlobe	protein	Sun98
+Nrx-1	+	R1-6	immuno	Tian13
+nSyb	+	lamina	immuno	Hiesinger01
+nSyb	+	R	insitu,immuno	DiAntonio93,Hiesinger01
+NT1	+	opticlobe	insitu	Zhu08
+Obp57e	+	R	microinj	Xu16
+ogre	+	lamina	insitu	Curtin99
+onecut	+	lamina	immuno	Nguyen00
+onecut	+	lobula	immuno	Nguyen00
+onecut	+	medulla	immuno	Nguyen00
+onecut	+	R	immuno	Nguyen00
+ort	+	C2	reporter	Gao08
+ort	+	L1	reporter	Pantazis08
+ort	+	L2	reporter	Pantazis08
+ort	+	L3	reporter	Pantazis08
+ort	+	Mi1	reporter	Gao08
+ort	+	R7	reporter	Karuppudurai14
+ort	+	T2	reporter	Gao08
+ort	+	Tm20	reporter	Gao08
+ort	+	Tm20	reporter	Li13
+ort	+	Tm2	reporter	Gao08
+ort	+	Tm5a	reporter	Karuppudurai14
+ort	+	Tm5b	reporter	Karuppudurai14
+ort	+	Tm5c	reporter	Karuppudurai14
+ort	+	Tm5	reporter	Gao08
+ort	+	Tm5	reporter	Li13
+ort	+	Tm9	reporter	Gao08
+ort	+	TmY10	reporter	Li13
+Pak	+	medulla	immuno	Hamanaka10
+#par-6	?	?	dev	
+para	+	R	immuno	Amichot93
+#Patj	?	?	dev	
+Pdf	+	lLNv	immuno	Helfrich-Forster1998
+Pdf	+	LNv	immuno	Yoshi2005
+Pdf	+	s-LNv	immuno	Helfrich-Forster1998
+Pdp1	+	LNd	immuno	Nitabach2006
+Pdp1	+	LNv	immuno	Nitabach2006
+Pdp1	+	s-LNv	immuno	Nitabach2006
+per	+	lLNv	immuno	Rieger2006
+per	+	LNd	immuno	Roger2006
+per	+	LNv	immuno	Yoshii2005
+per	+	R	insitu	Kloss1998
+per	+	s-LNv	immuno	Rieger2006
+Phm	+	lLNv	microarray	Park..Taghert11
+Pka-C1	+	opticlobe	insitu	Skoulakis93
+Plc21C	+	opticlobe	insitu	Shortridge91
+#PlexA dev
+pog	-	Tm5c	RT-PCR	Karuppudurai14
+Pph13	+	R1-8	insitu, immuno	Goriely99;Zelhof03
+prom	+	R	microinj	Xu16
+psq	+	dev-R3,4	insitu,reporter	Weber95
+qtc	+	opticlobe	insitu	Gaines00
+qvr	+	lobula	immuno	Wu10
+Rab11	+	R	immuno	Alone05
+Rdl	+	lLNv	immuno	Parisky08
+Rdl	+	medulla	immuno	Kolodziejczyk08
+Rdl	+	opticlobe	immuno	Chung09
+Rdl	+	s-LNv	immuno	Parisky08
+Rh2	-	R1-8	ocellus-specific	Pollock88
+Rh2	+	R8	northern	Cowman86
+Rh3	+	R7	northern,reporter	Zuker1987,Fortini1990
+Rh4	+	R7	northern,reporter	Feiler1992
+Rh5	+	Rh5	insitu,immuno,rep	Papatsenko1998,Chou96
+Rh6	+	Rh6	immuno,rep	Yasuyama99,Papatsenko01
+#rho dev
+robo1	+	lobula	immuno	Berni08
+robo1	+	medulla	immuno	Berni08
+#ro dev-R2-5,R8
+roX1	+	R	insitu;Male-only	Amrein97
+roX2	+	R	insitu;Male-only	Amrein97
+rtp	+	R1-6	immuno	Venkatachalam10
+#FLYBASEERROR run	-	R1-6	immuno	Kaminker02
+#FLYBASEERROR run	+	R7-8	immuno	Kaminker02
+rut	+	opticlobe	noassay	Han92
+salm	+	R7-8	immuno	Domingos04
+#sca dev
+S	+	dev-R2		Heberlein91
+S	+	dev-R5		Heberlein91
+S	+	dev-R8		Heberlein91
+#sdt dev
+#Sema-1a dev
+sens	+	R8	immuno	Wernet03
+SerT	+	opticlobe	immuno	Giang11
+shakB	+	lamina	insitu	Zhang99
+shi	+	opticlobe	insitu	Chen92
+Sh	+	lobula	immuno	Wu10
+Sh	+	medulla	immuno	Ruiz-Canada02
+sif	+	lamina	immuno	Sone97
+sif	+	lobula	immuno	Sone97
+sif	+	medulla	immuno	Sone97
+sif	+	R	immuno	Sone97
+#sina dev
+SK	+	lamina	immuno	AbouTayoun11
+SK	+	medulla	immuno	AbouTayoun11
+#sktl unclaer
+Slob	+	R	insitu	Jaramillo04
+Snap25	+	opticlobe	northern	Risinger93
+sNPF	+	LNd	immuno	Johard09
+sNPF	+	lobula	immuno	Johard09,Nassel08
+sNPF	+	medulla	immuno	Johard09,Lee04
+so	+	R1-6	immuno	Serikaku94
+so	+	R7	immuno	Serikaku94
+ss	+	R7	immuno:subset	Thanawala13
+#stan dev-only
+svp	+	R1	reporter	Wernet03
+svp	+	R3	reporter	Wernet03
+svp	+	R4	reporter	Wernet03
+svp	+	R6	reporter	Wernet03
+Synj	+	R1-6	immuno	Verstreken03
+Syn	+	R1-6	immuno:subset	Hamanaka10
+Syt1	+	opticlobe	immuno	DiAntonio93
+Syx1A	+	lamina		Schulze96
+Syx1A	+	medulla		Schulze96
+Syx1A	+	R	immuno	Hiesinger01
+tau	+	opticlobe		Heidary01
+TBPH	+	opticlobe	immuno	Feiguin09
+#Ten-m dev-only
+tim	+	lLNv	immuno	Rieger06
+tim	+	LNd	insitu,immuno	Kloss98
+tim	+	LNv	insitu,immuno	Kloss98
+tim	+	R	insitu,western	Kloss98,Myers96
+tll	+	opticlobe	immuno	Davis14
+toy	+	Tm20	immuno	Li13
+toy	+	Tm5	immuno	Li13
+toy	+	TmY10	immuno	Li13
+t	+	R1-8	immuno	Wagner07
+trio	+	lamina	immuno	Awasaki00
+#Trl dev-only
+#trn dev-only
+trp	+	R	immuno,western	Wong89,Montell89,Tian13
+tutl	+	lamina	immuno	Ferguson09
+tutl	+	lobula	immuno	Ferguson09
+TwdlE	+	R	microinj	Xu16
+#VAChT	+	C2	immuno	Kolodziejczyk08;flybase error
+VAChT	+	L2	immuno	Kolodziejczyk08
+VAChT	+	L4	immuno	Kolodziejczyk08
+veli	+	R	immuno;also lam,med	Bachmann08
+verm	+	R	immuno	McKay08
+VGAT	+	lamina	immuno	Kolodziejczyk08
+VGlut	+	Dm8	RT-PCR,immuno	Karuppudurai14
+VGlut	+	DM8	RT-PCR	Karuppudurai14
+VGlut	+	L1	RT-PCR	Takemura11
+VGlut	-	Tm5a	immuno	Karuppudurai14
+VGlut	-	Tm5b	immuno	Karuppudurai14
+VGlut	+	Tm5c	RT-PCR,immuno	Karuppudurai14
+VGlut	+	Tm5c	RT-PCR	Karuppudurai14
+Vha55	+	R	imuno	Pyza04
+VhaSFD	+	R	imuno	Pyza04
+VhaSFD	+	R	imuno	Pyza04
+Vps26	+	R1-6	immuno	Wang14
+vri	+	lLNv	insitu	Yang01
+vri	+	LNd	insitu	Blau99
+vri	+	LNv	insitu	Blau99
+vri	+	R	insitu	Blau99
+vri	+	s-LNv	insitu	Yang01
+vvl	+	Dm8a	reporter	Hasegawa11
+vvl	+	Dm8b	reporter	Hasegawa11
+vvl	+	opticlobe	immuno,reporter	Hasegawa11,Brody12
+vvl	+	Tm3a	reporter	Hasegawa11
+vvl	+	Tm3b	reporter	Hasegawa11
+vvl	+	Tm9	reporter	Hasegawa11
+vvl	+	TmY3	reporter	Hasegawa11
+Wdr82	+	lLNv	microarray	Park11
+Xport-A	+	R	immuno	Rosenbaum11
+CG7220	+	R1-6	microarray	Yang05
+Tequila	+	R1-6	microarray	Yang05
+Cpr72Ec	+	R1-6	microarray	Yang05
+CG10638	+	R1-6	microarray	Yang05
+Tsp42Ej	+	R1-6	microarray	Yang05
+CG18598	+	R1-6	microarray	Yang05
+Fbxl4	+	R1-6	microarray	Yang05
+repo	+	generalglia		manual
+repo	+	Glia_Eg	immuno	Ziegler13
+ced-6	+	generalglia		flybasequery
+D	+	generalglia		flybasequery
+drpr	+	generalglia		flybasequery
+e	+	generalglia		flybasequery
+fra	+	generalglia		flybasequery
+Gat	+	generalglia		flybasequery
+gb	+	generalglia		flybasequery
+kermit	+	generalglia		flybasequery
+Khc	+	generalglia		flybasequery
+Oatp58Dc	+	generalglia		flybasequery
+per	+	generalglia		flybasequery
+rb	+	generalglia		flybasequery
+SLC22A	+	generalglia		flybasequery
+TBPH	+	generalglia		flybasequery
+tim	+	generalglia		flybasequery
+Tret1-1	+	generalglia		flybasequery
+Vmat	+	generalglia		flybasequery
+ChAT	+	ChAT	good	driver.type
+VGlut	+	VGlut	good	driver.type
+Gad1	+	Gad1	good	driver.type
+Crz	+	Crz	good	driver.type
+NPF	+	NPF	good	driver.type
+Kdm2	+	Kdm2	good	driver.type

@@ -768,53 +768,53 @@ setSpecs <- function(){
 
 # Load file: ERCC concentrations
    specs$erccConcFn <- paste0(specs$baseDir,
-                              "/data/external/ERCC/cms_095046.txt")
+                              "/data/ercc/cms_095046.txt")
 
 # Load benchmark expression patterns
    specs$bmExpr <- loadBenchmark(specs)
 
 # Load files: GO annotation
    specs$goFn <- paste0(specs$baseDir,
-      "/data/external/flybase/flybase.fbgn_goterm.2014_05.txt.gz")
+      "/data/flybase/flybase.fbgn_goterm.2014_05.txt.gz")
    specs$goInfo <- loadGO(specs)
 
 # Load files: InterPro annotation
    specs$interproFn <- paste0(specs$baseDir,
-      "/data/external/flybase/fbgn_interpro.dmel-r6.02.20160607.txt.gz")
+      "/data/flybase/fbgn_interpro.dmel-r6.02.20160607.txt.gz")
    specs$interproInfo <- loadInterpro(specs)
 
    specs$flyBaseTfsFn <- paste0(specs$baseDir,
-      "/data/external/flybase/flybase_TFs_genegroup_FBgg0000745_20180221.txt")
+      "/data/flybase/flybase_TFs_genegroup_FBgg0000745_20180221.txt")
 
    specs$fullFlyBaseGroupsFn <- paste0(specs$baseDir,
-      "/data/external/flybase/gene_group_data_fb_2018_02.tsv.gz")
+      "/data/flybase/gene_group_data_fb_2018_02.tsv.gz")
 
    specs$flyBaseGroupsFn <-  list(
       beat = paste0(specs$baseDir,
-             "/data/external/flybase/beat_family_FBgg0000596.txt"),
+             "/data/flybase/beat_family_FBgg0000596.txt"),
       dip = paste0(specs$baseDir,
-             "/data/external/flybase/dip_FBgg0000530.txt"),
+             "/data/flybase/dip_FBgg0000530.txt"),
       dpr = paste0(specs$baseDir,
-             "/data/external/flybase/dpr_FBgg0000529.txt")
+             "/data/flybase/dpr_FBgg0000529.txt")
    )
 
 # Load files: Ozkan13 PPI
    specs$ozkan13 <- list()
    specs$ozkan13$proteinInfoFn <- paste0(specs$baseDir,
-      "/data/papers/ozkan13/ozkan_tableS1.txt")
+      "/data/ozkan13/ozkan_tableS1.txt")
 
    specs$ozkan13$proteinPairsFn <- paste0(specs$baseDir,
-      "/data/papers/ozkan13/ozkan_tableS2.txt")
+      "/data/ozkan13/ozkan_tableS2.txt")
 
 # Set file locations: Riveraalba11 connectome
    specs$riveraalba11 <- list()
    specs$riveraalba11$conMatrixFn <- paste0(specs$baseDir,
-      "/data/papers/riveraalba11/riveraalba2011_tableS2.txt")
+      "/data/riveraalba11/riveraalba2011_tableS2.txt")
 
 # Set file locations: Takemura13 connectome
    specs$takemura13 <- list()
    specs$takemura13$synapsesFn <- paste0(specs$baseDir,
-      "/data/papers/takemura13/nature12450-s3.xls")
+      "/data/takemura13/nature12450-s3.xls")
 
 # Load files: Konstaninides18 expression data
    specs$konstantinides18 <- list()
@@ -822,20 +822,20 @@ setSpecs <- function(){
       "/metadata/konstantinides18_rnaseq_samples.txt")
 
    specs$konstantinides18$markersFn <- paste0(specs$baseDir,
-      "/data/papers/konstantinides18/",
+      "/data/konstantinides18/",
       "konstantinides18_tableS1_cluster_markers.txt")
 
    specs$konstantinides18$scClusterAssFn  <- paste0(specs$baseDir,
-      "/data/papers/konstantinides18/",
+      "/data/konstantinides18/",
       "konstantinides18_scope_singlecell_cluster_assignment.csv")
 
    specs$konstantinides18$scClusterLabelsFn  <- paste0(specs$baseDir,
-      "/data/papers/konstantinides18/",
+      "/data/konstantinides18/",
       "konstantinides18_fig3a_cluster_labels.txt")
 
 # Load files: manual neurotransmitter/neuropeptide classes
    specs$ntSystemsFn<-paste0(specs$baseDir,
-      "/data/external/manual_nt_list/fly_neurotransmission_manuallist.txt")
+      "/data/misc/fly_neurotransmission_manuallist.txt")
 
    specs$ntSystems <- read.table(specs$ntSystemsFn,
                                  header = TRUE,

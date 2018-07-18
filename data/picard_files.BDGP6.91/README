@@ -1,0 +1,6 @@
+~/software/ucsc_bins/gtfToGenePred -genePredExt -geneNameAsName2 ../star_files.BDGP6.91/BDGP6.91.ERCC.INTACT.gtf refFlat.tmp.txt
+paste <(cut -f 12 refFlat.tmp.txt) <(cut -f 1-10 refFlat.tmp.txt) | awk 'BEGIN{FS="\t"; OFS="\t"} {if ($1 == "") {$1 = $2} print $0}' > refFlat.txt 
+gzip refFlat.txt
+
+zcat refFlat.txt.gz | grep -v '	ERCC' | gzip -c - > refFlat.noERCC.txt.gz
+zcat refFlat.txt.gz | grep '	ERCC' | gzip -c - > refFlat.ERCConly.txt.gz
