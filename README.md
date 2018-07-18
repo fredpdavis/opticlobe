@@ -23,7 +23,7 @@ The data used by this package comes from several sources. We include nearly all
 data files expected by the R and LSF shell programs, along with README files
 describing the contents. The only exceptions are large files (eg, genome
 sequence, gene annotations, transcript sequences, RNA-seq alignment indices),
-which we do not provide but descrige in README files how to obtain or build.
+which we do not provide but describe in README files how to obtain or build.
 
 | Data                    | Source                                                                                                                 |
 | ----------------------- | ---------------------------------------------------------------------------------------------------------------------- |
@@ -33,7 +33,7 @@ which we do not provide but descrige in README files how to obtain or build.
 | FlyBase gene groups     | [FlyBase 2018_02](http://fb2018_02.flybase.org/)
 
 
-We also use data from the following papers:
+We also used data from the following papers:
 
 - [Rivera-Alaba et al., Curr Biol 2011.](http://dx.doi.org/10.1016/j.cub.2011.10.022)
 - [Takemura et al., Nature 2013.](http://dx.doi.org/10.1038/nature12450)
