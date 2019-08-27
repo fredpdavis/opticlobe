@@ -1,0 +1,35 @@
+Single cell RNA-seq analysis of optic lobe
+Davie..Aerts, Cell 2018. doi:10.1016/j.cell.2018.05.057
+-----------------------------------------------------------------
+
+1. davie18_cluster_labels.txt
+
+copied from supplemental table S2:
+
+https://ars.els-cdn.com/content/image/1-s2.0-S0092867418307207-mmc2.xlsx
+
+
+2. davie18_cluster_markers.txt
+
+copied from supplemental table S3:
+
+https://ars.els-cdn.com/content/image/1-s2.0-S0092867418307207-mmc3.xlsx
+
+
+
+3. davie18_scope_singlecell_cluster_assignment.csv
+
+# Downloaded loom from aertslab.org and extracted cell assignments with their SCopeLoomR package:
+
+install.packages("devtools")
+devtools::install_github("aertslab/SCopeLoomR")
+vfh <- open_loom("./Aerts_Fly_AdultBrain_Filtered_57k.loom")
+tx <- get_clusterings(vfh)
+cell_ids <- get_cell_ids(vfh)
+outTab <- data.frame(cellID = cell_ids,
+                     clusterID = as.character(tx$`0`))
+rownames(outTab) <- NULL
+write.csv(outTab,
+          "davie18_scope_singlecell_cluster_assignment.csv",
+          row.names=FALSE,
+          quote=TRUE)

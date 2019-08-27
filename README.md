@@ -5,9 +5,11 @@ tables presented in:
 
 A genetic, genomic, and computational resource for exploring neural circuit function  
 Davis FP*, Nern A*, Picard S, Reiser MB, Rubin GM, Eddy SR, Henry GL.  
-submitted, 2018.
+[bioRxiv 2018](http://doi.org/10.1101/385476)
 
-Contact fred.davis@nih.gov with any questions.
+Version: updated Aug 27, 2019 to reflect latest preprint version
+
+Contact fredpdavis@gmail.com with any questions.
 
 ## Package contents
 
@@ -39,6 +41,7 @@ We also used data from the following papers:
 - [Takemura et al., Nature 2013.](http://dx.doi.org/10.1038/nature12450)
 - [Ozkan et al., Cell 2013.](http://dx.doi.org/10.1016/j.cell.2013.06.006)
 - [Konstantinides et al., Cell 2018.](http://dx.doi.org/10.1016/j.cell.2018.05.021)
+- [Davie et al., Cell 2018.](http://dx.doi.org/10.1016/j.cell.2018.05.057)
 
 
 ### Software

@@ -3,7 +3,7 @@
 # analyzeOpticLobeExpr.R - analyze TAPIN-seq measurements of gene expression
 #                          in individual cell types.
 #
-# Fred P. Davis, fredpdavis@gmail.com. 2015-2018
+# Fred P. Davis, fredpdavis@gmail.com. 2015-2019
 #
 ################################################################################
 
@@ -265,9 +265,9 @@ makeFigs <- function( data,
       print("- Fig 2C")
       tx <- makeTAPINyieldFig(dat, figName="msFig2C")
 
-      print("- Fig 2J,D")
+      print("- Fig 2D, 3-S1A")
       tx <- plotExprVsYield( data,
-                       figName.expr_yield = "msFig2J",
+                       figName.expr_yield = "msFig3S1A",
                        figName.yield_yield = "msFig2D",
                        geneList = c("ninaE"),
                        returnData=FALSE, runFit=FALSE)
@@ -276,12 +276,12 @@ makeFigs <- function( data,
       print("- Fig 2E")
       tx <- plotDetectionVsYield(data, figName = "msFig2E")
 
-      print("- Fig 2G")
-      tx <- plotRepCorVsYield(   data, figName = "msFig2G")
+      print("- Fig 2F")
+      tx <- plotRepCorVsYield(   data, figName = "msFig2F")
 
-      print("- Fig 2I")
+      print("- Fig 2G")
       tx <- plotHmapPmat(dat, mode = "gc",
-                          figName = "msFig2I.tan15_markers",
+                          figName = "msFig2G.tan15_markers",
                           geneList = c("svp", "bab2", "erm", "ap",
                                        "pdm3", "pros", "sens"),
                           exprMode          = "raw",
@@ -304,16 +304,25 @@ makeFigs <- function( data,
       print("- Data Tables")
       tx <- writeDataTables(dat, tabName="dataTable")
 
+   }
 
 
+   if (("all" %in% figs) | ("2S1" %in% figs)) {
+      print("Figure 2-S1")
 
-      print("- Fig 2F")
-      tx <- plotTxMolVsYield(    data, figName = "msFig2F")
+      print("- Fig 2-S1C")
+      tx <- plotTxMolVsYield(    data, figName = "msFig2S1C")
 
-      print("- Fig 2H")
+      print("- Fig 2-S1D")
+      tx <- plot.readCoverage(   data, figName = "msFig2S1D", type="txPosition")
+
+      print("- Fig 2-S1E")
+      tx <- plot.readCoverage(   data, figName = "msFig2S1E", type="maxVsYield")
+
+      print("- Fig 2-S1F")
       tx <- plotScatterTPM(data,
                      mode = "all.genes",
-                     figName = "msFig2H.T4T5_male_vs_female",
+                     figName = "msFig2S1F.T4T5_male_vs_female",
                      xSamples = c("T4.T5_d1_male_rep1",
                                   "T4.T5_d1_male_rep2"),
                      ySamples = c("T4.T5_d1_female_rep1",
@@ -321,24 +330,37 @@ makeFigs <- function( data,
                      xlab = "T4T5 male expr (TPM+1)",
                      ylab = "T4T5 female expr\n(TPM+1)")
 
+      print("- Fig 2-S1G")
+      tx <- plotReplicateCorrHistos(data, figName="msFig2S1G")
    }
 
-   if (("all" %in% figs) | ("S2" %in% figs)) {
-      print("Figure S2")
+   if (("all" %in% figs) | ("2S2" %in% figs)) {
+      print("Figure 2-S2")
 
-      tx <- plot.readCoverage(   data, figName = "msFigS2D", type="maxVsYield")
-
-      tx <- plot.readCoverage(   data, figName = "msFigS2C", type="txPosition")
-      tx <- plotReplicateCorrHistos(data, figName="msFigS2E")
+      print("- Fig 2-S2A,B")
+      tx <- compareToKonstantinides18(dat,
+                                      analyzeFACS = TRUE,
+                                      figName = "msFig2S2AB")
    }
+
 
    if (("all" %in% figs) | ("3" %in% figs)) {
 
       print("Figure 3")
 
-      tx <- plotExprBreadthHisto( data, figName.histo = "msFig3F",
-                                        figName.genegroups = "msFig4C",
-                                        figName.cdf   = "msFig3G" )
+      tx <- vizPfit(data,
+                    geneList          = c("VAChT"),
+                    figName.tpmHisto  = "msFig3A",
+                    figName.tpm_pon   = "msFig3B",
+                    labelCol          = c("black"),
+                    labelDirectly     = TRUE)
+
+      tx <- makeCoHeatmap(data, figName="msFig3C")
+
+      tx <- plotExprBreadthHisto(data,
+                                 figName.histo      = "msFig3D",
+                                 figName.cdf        = "msFig3E",
+                                 figName.genegroups = "msFig4C")
 
       print(tx$genegroups[c("DPR-INTERACTING PROTEINS","BEAT FAMILY",
                             "DEFECTIVE PROBOSCIS EXTENSION RESPONSE")])
@@ -346,35 +368,7 @@ makeFigs <- function( data,
       print("TOP 5 groups:",head(tx$genegroups,n=5))
       print("BOTTOM 5 groups:",tail(tx$genegroups,n=5))
 
-      tx <- vizPfit(data,
-                    geneList          = c("VAChT"),
-                    figName.tpmHisto  = "msFig3A",
-                    figName.tpm_pon   = "msFig3B",
-                    labelCol          = c("black"),
-                    labelCells        = c("Kdm2_d1") ,
-                    labelDirectly     = TRUE,
-                    labelLegend       = c("Kdm2") )
-
-      tx <- vizPfit(data,
-                    geneList          = c("ninaE"),
-                    figName.tpmHisto  = "msFig3C",
-                    figName.tpm_pon   = "msFig3D",
-                    labelCol          = c("black"),
-                    labelCells        = c("R1-6_d1") ,
-                    labelDirectly     = TRUE,
-                    labelLegend       = "R1-6" )
-
-      tx <- makeCoHeatmap(data, figName="msFig3E")
-
-
-      tx <- plotOnRangeHisto(            data, figName = "msFigS3B" )
-
-      tx <- plotMuOnOffHistos( data,
-                               figName.muOnHisto = "msFig3H",
-                               figName.muOffHisto = "msFigS3C",
-                               figName.dmuOnOffHisto = "msFig3I" )
-
-      detailedBmGene <- list( fkh = "msFig4J", Ets65A = "msFig4L")
+      detailedBmGene <- list( fkh = "msFig3F", Ets65A = "msFig3H")
 
       for (gene in names(detailedBmGene)) {
          t.posCells <- data$specs$benchmarkExp[[gene]]$pos
@@ -394,14 +388,38 @@ makeFigs <- function( data,
 
       }
 
-      tx <- analyzeRepPonConcordance(data, figName = "msFigS4A")
+   }
 
-      bmRes <- evaluatePcalls(data, figName="msFigS3A")
+
+   if (("all" %in% figs) | ("3S1" %in% figs)) {
+      print("Figure 3S1")
+
+      tx <- vizPfit(data,
+                    geneList          = c("ninaE"),
+                    figName.tpmHisto  = "msFig3S1B",
+                    figName.tpm_pon   = "msFig3S1C",
+                    labelCol          = c("black"),
+                    labelCells        = c("R1-6_d1") ,
+                    labelDirectly     = TRUE,
+                    labelLegend       = "R1-6" )
+
+
+
+      tx <- plotOnRangeHisto(            data, figName = "msFig3S1G" )
+
+      tx <- plotMuOnOffHistos( data,
+                               figName.muOnHisto = "msFig3S1D",
+                               figName.muOffHisto = "msFig3S1X",
+                               figName.dmuOnOffHisto = "msFig3S1Y" )
+
+      tx <- analyzeRepPonConcordance(data, figName = "msFig3S1F")
+
+      bmRes <- evaluatePcalls(data, figName="msFig3S1G")
       print(bmRes$mismatches)
       for (gene in names(bmRes$mismatches)) {
          vizPfit(data, geneList = gene,
-                 figName.tpmHisto = paste0("msFigS3_benchmark_mismatch_", gene),
-                 figName.tpm_pon =  paste0("msFigS3_benchmark_mismatch_", gene),
+                 figName.tpmHisto = paste0("msFig3S1_benchmark_mismatch_", gene),
+                 figName.tpm_pon =  paste0("msFig3S1_benchmark_mismatch_", gene),
                  labelDirectly = TRUE,
                  singlePlot = TRUE,
                  labelCells = unique(dat$pFit$inDat$driver[dat$pFit$inDat$cell
@@ -412,12 +430,17 @@ makeFigs <- function( data,
                  pointPch = 20,
                  labelLegend = "")
       }
-
    }
 
 
    if (("all" %in% figs) | ("4" %in% figs)) {
       print("Figure 4")
+
+      tx <- makeCoTree(data,
+                       figName.cotree   = "extra_msFigS4X_cotree",
+                       figName.allgenes = "msFig4A",
+                       figName.TFgenes  = "extra_msFigS4X_tfgenetree")
+
       tx <- plotHmapPmat.markers( data, figName.qc_pass = "msFig4B",
                                   tabName = "msTabS4",
                                   plotHeight=5, plotWidth=2.5,
@@ -445,7 +468,7 @@ makeFigs <- function( data,
 
       tx <- plotScatterTPM(data,
                      mode = "coding",
-                     figName = "msFig4E.T4_vs_T5",
+                     figName = "msFig4D.T4_vs_T5",
                      celltype1 = "T4",
                      celltype2 = "T5",
                      labelGenes.right = c("TfAP-2"),
@@ -455,16 +478,11 @@ makeFigs <- function( data,
                      xlab = "T4 expr (TPM+1)",
                      ylab = "T5 expr (TPM+1)")
 
-      tx <- makeCoTree(data,
-                       figName.cotree   = "extra_msFigS4X_cotree",
-                       figName.allgenes = "msFig4A",
-                       figName.TFgenes  = "extra_msFigS4X_tfgenetree")
-
 
 
       tx <- plotScatterTPM(data,
                      mode = "coding",
-                     figName = "msFig4H.T5_d1_vs_T5_d2",
+                     figName = "msFig4G.T5_d1_vs_T5_d2",
                      driver1 = "T5_d1",
                      driver2 = "T5_d2",
                      labelGenes.right = c("klg","bi","Con"),
@@ -476,15 +494,15 @@ makeFigs <- function( data,
 
    }
 
-   if (("all" %in% figs) | ("S5" %in% figs)) {
-      print("Figure S5")
+   if (("all" %in% figs) | ("4S1" %in% figs)) {
+      print("Figure 4S1")
 
-      tx <- plotHmapPmat.cam(data, figName = "msFigS5A", mode="sparse" )
-      tx <- plotHmapPmat.trueMarkers(data, figName = "msFigS4B")
+      tx <- plotHmapPmat.cam(data, figName = "msFig4S1A", mode="sparse" )
+      tx <- plotHmapPmat.trueMarkers(data, figName = "msFig4S1X")
 
       for (exprMode in c("raw", "p")) {
          tx <- plotHmapPmat(dat, mode = "gc",
-                          figName = paste0("msFigS5B.beat_",exprMode),
+                          figName = paste0("msFig4S1B.beat_",exprMode),
                           flybaseGeneGroup = "beat",
                           exprMode          = exprMode,
                           plotTitle="",legend=FALSE,
@@ -498,7 +516,7 @@ makeFigs <- function( data,
          )
 
          tx <- plotHmapPmat(dat, mode = "gc",
-                          figName = paste0("msFigS5C.dip_",exprMode),
+                          figName = paste0("msFig4S1C.dip_",exprMode),
                           flybaseGeneGroup = "dip",
                           exprMode          = exprMode,
                           plotTitle="",legend=FALSE,
@@ -512,7 +530,7 @@ makeFigs <- function( data,
          )
 
          tx <- plotHmapPmat(dat, mode = "gc",
-                          figName = paste0("msFigS5D.dpr_",exprMode),
+                          figName = paste0("msFig4S1D.dpr_",exprMode),
                           flybaseGeneGroup = "dpr",
                           exprMode          = exprMode,
                           plotTitle="",legend=FALSE,
@@ -526,15 +544,77 @@ makeFigs <- function( data,
          )
       }
 
-      tx <- plotExprOzkanPairs(dat, figName="msFigS5E")
+      tx <- plotExprOzkanPairs(dat, figName="msFig4S1E")
+
+      tx <- plotModelNlExpr(dat, flybaseGeneGroup="beat",
+                            figName = "fig4S1B.beat_right", xlim = c(-1,2)) ;
+
+      tx <- plotModelNlExpr(dat, flybaseGeneGroup="dip",
+                            figName = "fig4S1C.dip_right", xlim = c(-1,2)) ;
+
+      tx <- plotModelNlExpr(dat, flybaseGeneGroup="dpr",
+                            figName = "fig4S1D.dpr_right", xlim = c(-1,2)) ;
 
    }
 
-   if (("all" %in% figs) | ("5" %in% figs) | ("6" %in% figs)) {
-      print("Figure 5,6")
+   if (("all" %in% figs) | ("5" %in% figs)) {
+
+      tx <- compareToKonstantinides18(dat,
+                                      figName           = "msFig5A",
+                                      analyzeAbundance  = TRUE,
+                                      analyzeMarkers    = FALSE)
+
+      tx <- compareToDavie18(dat,
+                             figName            = "msFig5B",
+                             analyzeAbundance   = TRUE,
+                             analyzeMarkers     = FALSE)
+
+
+      cur.fignames <- list(davie18 = "msFig5C", 
+                           konstantinides18 = "msFig5S1A")
+      for (dataset in c("davie18", "konstantinides18")) {
+         tx <- calcScTapinCorrelation(dat,
+                                      dataset=dataset,
+                                      scClusterSummary="mean",
+                                      score="nnls",
+                                      figName = cur.fignames[[dataset]])
+      }
+
+
+# heatmap of markers
+      tx <- compareToDavie18(dat,
+                             clusterID=c(39,52,74),
+                             nMarkers = 100,
+                             markerHeatmap.flipCells = TRUE,
+                             markerHeatmap.gapCells  = FALSE,
+                             markerHeatmap.height  = 6.25 ,
+                             markerHeatmap.width  = 2 ,
+                             figName = "msFig5D",
+                             rawNL="mean2")
+
+      tx <- compareToKonstantinides18(dat,
+                                      figName           = "msFig5S2A",
+                                      analyzeAbundance  = FALSE,
+                                      analyzeMarkers    = TRUE)
+
+      tx <- compareToDavie18(dat,
+                             figName            = "msFig5S2B",
+                             analyzeAbundance   = FALSE,
+                             analyzeMarkers     = TRUE)
+
+   }
+
+
+   if (("all" %in% figs) | ("6" %in% figs) | ("7" %in% figs)) {
+      print("Figure 6,7")
+
+      tx <- plotHmapPmat.nt_and_rec(     data,
+                                         figName1 = "msFig6A",
+                                         figName2 = "msFig7A")
+
 
       tx <- plotHmapPmat(dat, mode = "gc",
-                          figName = "msFig5B.np",
+                          figName = "msFig6D.np",
                           geneList = c("AstA","AstA-R1","AstA-R2",
                                        "AstC","AstC-R1","AstC-R2",
                                        "Pdf","Pdfr"),
@@ -549,17 +629,13 @@ makeFigs <- function( data,
                           cellGroups        = dat$specs$cellGroups
       )
 
-      tx <- plotHmapPmat.nt_and_rec(     data,
-                                         figName1 = "msFig5A",
-                                         figName2 = "msFig6A")
-
-      tx <- findReg.NT(                  data, figName = "msFigS6")
+      tx <- findReg.NT(                  data, figName = "msFig6S1A")
 
    }
 
-   if (("all" %in% figs) | ("7" %in% figs)) {
+   if (("all" %in% figs) | ("8" %in% figs)) {
       tx <- plotHmapPmat(dat, mode = "gc",
-                          figName = "msFig7B",
+                          figName = "msFig8C",
                           geneList = c("ort", "HisCl1"),
                           tpmOverlay = TRUE,
                           plotTitle = "", legend=FALSE,
@@ -578,28 +654,30 @@ makeFigs <- function( data,
       tx <- plotSynapseReceptors(dat,
                                  presynaptic.name = "R8 111",
                                  genes = c("ort", "HisCl1"),
-                                 figName="msFig7XA") #defaults to R8 111
+                                 figName="msFig8F") #defaults to R8 111
 
 
       tx <- plotSynapseReceptors(dat,
                                  presynaptic.name = "R7 205",
                                  genes = c("ort", "HisCl1"),
-                                 figName="msFig7XB")
+                                 figName="msFig8G")
+   }
 
+   if (("all" %in% figs) | ("9" %in% figs)) {
 
       tx <- plotSynapseReceptors(dat,
                                  presynaptic.name = "C2 214",
                                  genes = c("Grd", "Rdl"),
-                                 figName="msFig7XC")
+                                 figName="msFig9D")
 
       tx <- plotSynapseReceptors(dat,
                                  presynaptic.name = "C3 103",
                                  genes = c("Grd", "Rdl"),
-                                 figName="msFig7XD")
+                                 figName="msFig9X")
 
 
       tx <- plotHmapPmat(dat, mode = "gc",
-                          figName = "msFig7.GABA_A",
+                          figName = "msFig9B.GABA_A",
                           geneList = c("CG8916","Grd","Rdl","Lcch3"),
                           plotTitle = "", legend=FALSE,
                           plotWidth         = 1.5,
@@ -619,7 +697,7 @@ makeFigs <- function( data,
       )
 
       tx <- plotHmapPmat(dat, mode = "gc",
-                          figName = "msFig7H",
+                          figName = "msFig9F",
                           geneList = c("Ekar", "GluClalpha","CG3822","Eaat1"),
                           tpmOverlay = TRUE,
                           plotTitle = "", legend=FALSE,
@@ -644,7 +722,7 @@ makeFigs <- function( data,
 
    if (("all" %in% figs) | ("S7" %in% figs)) {
       tx <- plotHmapPmat(dat, mode = "gc",
-                          figName = "msFigS7B",
+                          figName = "msFig7S1B",
                           geneList = c("Tk", "TkR86C","TkR99D","sNPF",
                                        "Nos", "shakB"),
                           tpmOverlay = TRUE,
@@ -832,6 +910,26 @@ setSpecs <- function(){
    specs$konstantinides18$scClusterLabelsFn  <- paste0(specs$baseDir,
       "/data/konstantinides18/",
       "konstantinides18_fig3a_cluster_labels.txt")
+
+   specs$konstantinides18$loomFn <- paste0(specs$baseDir,
+      "/data/scope/Desplan_Fly_AdultOpticLobe_57k.loom")
+
+# Load files: Davie18 expression data
+   specs$davie18 <- list()
+   specs$davie18$markersFn <- paste0(specs$baseDir,
+      "/data/davie18/",
+      "davie18_cluster_markers.txt")
+
+   specs$davie18$scClusterAssFn  <- paste0(specs$baseDir,
+      "/data/davie18/",
+      "davie18_scope_singlecell_cluster_assignment.csv")
+
+   specs$davie18$scClusterLabelsFn  <- paste0(specs$baseDir,
+      "/data/davie18/",
+      "davie18_cluster_labels.txt")
+
+   specs$davie18$loomFn  <- paste0(specs$baseDir,
+      "/data/scope/Aerts_Fly_AdultBrain_Filtered_57k.loom")
 
 # Load files: manual neurotransmitter/neuropeptide classes
    specs$ntSystemsFn<-paste0(specs$baseDir,
@@ -4318,6 +4416,8 @@ plotHmapPmat <- function(data, mode="gs",
                          cluster_cols = TRUE,
                          cluster_rows = TRUE,
                          outFormat = "pdf",  # or "png"
+                         makePlot = TRUE,
+                         returnMatrix = FALSE,
                          figName) {
 
 # Purpose: make heatmap of probability (or raw) expression matrix
@@ -4389,7 +4489,7 @@ plotHmapPmat <- function(data, mode="gs",
       pMat <- t.rawMat
       origRawMat <- t.rawMat
 
-      if (rawNL %in% c("mean","Z","mock")) {
+      if (rawNL %in% c("mean","mean2","Z","mock")) {
          curColors <- c("steelBlue3","white","darkOrange3")
          colorScaleMin <- -2.5
          colorScaleMax <- 2.5
@@ -4525,13 +4625,22 @@ plotHmapPmat <- function(data, mode="gs",
 
 
    if (exprMode == "raw") {
+
       if (rawNL == "fracmax") {
+
          pMat <- pMat / apply(pMat,1,max)
+
       } else if (rawNL == "mean") {
 
 
          pMat <- log2(1 + pMat)
          pMat <- pMat - apply(pMat,1,mean)
+
+      } else if (rawNL == "mean2") {
+
+         pMat <- 1 + pMat
+         pMat <- sweep(pMat,1, apply(pMat,1,mean),`/`)
+         pMat <- log2(pMat)
 
       } else if (rawNL == "Z") {
 
@@ -4725,12 +4834,12 @@ plotHmapPmat.nt_and_rec <- function( dat,
    
    outGenes <- c("brp", "nSyb", "Syt1", "Snap25","cpx",
                  "Hdc", "t", "CarT", "e","CG3790", 
-                 "Gad1", "VGAT",
+                 "Gad1",
                  "VAChT", "ChAT",
                  "VGlut", "Eaat1",
                  "ple", "Vmat", "DAT",
-                 "CG8468", "Eaat2", "prt", "Nos")
-   outGenes.gaps <- c(5,10,12,14,16,19)
+                 "CG8468", "CG45782", "Eaat2", "prt", "Nos")
+   outGenes.gaps <- c(5,10,11,13,15,18)
 
    inGenes <- dat$specs$ntSystems[
                dat$specs$ntSystems$geneName %in% rownames(dat$pFit$logp_on_gc) &
@@ -4842,6 +4951,282 @@ plotHmapPmat.nt_and_rec <- function( dat,
    
 }
 
+
+calcScTapinCorrelation <- function(
+   dat,
+   dataset      = "konstantinides18", #or "davie18"
+   plotHeight   = 5.25,
+   plotWidth    = 7.75,
+   nnlsMethod   = "nnls", #or "fcnnls"
+   nnls.options = list(c(
+      direction         = 'sumOfSc', #ScAsSumOfBulk
+      nMarkers          = 200,
+      markerType        = "both", #or bulkEmat, scClusterMat
+      intercept         = TRUE,
+      nl.hmap           = "column", #row, column, none, both
+      qnl.bulk          = FALSE,
+      qnl.sc            = FALSE
+   )),
+   nCores       = 4,
+   scClusterSummary = "mean" #mean, median
+
+   ) {
+
+# Purpose: build single cell v all TAPIN-seq profile spearman correlation matrix
+
+#   install.packages("devtools")
+#   devtools::install_github("aertslab/SCopeLoomR")
+
+   library(SCopeLoomR)
+   library(parallel)
+   library(pheatmap)
+   library(preprocessCore)
+
+
+# Prep TAPIN-seq data
+   bulkEmat <- dat$expr$rawpon$cells$raw
+   bulkEmat <- bulkEmat[,unlist(dat$specs$cellGroups)]
+
+# Access single cell data
+   vfh <- open_loom(dat$specs[[dataset]]$loomFn)
+   cell_ids <- get_cell_ids(vfh)
+
+   scGenes <- get_genes(vfh)
+   sharedGenes <- intersect(scGenes, rownames(bulkEmat))
+
+   print(paste0("Genes in scMat=",length(scGenes),
+                      ", bulkMat=",nrow(bulkEmat),
+                      ". shared=",length(sharedGenes)))
+
+
+# Cluster names are stored differently for the optic lobe and brain maps
+   if (dataset == "konstantinides18") {
+
+      cell_clusters <- get_clusterings_withName(vfh)
+
+   } else if (dataset == "davie18") {
+
+      clusterNames <- unlist(lapply(
+                         get_global_meta_data(vfh)$clusterings[[1]]$clusters,
+                         function(x) {print(x$description)}))
+      cell_clusters <- get_clusterings(vfh)
+      rownames(cell_clusters) <- cell_ids
+
+      cell_clusters[,"0"] <- clusterNames[1 + cell_clusters[,"0"]]
+
+   }
+
+
+   print("Getting scMat")
+   scMat <- get_dgem(vfh) #load entire sc gene x cell matrix
+
+   print("Normalizing to CPM")
+   scMat <- sweep(scMat, 2, colSums(scMat), `/`) * 1E6
+
+
+# as.char cause cluster names start from 0 and fuck things up.
+#   scClusters <- unique(as.character(colnames(cell_clusters[,"0"])))
+   scClusters <- unique(as.character(cell_clusters[,"0"]))
+   numSCclusters <- length(scClusters)
+
+   scClusterMat <- matrix(nrow=nrow(scMat), ncol=numSCclusters, data = 0)
+
+   rownames(scClusterMat) <- rownames(scMat)
+   colnames(scClusterMat) <- scClusters
+
+   print("Calculating single cell cluster transcriptomes")
+
+# had to as.char() up above, cause colum names are numbers and start from 0!
+   if (scClusterSummary == "mean") {
+
+      for (scCluster in scClusters) {
+         scClusterMat[,scCluster] <- rowMeans(scMat[,
+            rownames(cell_clusters)[cell_clusters[,"0"] == scCluster]])
+
+      }
+
+   } else if (scClusterSummary == "median") {
+
+      for (scCluster in scClusters) {
+         scClusterMat[,scCluster] <- apply(scMat[,
+            rownames(cell_clusters)[cell_clusters[,"0"] == scCluster]]
+            ,1,median)
+      }
+
+   }
+
+
+# Get sc and bulk matrices in register
+   bulkEmat     <- bulkEmat[sharedGenes,]
+   scMat        <- scMat[sharedGenes,]
+   scClusterMat <- scClusterMat[sharedGenes,]
+
+# Prep matrices & quantile normalized version
+   renlMats <- list()
+   renlMats$bulkEmat <- as.matrix(bulkEmat,
+                                  dimnames=list(rownames(bulkEmat),
+                                                colnames(bulkEmat)))
+
+   renlMats$scClusterMat  <- as.matrix(scClusterMat,
+                                       dimnames=list(rownames(scClusterMat),
+                                                     colnames(scClusterMat)))
+
+   for (matType in names(renlMats)) {
+      newMatType <- paste0(matType,".qnl")
+      t.colnames <- colnames(renlMats[[matType]])
+      t.rownames <- rownames(renlMats[[matType]])
+      renlMats[[newMatType]] <- normalize.quantiles(renlMats[[matType]])
+      colnames(renlMats[[newMatType]]) <- t.colnames
+      rownames(renlMats[[newMatType]]) <- t.rownames
+   }
+
+   for (matType in names(renlMats)) {
+      renlMats[[matType]] <- log1p(renlMats[[matType]])
+   }
+
+
+# Find all required marker gene sets
+   tx.nMarkers <- unique(unlist(lapply(nnls.options, function(x) {return(x$nMarkers)})))
+   markerLists <- list()
+   for (nMarker in tx.nMarkers) {
+      print(paste0("Looking for top-",nMarker," markers"))
+      markerLists[[paste0("top",nMarker)]] <- list()
+      for (matType in names(renlMats)) {
+         print(paste0("-> matrix ",matType))
+         curMarkers <- c()
+         for (i in 1:ncol(renlMats[[matType]])) {
+            print(paste0("on column ",i))
+   
+            fc_v_med <- renlMats[[matType]][,i] -
+                          apply(renlMats[[matType]][,-1 * i],1,median)
+   
+            fc_v_max <- renlMats[[matType]][,i] -
+                          apply(renlMats[[matType]][,-1 * i],1,max)
+   
+            colMarkers <- union(
+                  head(rownames(renlMats[[matType]][
+                        order(fc_v_med, decreasing=TRUE),]),
+                       n=nMarker),
+                  head(rownames(renlMats[[matType]][
+                        order(fc_v_max, decreasing=TRUE),]),
+                       n=nMarker))
+
+            curMarkers <- unique(c(curMarkers, colMarkers))
+         }
+         markerLists[[paste0("top",nMarker)]][[matType]] <- curMarkers
+      }
+   }
+
+
+# Start NNLS regression analyses
+   nnlsFits <- list()
+   for (optionInd in 1:length(nnls.options)) {
+      print(paste0("Running regression #",optionInd))
+      curOptions <- nnls.options[[optionInd]]
+
+      library(NMF)
+      nmf.options(cores=nCores)
+
+# set what matrix to use: quantileNormalize or not
+      curMatTypes <- list()
+      curMatTypes$bulkEmat <- "bulkEmat"
+      curMatTypes$scClusterMat <- "scClusterMat"
+
+      if (curOptions$qnl.bulk) {
+         curMatTypes$bulkEmat <- "bulkEmat.qnl" }
+
+      if (curOptions$qnl.sc) {
+         curMatTypes$scClusterMat <- "scClusterMat.qnl" }
+
+      curMats <- list()
+      curMats$bulkEmat <- renlMats[[curMatTypes$bulkEmat]]
+      curMats$scClusterMat<- renlMats[[curMatTypes$scClusterMat]]
+
+      curNmarker <- paste0("top",curOptions$nMarkers)
+   
+# define markers
+      markerGenes <- list(bulkEmat = c(), scClusterMat = c())
+      for (matType in names(curMatTypes)) {
+         print(paste0("on matrix ",matType))
+         markerGenes[[matType]] <- markerLists[[curNmarker]][[curMatTypes[[matType]]]]
+      }
+      markerGenes$both <- unique(unlist(markerGenes))
+   
+# run NNLS on each marker set
+      print(paste0("Running nnls using markers ", curOptions$markerType))
+      t.bMat  <- curMats$bulkEmat[markerGenes[[curOptions$markerType]],]
+      t.scMat <- curMats$scClusterMat[markerGenes[[curOptions$markerType]],]
+
+      if (curOptions$direction == "sumOfSc") {
+
+         curFit <- runNNLS(x            = as.matrix(t.scMat),
+                           y            = as.matrix(t.bMat),
+                           intercept    = curOptions$intercept,
+                           method       = nnlsMethod)
+
+
+         outMat <- curFit$coef
+
+      } else if (curOptions$direction == "sumOfBulk") {
+
+         curFit <- runNNLS(y            = as.matrix(t.scMat),
+                           x            = as.matrix(t.bMat),
+                           intercept    = curOptions$intercept,
+                           method       = nnlsMethod)
+
+         outMat <- t(curFit$coef)
+
+      }
+
+# Only show single cell clusters with positive coefficients
+#         outMat <- outMat[apply(outMat,1,max) > 0,]
+
+      plotMat <- outMat
+      if (curOptions$nl.hmap == "column") {
+         plotMat <- sweep(plotMat, 2, apply(plotMat,2,max), `/`)
+      } else if (curOptions$nl.hmap == "row") {
+#               plotMat <- plotMat[apply(plotMat,1,max) > 0,]
+         plotMat <- sweep(plotMat, 1, apply(plotMat,1,max), `/`)
+         plotMat[is.nan(plotMat)] <- 0
+      } else if (curOptions$nl.hmap == "both") {
+         plotMat <- sweep(plotMat, 2, apply(plotMat,2,sum), `/`)
+         plotMat <- sweep(plotMat, 1, apply(plotMat,1,max), `/`)
+         plotMat[is.nan(plotMat)] <- 0
+      }
+
+      orderByClusterID <- order(as.integer(gsub(".* ","",rownames(plotMat))))
+#      return(list(plotMat=plotMat, orderByClusterID = orderByClusterID))
+
+      outFn <- paste0("bulk_vs_sc_nnls",
+                      ".",dataset,
+                      ".nnls_direction_",curOptions$direction,
+                      ".qnl_bulk_",curOptions$qnl.bulk,
+                      ".qnl_sc_",curOptions$qnl.sc,
+                      ".nl_hmap_",curOptions$nl.hmap,
+                      ".nnls_intercept_",curOptions$intercept,
+                      ".markers_",curOptions$markerType,
+                      ".nMarkers_",curOptions$nMarkers,
+                      ".pdf")
+      pdf(outFn, height=plotHeight, width=plotWidth)
+      pheatmap(plotMat[orderByClusterID,],
+               cluster_col=FALSE,
+               cluster_row=FALSE,
+               fontsize_row=4,
+               fontsize_col=5,
+               scale="none")
+      dev.off()
+
+# To select named clusters only
+#         plotMat2 <- plotMat[rownames(plotMat)[!grepl("No Direct", rownames(plotMat))],]
+
+      nnlsFits[[optionInd]] <- list(options = curOptions, fit = curFit)
+   }
+
+   return(list(renlMats         = renlMats,
+               nnls.options     = nnls.options,
+               nnlsFits         = nnlsFits))
+
+}
 
 plotHmapPmat.cam <- function(dat, figName,
                              mode = "sparse" #"all"
@@ -5861,6 +6246,98 @@ writeDataTables <- function(dat, tabName = "dataTable") {
    close(fh.readme)
 
    return(1)
+
+}
+
+plotModelNlExpr <- function(dat,
+                            geneList,
+                            flybaseGeneGroup,
+                            mode = "drivers",
+                            onlyBimodalGenes = TRUE,
+                            xlim = c(-1,2),
+                            figName = "fig4S1X") {
+# Purpose: Given set of genes, scale expression to range defined by
+# modeled 0 (off) to 1 (on)
+
+   if (!missing(flybaseGeneGroup)) {
+      tx <- read.table(dat$specs$flyBaseGroupsFn[[flybaseGeneGroup]],
+                       header=FALSE, sep="\t")
+      colnames(tx) <- c("geneID", "currentGeneName")
+
+      geneList <- dat$specs$transcriptInfo$gene_name[
+         match(tx$geneID, dat$specs$transcriptInfo$gene_id)]
+   }
+
+   rawMat <- dat$expr$rawpon[[mode]]$raw[geneList,,drop=FALSE]
+   pMat <- dat$expr$rawpon[[mode]]$p[geneList,,drop=FALSE]
+
+   nlVals <- list()
+   gene2d <- list()
+#   yRange <- c(0)
+   xRange <- c(0)
+   for (gene in geneList) {
+
+      if (onlyBimodalGenes &
+          dat$pFit$geneEfit[[gene]]$exprType != "bimodal") {
+         print(paste0("Skipping unimodal ", gene))
+         next;
+      }
+
+      print(paste0("on gene ",gene))
+      rawTPM <- unlist(log(1 + rawMat[gene,]))
+      curPon <- pMat[gene,]
+
+      bim.pion <- dat$pFit$geneEfit[[gene]]$bimPars$pi_on
+      bim.pioff <- dat$pFit$geneEfit[[gene]]$bimPars$pi_off
+
+      mu_on <- dat$pFit$geneEfit[[gene]]$bimPars$mu_on
+      sd_on <- dat$pFit$geneEfit[[gene]]$bimPars$sd_on
+      mu_off <- dat$pFit$geneEfit[[gene]]$bimPars$mu_off
+      sd_off <- dat$pFit$geneEfit[[gene]]$bimPars$sd_off
+
+      nlTPM <- (rawTPM - mu_off) / (mu_on - mu_off)
+      nlVals[[gene]] <- nlTPM
+
+      gene2d[[gene]] <- ecdf(nlTPM)
+#      yRange <- range(c(yRange, gene2d[[gene]]$y))
+#      xRange <- range(c(xRange, gene2d[[gene]]$x))
+
+   }
+
+   if (!missing(xlim)) {xRange <- xlim}
+
+   outPdf <- paste0(dat$specs$outDir,"/",figName,"_nlExprHist.pdf")
+   pdf(outPdf, height=1.25, width=1)
+   par(mar=c(2.25,1,0.5,0.5),ps=10,xpd=FALSE)
+   plot(gene2d[[geneList[1]]],
+           col.01line=NA, verticals=T, do.points=FALSE,
+        main = "",
+        xlim = xRange,
+        ylim=c(0,1),
+#        ylim = yRange,
+        pch=20,cex=0.2,
+        xaxt = "n",
+        yaxt="n",
+        xlab = "", ylab=""
+        )
+   mtext(side=1, text="Expression", line=1.25)
+   mtext(side=2, text="Cum. Density", line=0.25)
+   axis(1, las=1, xpd=FALSE, labels=NA, at=c(0,1), tck=-0.1)
+   mtext(side=1, at = c(0,1), text=c("off", "on"), line=0.25)
+   for (gene in names(nlVals)) {
+      print(paste0("plot gene: ", gene))
+      plot(gene2d[[gene]], 
+           col         = rgb(0,0,0,0.25),
+           xlim = xRange,
+           ylim=c(0,1),
+           col.01line = NA,
+           verticals=T, do.points=FALSE,
+           pch=20,cex=0.2,
+           main=gene,
+           lwd = 1,
+           add=TRUE)
+   }
+   dev.off()
 
 }
 
@@ -8067,90 +8544,481 @@ plotExprOzkanPairs <- function(dat,
 }
 
 
+compareToDavie18 <- function( dat,
+                              clusterID,
+                              rawNL             = "mean", #fracmax
+                              calcCorMat        = FALSE,
+                              corMethod         = "kendall",
+                              cellGroups,
+                              bimodalOnly       = FALSE,
+                              analyzeMarkers    = TRUE,
+                              analyzeAbundance = FALSE,
+                              markerHeatmap.height,
+                              markerHeatmap.width,
+                              markerHeatmap.flipCells = FALSE,
+                              markerHeatmap.gapCells  = TRUE,
+                              nMarkers,
+                              figName = "figSX_Davie_scClusterMarkers") {
+
+# Purpose: compare our data to optic lobe scRNA-seq reported in
+#   Davie et al., 2018
+
+# Read in cluster markers;
+   bimodalList <- c()
+   for (gene in names(dat$pFit$geneEfit)) {
+      if (dat$pFit$geneEfit[[gene]]$exprType == "bimodal") {
+         bimodalList <- c(bimodalList, gene)
+      }
+   }
+
+   if (analyzeMarkers) {
+
+      if (!missing(clusterID)) {
+         plotWidth <- 1.5
+         plotHeight <- 5
+         fontsize_col <- 5
+         figName <- paste0(figName,".cluster",clusterID)
+      } else {
+         plotWidth <- 8
+         plotHeight <- 5
+         fontsize_col <- 4
+      }
+
+      if (!missing(markerHeatmap.height)) {
+         plotHeight <- markerHeatmap.height
+         plotWidth <- markerHeatmap.width
+      }
+
+      print(" Expression of Davie single cell cluster makers in our dataset")
+      scMarkers <- read.table(dat$specs$davie18$markersFn,
+                              header=TRUE,sep="\t",
+                              stringsAsFactors=FALSE,
+                              as.is=TRUE)
+      t.1 <- scMarkers$gene_name
+      print(paste0("Original markers table, n=",nrow(scMarkers)," genes"))
+      scMarkers <- scMarkers[scMarkers$gene_name %in% dat$expr$geneExpr$gene_name,]
+      t.2 <- scMarkers$gene_name
+      print(paste0("-> in our matrix: n=",nrow(scMarkers)," genes"))
+      print(paste0("Missing genes!:"))
+      print(paste0(sort(setdiff(t.1,t.2)),collapse=", "))
+   
+      if (missing(cellGroups)) {
+         curCellGroups <- dat$specs$cellGroups
+#         curCellGroups <- dat$specs$cellGroups[c(2,3,4)]
+      } else {
+         curCellGroups <- cellGroups
+      }
+
+      if (missing(clusterID)) {clusterID <- sort(unique(scMarkers$cluster_id));}
+   
+      geneList <- c()
+      geneGaps <- c()
+      geneGaps.labels <- c()
+
+
+# HERENOW 190716_1355 - init corMat to store rank corr of bulk v sc marker genes
+
+      print("NOTE **********  SLOPPY CELL-LEVL EXPR MATRIX: INCLUDES QC-FAIL SAMPLES???")
+      if (calcCorMat) {
+
+         bulkCells <- unlist(curCellGroups)
+#         bulkFCmat <- 1 + dat$expr$rawpon$cells$raw[,bulkCells]
+         bulkFCmat <- 1 + dat$expr$geneExpr.bycell[,paste0("tpm.",bulkCells)]
+         rownames(bulkFCmat) <- dat$expr$geneExpr.bycell$gene_name
+         colnames(bulkFCmat) <- gsub("tpm.","",colnames(bulkFCmat))
+         bulkFCmat <- sweep(bulkFCmat, 2, apply(bulkFCmat,2,mean), `/`)
+#         return(bulkFCmat)
+
+         corMat <- matrix(data=0,
+                          nrow=length(clusterID),
+                          ncol=length(bulkCells))
+         rownames(corMat) <- clusterID
+         colnames(corMat) <- bulkCells
+
+# fill in row by row, since need to run correlation on cluster-specific marker
+
+         for (curCluster in rownames(corMat)) {
+            curMarkers <- scMarkers$gene_name[scMarkers$cluster_id == curCluster]
+
+            if (!missing(nMarkers)) { curMarkers <- head(curMarkers, nMarkers) }
+
+            print(paste0("cluster ",curCluster," has ",length(curMarkers)," markers"))
+
+            for (bulkCell in colnames(corMat)) {
+               curCors <- cor(length(curMarkers):1,
+                              bulkFCmat[curMarkers,bulkCell],
+                              method=corMethod)
+               if (any(is.na(curCors))) {
+                  print("    -> yes there eare NA's here -- WTF?")
+               }
+               corMat[curCluster,bulkCell] <- curCors
+            }
+         }
+
+
+#         corMat <- sweep(corMat, 2, apply(corMat,2,max),`/`)
+#         corMat[corMat < -1] <- -1
+
+#         tx.origRange <- apply(corMat,2,function(x) {max(x) - min(x)})
+#         tx.origMin <- apply(corMat,2,min)
+#         corMat <- sweep(corMat, 2, tx.origMin, `-`)
+#         corMat <- sweep(corMat, 2, tx.origRange, `/`)
+
+         outFn <- paste0(dat$specs$outDir,"/bulk_FC_vs_scMarkerRank_Davie18.pdf")
+         pdf(outFn, height=10, width=12)
+         pheatmap(corMat, cluster_col=FALSE,fontsize_row=7,scale="none",
+                  main=paste0(corMethod," over scMarkers"))
+         dev.off()
+
+         return(list(bulkFCmat = bulkFCmat, corMat = corMat))
+
+      }
+
+      for (curCluster in clusterID) {
+         print(paste0("cluster = ",curCluster))
+         curMarkers <- scMarkers$gene_name[scMarkers$cluster_id == curCluster]
+         print(paste0(" -> ",length(curMarkers)," markers"))
+
+         if (bimodalOnly) {
+            curMarkers <- intersect(curMarkers, bimodalList)
+         }
+
+         if (!missing(nMarkers)) {curMarkers <- head(curMarkers, nMarkers)}
+
+         if (length(curMarkers) == 0) {
+            print(paste0("WARNING*************************** ",
+                         "NO MARKERS FOR CLustER ",curCluster))}
+   
+         geneList <- c(geneList, curMarkers)
+         geneGaps <- c(geneGaps, length(geneList))
+         geneGaps.labels <- c(geneGaps.labels, curCluster)
+   
+      }
+      geneGaps <- geneGaps[1:(length(geneGaps) - 1)]
+
+      gaps_cells <- NULL #counterintuitive: NULL means will be gapped
+      if (!markerHeatmap.gapCells) {
+         gaps_cells <- FALSE #FALSE means will not be gapped
+      }
+
+      if (markerHeatmap.flipCells) {
+         curCellGroups <- rev(unlist(curCellGroups))
+      }
+
+      plotHmapPmat(dat,
+         figName = paste0(figName,"_relTPM"),
+         mode = "gc",
+         exprMode = "raw",
+         rawNL = rawNL,
+         fontsize_col=fontsize_col,
+         plotWidth=plotWidth,
+         plotHeight=plotHeight,
+         legend=FALSE, plotTitle="",
+         geneLabel = FALSE,
+         cluster_cols = FALSE,
+         cluster_rows = FALSE,
+         gaps_cells = gaps_cells,
+         gaps_genes = geneGaps,
+         gaps_genes.group_labels = geneGaps.labels,
+         geneList = geneList,
+         colType = "gene",
+         cellGroups = curCellGroups
+      )
+   }
+
+# Cluster size vs true cell type abundance
+   if (analyzeAbundance) {
+
+# Read in cluster label
+      clusterLabels <- read.table(dat$specs$davie18$scClusterLabelsFn,
+                        sep="\t",header=FALSE)
+      colnames(clusterLabels) <- c("clusterID","clusterName")
+
+# Read in cluster size
+
+      clusterAss <- read.csv(dat$specs$davie18$scClusterAssFn,
+                             header=TRUE)
+      colnames(clusterAss) <- c("cellID", "clusterID")
+#      clusterAss$clusterID <- gsub("[^0-9]","",clusterAss$clusterID,perl=TRUE)
+      clusterSize <- table(clusterAss$clusterID)
+      print(clusterSize)
+
+      trueAbund.perBrain <- c(
+         "T1"           = 1500,
+         "T4/T5"        = 12000,
+         "Dm8/Tm5c"     = 2300,
+         "T2/T3"        = 3000,
+         "Lawf1"        = 302,
+         "Lawf2"        = 280,
+         "C2/C3"        = 3000,
+         "Tm9"          = 1500,
+         "Mi1"          = 1500,
+         "L1/L2/L3/L4/L5" = 7500,
+         "Pm3" = 74
+      )
+      trueAbund.perBrain <- na.omit(trueAbund.perBrain)
+      print("Number of celltype/clusters:")
+      print(length(trueAbund.perBrain))
+
+
+      plotMat <- matrix(data = rep(NA, 2 * length(trueAbund.perBrain)), ncol=2)
+      rownames(plotMat) <- names(trueAbund.perBrain)
+      colnames(plotMat) <- c("clusterSize", "trueAbund.perBrain")
+
+      for (celltype in names(trueAbund.perBrain)) {
+         curClusterID <- clusterLabels$clusterID[clusterLabels$clusterName == celltype]
+         print(paste0(celltype," is cluster ID ", curClusterID))
+         plotMat[celltype,"clusterSize"] <- clusterSize[names(clusterSize) == curClusterID]
+         plotMat[celltype,"trueAbund.perBrain"] <- trueAbund.perBrain[celltype]
+      }
+      print(plotMat)
+
+      obs.relabund <- plotMat[,"clusterSize"] / plotMat["T1","clusterSize"]
+      exp.relabund <- plotMat[,"trueAbund.perBrain"] / plotMat["T1","trueAbund.perBrain"]
+      obs.v.exp.relabund <- obs.relabund / exp.relabund
+      obs.v.exp.relabund <- sort(obs.v.exp.relabund)
+
+      pdf(paste0(dat$specs$outDir,"/",figName,"_relAbundBarPlot.pdf"),
+          width=2.5,height=2)
+      par(mar=c(3,5,0.5,1))
+#      barplot(rbind(obs.relabund,exp.relabund),
+      plot( obs.v.exp.relabund,
+            1:length(obs.v.exp.relabund),
+           ylab = "",
+           xlab="",
+           yaxt="n",
+           xaxt="n",
+           main="",
+           las=1,
+           pch=20,
+           cex=1.2,
+           bty="n",
+           log="x")
+      abline(v=1,lwd=2,col="darkgray")
+      barnames <- names(obs.v.exp.relabund)
+# split to multiple lines:      barnames <- gsub("/","/\n",barnames)
+      axis(1,cex.axis=0.6,mgp=c(3,0.5,0))
+      mtext(barnames, 2, at=1:length(obs.v.exp.relabund),
+            las=1,
+            line=0.5,
+            cex=0.6)
+      mtext("Observed / Expected\nabundance",1,line=2,cex=0.6)
+      mtext("Brain single cell clusters", 2, line=4,cex=0.6)
+      text(1,1," Normalized to T1",cex=0.6,col="darkgray",adj=c(0,0),xpd=TRUE)
+      dev.off()
+      print(obs.v.exp.relabund)
+
+   }
+
+}
+
+
 compareToKonstantinides18 <- function( dat,
-                                       figName = "figSX_scClusterMarkers",
-                                       facsExpr) {
+                                       clusterID,
+                                       analyzeFACS = TRUE,
+                                       analyzeMarkers = TRUE,
+                                       analyzeAbundance = FALSE,
+                                       markerAverage = FALSE, #if yes, Z-score of average
+                                       rawNL = "mean", #fracmax
+                                       cellGroups,
+                                       nMarkers,
+                                       figName = "figSX_Konst_scClusterMarkers",
+                                       facsExpr ) {
 # Purpose: compare our data to optic lobe FACS-seq and scRNA-seq reported in
 #   Konstantinides et al., 2018
 
 # Read in cluster markers;
 
-   if (0) {
-   print(" Expression of single cell cluster makers in our dataset")
-   scMarkers <- read.table(dat$specs$konstantinides18$markersFn,
-                           header=TRUE,sep="\t",
-                           stringsAsFactors=FALSE,
-                           as.is=TRUE)
-   t.1 <- scMarkers$gene_name
-   print(paste0("Original markers table, n=",nrow(scMarkers)," genes"))
-   scMarkers <- scMarkers[scMarkers$gene_name %in% dat$expr$geneExpr$gene_name,]
-   t.2 <- scMarkers$gene_name
-   print(paste0("-> in our matrix: n=",nrow(scMarkers)," genes"))
-   print(paste0("Missing genes!:"))
-   print(paste0(sort(setdiff(t.1,t.2)),collapse=", "))
+   if (analyzeMarkers) {
+    if ( markerAverage == FALSE) {
 
-   curCellGroups <- dat$specs$cellGroups[c(2,3,4)]
+      if (!missing(clusterID)) {
+         plotWidth <- 1.5
+         plotHeight <- 5
+         fontsize_col <- 5
+         figName <- paste0(figName,".cluster",clusterID)
+      } else {
+         plotWidth <- 8
+         plotHeight <- 5
+         fontsize_col <- 4
+      }
 
-   geneList <- c()
-   geneGaps <- c()
-   geneGaps.labels <- c()
-   for (curCluster in sort(unique(scMarkers$cluster_id))) {
-      print(paste0("cluster = ",curCluster))
-      curMarkers <- scMarkers$gene_name[scMarkers$cluster_id == curCluster]
-      print(paste0(" -> ",length(curMarkers)," markers"))
-      if (curMarkers == 0) {
-         print(paste0("WARNING*************************** ",
-                      "NO MARKERS FOR CLustER ",curCluster))}
+      print(" Expression of single cell cluster makers in our dataset")
+      scMarkers <- read.table(dat$specs$konstantinides18$markersFn,
+                              header=TRUE,sep="\t",
+                              stringsAsFactors=FALSE,
+                              as.is=TRUE)
+      t.1 <- scMarkers$gene_name
+      print(paste0("Original markers table, n=",nrow(scMarkers)," genes"))
+      scMarkers <- scMarkers[scMarkers$gene_name %in% dat$expr$geneExpr$gene_name,]
+      t.2 <- scMarkers$gene_name
+      print(paste0("-> in our matrix: n=",nrow(scMarkers)," genes"))
+      print(paste0("Missing genes!:"))
+      print(paste0(sort(setdiff(t.1,t.2)),collapse=", "))
+   
+      if (missing(cellGroups)) {
+         curCellGroups <- dat$specs$cellGroups[c(2,3,4)]
+      } else {
+         curCellGroups <- cellGroups
+      }
 
-      geneList <- c(geneList, curMarkers)
-      geneGaps <- c(geneGaps, length(geneList))
-      geneGaps.labels <- c(geneGaps.labels, curCluster)
+      if (missing(clusterID)) {clusterID <- sort(unique(scMarkers$cluster_id));}
+   
+      geneList <- c()
+      geneGaps <- c()
+      geneGaps.labels <- c()
+      for (curCluster in clusterID) {
+         print(paste0("cluster = ",curCluster))
+         curMarkers <- scMarkers$gene_name[scMarkers$cluster_id == curCluster]
+         print(paste0(" -> ",length(curMarkers)," markers"))
 
-   }
-   geneGaps <- geneGaps[1:(length(geneGaps) - 1)]
+         if (!missing(nMarkers)) {curMarkers <- head(curMarkers, nMarkers)}
 
-   if (0) {
-   plotHmapPmat(dat,
-      figName = paste0(figName,"_pexpr"),
-      mode = "gc",
-      fontsize_col=2,
-      plotWidth=12,
-      plotHeight=7,
-      legend=FALSE, plotTitle="",
-      geneLabel = FALSE,
-      cluster_cols = FALSE,
-      cluster_rows = FALSE,
-      gaps_genes = geneGaps,
-      geneList = geneList,
-      colType = "gene",
-      cellGroups = curCellGroups
-   )
-   }
+         if (curMarkers == 0) {
+            print(paste0("WARNING*************************** ",
+                         "NO MARKERS FOR CLustER ",curCluster))}
 
-   plotHmapPmat(dat,
-      figName = paste0(figName,"_relTPM"),
-      mode = "gc",
-      exprMode = "raw",
-      rawNL = "mean",
-      fontsize_col=4,
-      plotWidth=8,
-      plotHeight=5,
-      legend=FALSE, plotTitle="",
-      geneLabel = FALSE,
-      cluster_cols = FALSE,
-      cluster_rows = FALSE,
-      gaps_genes = geneGaps,
-      gaps_genes.group_labels = geneGaps.labels,
-      geneList = geneList,
-      colType = "gene",
-      cellGroups = curCellGroups
-   )
+   
+         geneList <- c(geneList, curMarkers)
+         geneGaps <- c(geneGaps, length(geneList))
+         geneGaps.labels <- c(geneGaps.labels, curCluster)
+   
+      }
+      geneGaps <- geneGaps[1:(length(geneGaps) - 1)]
+   
+      if (0) {
+      plotHmapPmat(dat,
+         figName = paste0(figName,"_pexpr"),
+         mode = "gc",
+         fontsize_col=2,
+         plotWidth=12,
+         plotHeight=7,
+         legend=FALSE, plotTitle="",
+         geneLabel = FALSE,
+         cluster_cols = FALSE,
+         cluster_rows = FALSE,
+         gaps_genes = geneGaps,
+         geneList = geneList,
+         colType = "gene",
+         cellGroups = curCellGroups
+      )
+      }
+   
+      plotHmapPmat(dat,
+         figName = paste0(figName,"_relTPM"),
+         mode = "gc",
+         exprMode = "raw",
+         rawNL = rawNL,
+         fontsize_col=fontsize_col,
+         plotWidth=plotWidth,
+         plotHeight=plotHeight,
+         legend=FALSE, plotTitle="",
+         geneLabel = FALSE,
+         cluster_cols = FALSE,
+         cluster_rows = FALSE,
+         gaps_genes = geneGaps,
+         gaps_genes.group_labels = geneGaps.labels,
+         geneList = geneList,
+         colType = "gene",
+         cellGroups = curCellGroups
+      )
+
+      plotHmapPmat(dat,
+         figName = paste0(figName,"_relTPM_withLegend"),
+         mode = "gc",
+         exprMode = "raw",
+         rawNL = rawNL,
+         fontsize_col=fontsize_col,
+         plotWidth=c(plotWidth + 2),
+         plotHeight=plotHeight,
+         legend=TRUE, plotTitle="",
+         geneLabel = FALSE,
+         cluster_cols = FALSE,
+         cluster_rows = FALSE,
+         gaps_genes = geneGaps,
+         gaps_genes.group_labels = geneGaps.labels,
+         geneList = geneList,
+         colType = "gene",
+         cellGroups = curCellGroups
+      )
+
+    } else if (markerAverage == TRUE) {
+# Iterate per clusterID and calculate across-marker expression Z-score
+# Then all clusters.
+
+
+      print(" Expression of single cell cluster makers in our dataset")
+      scMarkers <- read.table(dat$specs$konstantinides18$markersFn,
+                              header=TRUE,sep="\t",
+                              stringsAsFactors=FALSE,
+                              as.is=TRUE)
+      t.1 <- scMarkers$gene_name
+      print(paste0("Original markers table, n=",nrow(scMarkers)," genes"))
+      scMarkers <- scMarkers[scMarkers$gene_name %in% dat$expr$geneExpr$gene_name,]
+      t.2 <- scMarkers$gene_name
+      print(paste0("-> in our matrix: n=",nrow(scMarkers)," genes"))
+      print(paste0("Missing genes!:"))
+      print(paste0(sort(setdiff(t.1,t.2)),collapse=", "))
+
+      clusterID <- sort(unique(scMarkers$cluster_id));
+
+       figName <- paste0(figName,".markerAverage.rawNL_",rawNL)
+
+       plotWidth <- 8
+       plotHeight <- 5
+       fontsize_col <- 4
+
+      if (missing(cellGroups)) {
+         curCellGroups <- dat$specs$cellGroups[c(2,3,4)]
+      } else {
+         curCellGroups <- cellGroups
+      }
+
+      bulkCells <- unlist(curCellGroups)
+      outMat <- matrix( nrow = length(bulkCells),
+                        ncol = length(clusterID),
+                        data = 0)
+      rownames(outMat) <- bulkCells
+      colnames(outMat) <- as.character(clusterID)
+
+      markMat <- plotHmapPmat(dat,
+                             figName = paste0(figName,"_relTPM"),
+                             mode = "gc",
+                             exprMode = "raw",
+                             rawNL = rawNL,
+                             geneList = unique(scMarkers$gene_name),
+                             colType = "gene",
+                             cellGroups = curCellGroups,
+                             makePlot = FALSE,
+                             returnMat = TRUE )
+#      return(list(outMat = outMat, markMat = markMat))
+      for (curCluster in clusterID) {
+         print(paste0("cluster = ",curCluster))
+         curMarkers <- scMarkers$gene_name[scMarkers$cluster_id == curCluster]
+         if (!missing(nMarkers)) {curMarkers <- head(curMarkers, nMarkers)}
+
+         # summary stat per TAPIN cell type: average p(on), fracmax, mean log2TPM
+
+         curVals <- rowMeans(markMat[,curMarkers])
+         outMat[,as.character(curCluster)] <- curVals
+      }
+
+      for (scale in c("row","column","none")){
+      pdf(paste0(figName,".scale_",scale,".pdf"),
+          height=plotHeight, width=plotWidth)
+      pheatmap(outMat,
+               scale=scale,
+               cluster_rows = FALSE,
+               cluster_cols = TRUE)
+      dev.off()
+      }
+
+    }
    }
 
 # Compare FACS datasets
 # ultimately; heatmap of our data on one axis, their samples on the other.
-
-   if (1) {
+   if (analyzeFACS) {
 
    library(ComplexHeatmap)
    library(circlize)
@@ -8214,29 +9082,28 @@ compareToKonstantinides18 <- function( dat,
          print(sharedCols)
 # HERENOW 180620_0037
 
-         ourMat <- ourMat[,sharedCols]
-         facsMat <- facsMat[,sharedCols]
+         if (0) {
+            print("NOTE!!!********8 USING ALL CELL TYPES, NOT JUST SHARED!!")
+         } else {
+            ourMat <- ourMat[,sharedCols]
+            facsMat <- facsMat[,sharedCols]
+         }
 
          ourMat  <- ourMat[ rownames(dat$expr$rawpon$cells$p),]
          facsMat <- facsMat[ rownames(dat$expr$rawpon$cells$p),]
 
       # MARKER STRAEGY: HIGHEST FC v MEAN
       # ALT: highest correlaton to bit vector pattern -- eg, 00001000
-         fcMat <- facsMat[apply(facsMat,1,max) >= 50,]
-         fcMat <- log2(1 + fcMat)
-         fcMat <- fcMat - apply(fcMat,1,mean)
+         fcMat.facs <- facsMat[apply(facsMat,1,max) >= 50,]
+         fcMat.facs <- log2(1 + fcMat.facs)
+         fcMat.facs <- fcMat.facs - apply(fcMat.facs,1,mean)
          facsMarkers <- list()
          geneGaps <- c()
          for (facsCol in colnames(facsMat)) {
             print(paste0("MARKER FOR ",facsCol))
-            curMat <- fcMat[,facsCol,drop=FALSE]
+            curMat <- fcMat.facs[,facsCol,drop=FALSE]
             curMat <- curMat[order(curMat[,facsCol],decreasing=TRUE),,drop=FALSE]
             curMat <- curMat[curMat[,facsCol] > 2,,drop=FALSE]
-
-#            curMat <- facsMat[facsMat[,facsCol] >= 50,]
-#            curMat <- curMat[curMat[,facsCol] > 2 * 
-#                              apply(curMat[,setdiff(colnames(curMat),facsCol)],1,max),]
-#            curMat <- curMat[order(curMat[,facsCol],decreasing=TRUE),,drop=FALSE]
 
             facsMarkers[[facsCol]] <- head(rownames(curMat),n=10)
 
@@ -8251,44 +9118,117 @@ compareToKonstantinides18 <- function( dat,
          geneGaps.labels <- gsub("tpm.","",colnames(facsMat))
 
 
-   if (0) {
-   plotHmapPmat(dat,
-      figName = paste0(figName,"_FACSmarkers_pexpr"),
-      mode = "gc",
-      fontsize_col=2,
-      plotWidth=10,
-      plotHeight=5,
-      legend=FALSE, plotTitle="",
-      geneLabel = FALSE,
-      cluster_cols = FALSE,
-      cluster_rows = FALSE,
-      gaps_genes = geneGaps,
-      geneList = unlist(facsMarkers),
-      colType = "gene",
-      cellGroups = list(sharedCells)
-#      cellGroups = dat$specs$cellGroups
-   )
-   }
+# NEW 190318_1457 -- find top-100 markers within each dataset and compare
+# between with Jaccard index to establish similarity
 
-   plotHmapPmat(dat,
-      figName = paste0(figName,"_FACSmarkers_relTPM"),
-      mode = "gc",
-      exprMode = "raw",
-      rawNL = "mean",
-      fontsize_col=5,
-      plotWidth=5,
-      plotHeight=2.5,
-      legend=FALSE, plotTitle="",
-      geneLabel = FALSE,
-      cluster_cols = FALSE,
-      cluster_rows = FALSE,
-      gaps_genes = geneGaps,
-      gaps_genes.group_labels = geneGaps.labels,
-      geneList = unlist(facsMarkers),
-      colType = "gene",
-      cellGroups = list(sharedCells)
-#      cellGroups = dat$specs$cellGroups
-   )
+         if (1) {
+         nMarkers <- 100
+         fcMats <- list()
+         fcMats$facs <- facsMat[apply(facsMat,1,max) >= 50,]
+         fcMats$tapin <- ourMat[apply(ourMat,1,max) >= 50,]
+         markers <- list()
+         print("GOTHERE1")
+
+         for (platform in names(fcMats)) {
+
+            fcMats[[platform]] <- log2(1 + fcMats[[platform]])
+            fcMats[[platform]] <- fcMats[[platform]] - 
+                                   apply(fcMats[[platform]], 1, mean)
+            markers[[platform]] <- list()
+
+            for (sharedCol in colnames(fcMats[[platform]])) {
+               curMat <- fcMats[[platform]][, sharedCol,drop=FALSE]
+               curMat <- curMat[order(curMat[,sharedCol],decreasing=TRUE),,drop=FALSE]
+#               curMat <- curMat[curMat[,sharedCol] > 2,,drop=FALSE]
+               curMat <- curMat[curMat[,sharedCol] > 1,,drop=FALSE]
+
+               markers[[platform]][[sharedCol]] <- head(rownames(curMat),n=nMarkers)
+            }
+         }
+         print("GOTHERE2")
+
+
+         markerSimMat <- matrix(nrow = ncol(fcMats$tapin),
+                                ncol = ncol(fcMats$facs),
+                                data = 0)
+         rownames(markerSimMat) <- colnames(fcMats$tapin)
+         colnames(markerSimMat) <- colnames(fcMats$facs)
+         print("GOTHERE3")
+         for (facsCol in colnames(markerSimMat)) {
+            t.facs <- markers$facs[[facsCol]]
+            for (tapinCol in rownames(markerSimMat)) {
+               t.tapin <- markers$tapin[[tapinCol]]
+
+               t.intersect <- length(intersect(t.tapin, t.facs))
+#               t.union <- length(union(t.tapin, t.facs))
+               t.union <- min(length(t.tapin), length(t.facs))
+               markerSimMat[tapinCol, facsCol] <- 100 * t.intersect / t.union
+            }
+         }
+         print("GOTHERE4")
+
+         pdf(paste0(dat$specs$outDir,"/",
+                    figName,"_jaccardMat_FACS_TAPIN_marker100.pdf"),
+             height=3.5, width=4)
+#             height=11, width=8)
+
+         colnames(markerSimMat) <- gsub("tpm.","",colnames(markerSimMat))
+         rownames(markerSimMat) <- gsub("tpm.","",rownames(markerSimMat))
+
+         print(" GOT HERE")
+         ht1 <- ComplexHeatmap::Heatmap(markerSimMat,
+                  cluster_rows=FALSE,
+                  cluster_columns=FALSE,
+                  column_title = "FACS-seq",
+                  col=colorRampPalette(rev(brewer.pal(n = 7, name = "RdYlBu")))(100),
+                  row_title = "INTACT/TAPIN-seq")
+         draw(ht1)
+         dev.off()
+
+         }
+
+
+      if (1) {
+      plotHmapPmat(dat,
+         figName = paste0(figName,"_FACSmarkers_pexpr"),
+         mode = "gc",
+         fontsize_col=2,
+         plotWidth=10,
+         plotHeight=5,
+         legend=FALSE, plotTitle="",
+         geneLabel = FALSE,
+         cluster_cols = FALSE,
+         cluster_rows = FALSE,
+         gaps_genes = geneGaps,
+         geneList = unlist(facsMarkers),
+         colType = "gene",
+         cellGroups = list(sharedCells)
+   #      cellGroups = dat$specs$cellGroups
+      )
+      }
+
+      if (1) {
+      plotHmapPmat(dat,
+         figName = paste0(figName,"_FACSmarkers_relTPM"),
+         mode = "gc",
+         exprMode = "raw",
+         rawNL = "mean",
+         fontsize_col=5,
+         plotWidth=5,
+         plotHeight=2.5,
+         legend=FALSE, plotTitle="",
+         geneLabel = FALSE,
+         cluster_cols = FALSE,
+         cluster_rows = FALSE,
+         gaps_genes = geneGaps,
+         gaps_genes.group_labels = geneGaps.labels,
+         geneList = unlist(facsMarkers),
+         colType = "gene",
+         cellGroups = list(sharedCells)
+   #      cellGroups = dat$specs$cellGroups
+      )
+      }
+
       }
 
       return(1)
@@ -8296,7 +9236,7 @@ compareToKonstantinides18 <- function( dat,
 
 
 # Cluster size vs true cell type abundance
-   if (1) {
+   if (analyzeAbundance) {
 
 # Read in cluster label
       clusterLabels <- read.table(dat$specs$konstantinides18$scClusterLabelsFn,
@@ -8313,29 +9253,16 @@ compareToKonstantinides18 <- function( dat,
       print(clusterSize)
 
       trueAbund.perBrain <- c(
-#         "perineurial glia" = ,
-#         "subperineurial glia" = ,
-#         "ensheathing glia" = ,
-#         "neuropile glia" = ,
-#         "astrocyte-like glia" = ,
-#         "chiasm glia" = ,
-#         "chortex glia" = ,
-         "T1" = 1600,
-         "T4/T5" = 12800,
-         "Dm8/Tm5c" = 1200,
-         "Mt1" = NA,
-         "Tm5ab" = NA,
-         "T2/T3" = 3200,
-         "Lawf1/Lawf2" = 400,
-         "C2/C3" = 3200,
-         "Dm12" = 250,
-         "Tm9" = 1600,
-         "TmY14" = NA,
-         "Dm2" = NA,
-         "Tm1/TmY8" = NA,
-         "Mi1/Tm2/Tm3" = 4800,
-         "Pm3" = 50,
-         "Pm1/Pm2" = NA
+         "T1"           = 1500,
+         "T4/T5"        = 12000,
+         "Dm8/Tm5c"     = 2300,
+         "T2/T3"        = 3000,
+         "Lawf1/Lawf2"  = 582,
+         "C2/C3"        = 3000,
+         "Dm12"         = 240,
+         "Tm9"          = 1500,
+         "Mi1/Tm2/Tm3"  = 4500,
+         "Pm3"          = 74
       )
       trueAbund.perBrain <- na.omit(trueAbund.perBrain)
       print("Number of celltype/clusters:")
@@ -8379,31 +9306,35 @@ compareToKonstantinides18 <- function( dat,
       obs.v.exp.relabund <- sort(obs.v.exp.relabund)
 
       pdf(paste0(dat$specs$outDir,"/",figName,"_relAbundBarPlot.pdf"),
-          width=5,height=3)
-      par(mar=c(4.5,5,1,1))
+          width=2.5,height=2)
+      par(mar=c(3,5,0.5,1))
 #      barplot(rbind(obs.relabund,exp.relabund),
-      plot(1:length(obs.v.exp.relabund),
-           obs.v.exp.relabund,
-           xlab = "",
-           ylab = "Observed / Expected\nabundance",
+      plot( obs.v.exp.relabund,
+            1:length(obs.v.exp.relabund),
+           ylab = "",
+           xlab="",
+           yaxt="n",
            xaxt="n",
            main="",
            las=1,
            pch=20,
-           cex=1.5,
+           cex=1.2,
            bty="n",
-           log="y")
-      abline(h=1,lwd=2,col="darkgray")
+           log="x")
+      abline(v=1,lwd=2,col="darkgray")
       barnames <- names(obs.v.exp.relabund)
-      barnames <- gsub("/","/\n",barnames)
-      mtext(barnames, 1, at=1:length(obs.v.exp.relabund),
-            line=1.5,
-            cex=0.8)
-      mtext("Labeled single cell clusters", 1,
-            line=3, cex=1)
-      text(7,0.8,"Normalized to T1 cluster",cex=1,col="darkgray",adj=c(0,1))
+# split to multiple lines:      barnames <- gsub("/","/\n",barnames)
+      axis(1,cex.axis=0.6,mgp=c(3,0.5,0))
+      mtext(barnames, 2, at=1:length(obs.v.exp.relabund),
+            las=1,
+            line=0.5,
+            cex=0.6)
+      mtext("Observed / Expected\nabundance",1,line=2,cex=0.6)
+      mtext("Optic lobe single cell clusters", 2, line=4,cex=0.6)
+      text(1,1," Normalized to T1",cex=0.6,col="darkgray",adj=c(0,0),xpd=TRUE)
       dev.off()
       print(obs.v.exp.relabund)
+
 
    }
 
@@ -8419,6 +9350,7 @@ loadExpr.Konstantinides18 <- function(dat) {
    return(konstantinides18)
 
 }
+
 
 
 analyzeRepPonConcordance <- function(dat, figName = "msFigS4A") {
@@ -8479,5 +9411,55 @@ analyzeRepPonConcordance <- function(dat, figName = "msFigS4A") {
         
    dev.off()
    return(concords)
+
+}
+
+
+
+
+runNNLS <- function(x, y, intercept = FALSE, method = "fcnnls") {
+
+   library(NMF)
+   library(nnls)
+
+
+   coef.rows <- colnames(x)
+   coef.cols <- colnames(y)
+
+   if (intercept) { x <- cbind(1, x) }
+
+   if (method == "nnls") {
+
+      curFit <- list(fits = list(),
+                     coef = matrix(nrow=length(coef.rows),
+                                   ncol=length(coef.cols),
+                                   data=0,
+                                   dimnames=list(coef.rows,
+                                                 coef.cols)))
+
+      for (i in 1:ncol(y)) {
+         curFit$fits[[i]] <- nnls(x, y[,i])
+         if (intercept) {
+            curFit$coef[,i] <- coef(curFit$fits[[i]])[-1]
+         } else {
+            curFit$coef[,i] <- coef(curFit$fits[[i]])
+         }
+      }
+
+   } else if (method == "fcnnls") {
+
+      curFit <- list()
+
+      curFit$fits <- .fcnnls(x,y)
+      return(curFit)
+      if (intercept) {
+         curFit$coef <- curFit$fits$coef[-1,]
+      } else {
+         curFit$coef <- curFit$fits$coef
+      }
+
+   }
+
+   return(curFit)
 
 }
