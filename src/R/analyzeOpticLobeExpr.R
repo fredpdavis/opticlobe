@@ -2528,10 +2528,10 @@ inferState <- function(data,
                                                 parameter_name="log_lik_h")
 
                      for (h in 1:length(hList)) {
-                        bim.elpd_i[hList[h]] <- logSumExp(bim.kll[h,]) -
+                        bim.elpd_i[hList[h]] <- logSumExp(bim.kll[ , h]) -
                                                 log(nrow(bim.kll)) ;
 
-                        uni.elpd_i[hList[h]] <- logSumExp(uni.kll[h,]) -
+                        uni.elpd_i[hList[h]] <- logSumExp(uni.kll[ , h]) -
                                                 log(nrow(uni.kll)) ;
                      }
                   }
